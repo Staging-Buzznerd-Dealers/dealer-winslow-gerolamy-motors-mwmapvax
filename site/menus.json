@@ -140,6 +140,12 @@
               "label": "Talk to service",
               "type": "url",
               "url": "/#contact"
+            },
+            {
+              "id": "hm-svc-eld",
+              "label": "ELD",
+              "type": "page",
+              "ref": "eld"
             }
           ]
         },

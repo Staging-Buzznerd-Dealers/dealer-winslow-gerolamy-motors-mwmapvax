@@ -1,0 +1,146 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "pb-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "page-banner",
+        "values": {
+          "title": "ELD",
+          "crumb": "<a href=\"/service\">Service</a> / ELD",
+          "subtitle": "",
+          "ctaLabel": "",
+          "ctaUrl": "",
+          "image": {
+            "src": "/images/hero-banner-poster.jpg",
+            "alt": "International trucks lined up in front of the Winslow-Gerolamy dealership",
+            "width": 1440,
+            "height": 780
+          }
+        }
+      }
+    },
+    {
+      "id": "im-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "intro-media",
+        "values": {
+          "eyebrow": "Electronic logging devices",
+          "heading": "Lead Your Fleet Into The Future",
+          "text": "Connect to a platform that helps you reduce fleet costs, increase productivity and efficiency, improve safety and strengthen compliance.\n\nWinslow Gerolamy Motors is an authorized Geotab reseller. Geotab is an effortless ELD solution providing simple log management, alerts of HOS (hours of service), DVIR’s (driver vehicle inspections and diagnostics), simplified roadside inspections, cross border compliance and much more",
+          "ctaLabel": "View Geotab brochure",
+          "ctaUrl": "/#contact",
+          "image": {
+            "src": "/images/geotab-dashboard.jpg",
+            "alt": "MyGeotab fleet dashboard shown on a monitor, tablet and phone, with two Geotab GO devices",
+            "width": 1052,
+            "height": 716
+          },
+          "badgeImage": {
+            "src": "/images/geotab-logo.jpg",
+            "alt": "Geotab: management by measurement",
+            "width": 504,
+            "height": 126
+          },
+          "badgeText": "Authorized\n\nGeotab Installer"
+        }
+      }
+    },
+    {
+      "id": "fe-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "card-grid",
+        "values": {
+          "eyebrow": "Features",
+          "heading": "Additional Key Features",
+          "intro": "",
+          "outroHeading": "",
+          "outro": "",
+          "cards": [
+            {
+              "title": "Accurate Vehicle Tracking",
+              "paras": [
+                {
+                  "text": "GPS vehicle tracking and telematics starts recording as soon as you begin driving. Collect rich, accurate data on vehicle location, speed, trip distance and time, engine idling and more."
+                }
+              ],
+              "points": [],
+              "after": "",
+              "linkLabel": "",
+              "linkUrl": ""
+            },
+            {
+              "title": "Vehicle Health Assessments",
+              "paras": [
+                {
+                  "text": "Valuable information collected such as odometer and engine faults data helps prioritize vehicle maintenance, as well as identifying both safe and risky driving habits."
+                }
+              ],
+              "points": [],
+              "after": "",
+              "linkLabel": "",
+              "linkUrl": ""
+            },
+            {
+              "title": "Collision Detection And Notification",
+              "paras": [
+                {
+                  "text": "Through Geotab’s patented algorithms and the GO device’s accelerometer, harsh event data is collected such as acceleration, braking, cornering, etc. If a suspected collision is detected, detailed forensic data is automatically uploaded from the GO device to allow for forensic reconstruction of the event."
+                }
+              ],
+              "points": [],
+              "after": "",
+              "linkLabel": "",
+              "linkUrl": ""
+            },
+            {
+              "title": "Advanced Data Capture",
+              "paras": [
+                {
+                  "text": "Data from a multitude of sources is captured including, engine, drivetrain, instrument clusters and other subsystems. Much of this data is a valuable tool when managing fleets as all data is in real-time."
+                }
+              ],
+              "points": [],
+              "after": "",
+              "linkLabel": "",
+              "linkUrl": ""
+            },
+            {
+              "title": "Track And Manage Fuel Trends",
+              "paras": [
+                {
+                  "text": "Fuel and EV Energy Usage can be tracked and reported to provide the Fleet Manager with the information they need for consumption and the data to drive efficiencies."
+                }
+              ],
+              "points": [],
+              "after": "",
+              "linkLabel": "",
+              "linkUrl": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cb-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "contact-band",
+        "values": {
+          "eyebrow": "",
+          "heading": "Contact Us",
+          "text": "705-742-3411, to get a complete explanation on how GEOTAB will improve your driving experience.",
+          "callLabel": "705-742-3411",
+          "callUrl": "tel:+17057423411",
+          "emailLabel": "etardiff@wgmotors.ca",
+          "emailUrl": "mailto:etardiff@wgmotors.ca",
+          "ctaLabel": "phudder@wgmotors.ca",
+          "ctaUrl": "mailto:phudder@wgmotors.ca"
+        }
+      }
+    }
+  ]
+}

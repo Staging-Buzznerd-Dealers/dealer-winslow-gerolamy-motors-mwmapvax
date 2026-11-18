@@ -89,5 +89,23 @@
       "footer": null,
       "utilityNav": null
     }
+  },
+  {
+    "slug": "eld",
+    "title": "ELD – Geotab Electronic Logging Devices",
+    "description": "Winslow-Gerolamy Motors is an authorized Geotab reseller and installer: a simple ELD solution for log management, hours-of-service alerts, DVIRs and compliance.",
+    "path": "/eld",
+    "out": "eld/index.html",
+    "dir": "eld",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
   }
 ]

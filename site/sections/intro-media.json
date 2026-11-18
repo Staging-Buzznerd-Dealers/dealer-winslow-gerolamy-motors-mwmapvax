@@ -1,0 +1,165 @@
+{
+  "version": 2,
+  "id": "intro-media",
+  "name": "Intro with product image and badge",
+  "props": [
+    {
+      "key": "eyebrow",
+      "type": "text",
+      "label": "Eyebrow (small label)"
+    },
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading"
+    },
+    {
+      "key": "text",
+      "type": "textarea",
+      "label": "Copy (blank line between paragraphs)"
+    },
+    {
+      "key": "ctaLabel",
+      "type": "text",
+      "label": "Button label (blank for none)"
+    },
+    {
+      "key": "ctaUrl",
+      "type": "url",
+      "label": "Button link"
+    },
+    {
+      "key": "image",
+      "type": "image",
+      "label": "Product image"
+    },
+    {
+      "key": "badgeImage",
+      "type": "image",
+      "label": "Badge logo"
+    },
+    {
+      "key": "badgeText",
+      "type": "textarea",
+      "label": "Badge text"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "im",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "card",
+        "anchor": "overview"
+      },
+      "children": [
+        {
+          "id": "im-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "align": "center",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "im-copy",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "im-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "headingLevel": 2,
+                    "eyebrow": "{{eyebrow}}"
+                  }
+                },
+                {
+                  "id": "im-text",
+                  "type": "text",
+                  "props": {
+                    "text": "{{text}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "im-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "{{ctaLabel}}",
+                        "url": "{{ctaUrl}}",
+                        "style": "primary"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "im-media",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "im-img",
+                  "type": "image",
+                  "props": {
+                    "image": "{{image}}",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "im-badge",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "im-badge-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "im-logo",
+                  "type": "image",
+                  "props": {
+                    "image": "{{badgeImage}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "im-badge-text",
+                  "type": "text",
+                  "props": {
+                    "text": "{{badgeText}}",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "css": "body :where([data-bz-node=\"im\"]) .bz-block{padding:0}\nbody :where([data-bz-node=\"im\"]) .bz-container{padding:0;max-width:none}\nbody [data-bz-node=\"im\"]>.bz-container{padding-inline:0}\n\nbody [data-bz-node=\"im\"]{background:#fff;padding:96px 0 90px}\nbody [data-bz-node=\"im\"]>.bz-container{max-width:var(--container)}\nbody [data-bz-node=\"im-row\"]{display:grid;grid-template-columns:1fr 1fr;gap:0 64px;align-items:center}\nbody [data-bz-node=\"im-row\"]>.bz-col{grid-column:auto}\nbody [data-bz-node=\"im-h\"] .bz-eyebrow{font:700 10.5px/1.4 var(--font-body);letter-spacing:.22em;text-transform:uppercase;color:#6b6b6a;margin:0 0 14px}\nbody [data-bz-node=\"im-h\"] h2{font:700 36px/1.08 var(--font-heading);letter-spacing:0;text-transform:uppercase;color:var(--ink);margin:0;max-width:520px}\nbody [data-bz-node=\"im-text\"] .bz-text{max-width:520px;margin-top:24px}\nbody [data-bz-node=\"im-text\"] p{font:400 13.5px/25px var(--font-body);color:var(--ink);margin:0;margin:0 0 14px}\nbody [data-bz-node=\"im-text\"] p:last-child{margin:0}\nbody [data-bz-node=\"im-cta\"]{margin-top:28px}\nbody [data-bz-node=\"im-cta\"] .bz-btns{margin:0}\nbody [data-bz-node=\"im-cta\"] .bz-btn{display:inline-flex;align-items:center;justify-content:center;height:50px;padding:0 28px;border:0;border-radius:2px;background:var(--accent);color:#fff;font:700 11px/1 var(--font-body);letter-spacing:.18em;text-transform:uppercase;text-decoration:none}\nbody [data-bz-node=\"im-cta\"] .bz-btn:hover{background:var(--accent-dark)}\nbody [data-bz-node=\"im-media\"] figure{margin:0}\nbody [data-bz-node=\"im-media\"] img{width:100%;height:auto;border-radius:0}\nbody [data-bz-node=\"im-badge\"]{display:flex;justify-content:center;margin-top:56px}\nbody [data-bz-node=\"im-badge-col\"]{display:flex;align-items:center;justify-content:center;gap:22px}\nbody [data-bz-node=\"im-badge-col\"] .bz-block{width:auto}\nbody [data-bz-node=\"im-logo\"] img{width:160px;height:auto}\nbody [data-bz-node=\"im-logo\"] figure{margin:0}\nbody [data-bz-node=\"im-badge-text\"]{border-left:1px solid #cfcfcd;padding-left:22px}\nbody [data-bz-node=\"im-badge-text\"] p{font:400 14px/1.7 var(--font-body);color:#555;margin:0}\n@media (max-width:1100px){body [data-bz-node=\"im\"]{padding:64px 24px}body [data-bz-node=\"im-row\"]{grid-template-columns:1fr;gap:32px}body [data-bz-node=\"im-h\"] h2{font-size:30px}body [data-bz-node=\"im-badge\"]{margin-top:40px}}\n@media (max-width:640px){body [data-bz-node=\"im\"]{padding:48px 20px}body [data-bz-node=\"im-h\"] h2{font-size:26px}body [data-bz-node=\"im-cta\"] .bz-btn{width:100%}body [data-bz-node=\"im-logo\"] img{width:120px}}\n"
+}
