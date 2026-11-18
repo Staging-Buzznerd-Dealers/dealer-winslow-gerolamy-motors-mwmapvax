@@ -1,0 +1,77 @@
+{
+  "id": "lease-rental-request",
+  "name": "Lease / rental request",
+  "status": "live",
+  "surfaces": [
+    "page"
+  ],
+  "intent": "rental-request",
+  "submitLabel": "Submit",
+  "successMessage": "Thanks — we have received your lease / rental request.",
+  "consent": {
+    "enabled": false,
+    "required": false,
+    "text": ""
+  },
+  "fields": [
+    {
+      "id": "lr-first",
+      "type": "first_name",
+      "label": "First Name",
+      "required": true,
+      "width": "half",
+      "placeholder": "Enter First Name"
+    },
+    {
+      "id": "lr-last",
+      "type": "last_name",
+      "label": "Last Name",
+      "required": false,
+      "width": "half",
+      "placeholder": "Enter Last Name"
+    },
+    {
+      "id": "lr-phone",
+      "type": "phone",
+      "label": "Phone Number",
+      "required": false,
+      "width": "half",
+      "placeholder": "Enter Phone"
+    },
+    {
+      "id": "lr-email",
+      "type": "email",
+      "label": "Email Address",
+      "required": true,
+      "width": "half",
+      "placeholder": "Enter Email"
+    },
+    {
+      "id": "lr-message",
+      "type": "paragraph",
+      "label": "Message",
+      "required": false,
+      "placeholder": "Write here"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "lr-default",
+      "name": "Lease / rental requests",
+      "logic": "AND",
+      "rules": [],
+      "targetType": "role",
+      "roleId": "sales-manager",
+      "scopeMode": "dynamic"
+    }
+  ],
+  "confirmations": [
+    {
+      "id": "lr-thanks",
+      "name": "Thanks",
+      "type": "message",
+      "rules": [],
+      "message": "Thanks — we have received your lease / rental request."
+    }
+  ]
+}

@@ -71,5 +71,23 @@
       "footer": null,
       "utilityNav": null
     }
+  },
+  {
+    "slug": "rental",
+    "title": "Rental & Leasing",
+    "description": "Idealease Peterborough offers comprehensive truck leasing, truck rentals and a dedicated maintenance solution, backed by Winslow-Gerolamy Motors.",
+    "path": "/rental",
+    "out": "rental/index.html",
+    "dir": "rental",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
   }
 ]
