@@ -1,4 +1,4 @@
-/* Open the FAQ question that has an answer on load, as the page content shows it expanded. */
+/* Open the first FAQ question that has an answer, as the page content shows it expanded. */
 (function () {
   var items = document.querySelectorAll('[data-bz-node="fq-list"] details.bz-faq');
   for (var i = 0; i < items.length; i++) {

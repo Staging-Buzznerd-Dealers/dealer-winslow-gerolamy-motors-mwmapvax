@@ -8,7 +8,10 @@
         "sectionId": "page-banner",
         "values": {
           "title": "Heavy-Duty Truck Parts In Central Ontario",
-          "crumb": "Heavy-Duty Truck Parts in Central Ontario",
+          "crumb": "Parts",
+          "subtitle": "One of the largest inventories of heavy-duty truck parts in Central Ontario, supporting owner-operators and fleets with fast, accurate, and reliable parts supply.",
+          "ctaLabel": "Order parts",
+          "ctaUrl": "/store/parts",
           "image": {
             "src": "/images/hero-banner-poster.jpg",
             "alt": "International trucks lined up in front of the Winslow-Gerolamy dealership",
@@ -38,11 +41,35 @@
       }
     },
     {
+      "id": "tiles-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "stat-tiles",
+        "values": {
+          "tiles": [
+            {
+              "value": "100+",
+              "label": "Major suppliers"
+            },
+            {
+              "value": "12 mo.",
+              "label": "Unlimited mileage warranty on OEM parts"
+            },
+            {
+              "value": "Daily",
+              "label": "Parts delivery across Central Ontario"
+            }
+          ]
+        }
+      }
+    },
+    {
       "id": "cp-placed",
       "type": "sharedSection",
       "props": {
-        "sectionId": "capabilities",
+        "sectionId": "card-grid",
         "values": {
+          "eyebrow": "Parts solutions",
           "heading": "OEM & Aftermarket Parts Solutions",
           "cards": [
             {
@@ -55,8 +82,10 @@
                   "text": "International™ and OEM parts include a 12-month, unlimited mileage warranty, covering new and renewed parts with a warrantable failure."
                 }
               ],
-              "ctaLabel": "",
-              "ctaUrl": ""
+              "points": [],
+              "after": "",
+              "linkLabel": "",
+              "linkUrl": ""
             },
             {
               "title": "Aftermarket Parts",
@@ -65,8 +94,10 @@
                   "text": "We also offer high quality aftermarket parts as cost-effective alternatives when appropriate. Our team works with customers to select the best option based on application, performance needs, and budget."
                 }
               ],
-              "ctaLabel": "",
-              "ctaUrl": ""
+              "points": [],
+              "after": "",
+              "linkLabel": "",
+              "linkUrl": ""
             },
             {
               "title": "Knowledgeable Parts Team",
@@ -78,11 +109,11 @@
                   "text": "We also have a team of Outside Parts Sales Representatives who travel daily to support customers and fulfill parts requirements across the region."
                 }
               ],
-              "ctaLabel": "",
-              "ctaUrl": ""
-            }
-          ],
-          "cardsMore": [
+              "points": [],
+              "after": "",
+              "linkLabel": "",
+              "linkUrl": ""
+            },
             {
               "title": "Fast Availability & Delivery",
               "paras": [
@@ -96,8 +127,10 @@
                   "text": "We also offer daily parts delivery to customers across Central Ontario, helping reduce downtime and keep repairs moving."
                 }
               ],
-              "ctaLabel": "",
-              "ctaUrl": ""
+              "points": [],
+              "after": "",
+              "linkLabel": "",
+              "linkUrl": ""
             },
             {
               "title": "Parts Ordering Technology",
@@ -109,8 +142,10 @@
                   "text": "Customers can also order parts online through Fleetrite.com, providing access to International Truck, IC Bus, and all-makes parts in a convenient digital platform."
                 }
               ],
-              "ctaLabel": "",
-              "ctaUrl": ""
+              "points": [],
+              "after": "",
+              "linkLabel": "",
+              "linkUrl": ""
             },
             {
               "title": "Fleet Parts Support",
@@ -122,10 +157,15 @@
                   "text": "Our team helps ensure consistent parts availability for maintenance schedules, repairs, and day-to-day fleet requirements."
                 }
               ],
-              "ctaLabel": "",
-              "ctaUrl": ""
+              "points": [],
+              "after": "",
+              "linkLabel": "",
+              "linkUrl": ""
             }
-          ]
+          ],
+          "intro": "",
+          "outroHeading": "",
+          "outro": ""
         }
       }
     },
@@ -133,9 +173,11 @@
       "id": "cl-placed",
       "type": "sharedSection",
       "props": {
-        "sectionId": "checklist-split",
+        "sectionId": "split-band",
         "values": {
+          "eyebrow": "Why choose us",
           "heading": "Why Choose Winslow-Gerolamy Motors Limited For Parts",
+          "text": "",
           "points": [
             {
               "text": "One of the largest parts inventories in Central Ontario"
@@ -159,6 +201,8 @@
               "text": "12-month unlimited mileage warranty on OEM parts"
             }
           ],
+          "linkLabel": "",
+          "linkUrl": "",
           "image": {
             "src": "/images/parts-department.jpg",
             "alt": "Parts counter shelves stocked with oils, fluids and truck parts",
@@ -174,6 +218,7 @@
       "props": {
         "sectionId": "promo-cards",
         "values": {
+          "eyebrow": "Specials",
           "heading": "Parts Promotions",
           "intro": "We offer rotating parts promotions throughout the year, including brake specials and parts flyers with limited-time pricing. Availability and pricing are subject to change based on inventory.",
           "promos": [
@@ -186,7 +231,7 @@
               },
               "title": "Parts Special – Pre-Winter Skid Lot Sale",
               "text": "Prices valid while supplies last.",
-              "ctaLabel": "Read more »",
+              "ctaLabel": "Read more",
               "ctaUrl": "/store/parts"
             }
           ]
@@ -208,7 +253,8 @@
           "type": "heading",
           "props": {
             "text": "Frequently Asked Questions",
-            "headingLevel": 2
+            "headingLevel": 2,
+            "eyebrow": "Parts FAQs"
           }
         },
         {
@@ -247,6 +293,24 @@
           }
         }
       ]
+    },
+    {
+      "id": "cb-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "contact-band",
+        "values": {
+          "eyebrow": "Need help?",
+          "heading": "Contact Our Parts Department",
+          "text": "Call us or visit our dealership at 1018 Lansdowne St. West, Peterborough, Ontario.",
+          "callLabel": "(705) 742-3411",
+          "callUrl": "tel:+17057423411",
+          "emailLabel": "info@wgmotors.ca",
+          "emailUrl": "mailto:info@wgmotors.ca",
+          "ctaLabel": "Order parts",
+          "ctaUrl": "/store/parts"
+        }
+      }
     }
   ]
 }

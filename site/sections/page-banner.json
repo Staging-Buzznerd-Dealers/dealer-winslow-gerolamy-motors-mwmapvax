@@ -1,7 +1,7 @@
 {
   "version": 2,
   "id": "page-banner",
-  "name": "Page banner",
+  "name": "Page banner (centred, breadcrumb, button)",
   "props": [
     {
       "key": "title",
@@ -12,6 +12,21 @@
       "key": "crumb",
       "type": "text",
       "label": "Breadcrumb (current page)"
+    },
+    {
+      "key": "subtitle",
+      "type": "textarea",
+      "label": "Subtitle"
+    },
+    {
+      "key": "ctaLabel",
+      "type": "text",
+      "label": "Button label (blank for none)"
+    },
+    {
+      "key": "ctaUrl",
+      "type": "url",
+      "label": "Button link"
     },
     {
       "key": "image",
@@ -52,19 +67,44 @@
               },
               "children": [
                 {
+                  "id": "pb-crumb",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"/\">Home</a> / {{crumb}}",
+                    "width": "full",
+                    "align": "center"
+                  }
+                },
+                {
                   "id": "pb-h",
                   "type": "heading",
                   "props": {
                     "text": "{{title}}",
-                    "headingLevel": 1
+                    "headingLevel": 1,
+                    "align": "center"
                   }
                 },
                 {
-                  "id": "pb-crumb",
+                  "id": "pb-sub",
                   "type": "text",
                   "props": {
-                    "text": "<a href=\"/\">Home</a> » {{crumb}}",
-                    "width": "full"
+                    "text": "{{subtitle}}",
+                    "width": "full",
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "pb-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "{{ctaLabel}}",
+                        "url": "{{ctaUrl}}",
+                        "style": "secondary"
+                      }
+                    ],
+                    "align": "center"
                   }
                 }
               ]
@@ -74,5 +114,5 @@
       ]
     }
   ],
-  "css": "body :where([data-bz-node=\"pb\"]) .bz-block{padding:0}\nbody :where([data-bz-node=\"pb\"]) .bz-container{padding:0;max-width:none}\nbody [data-bz-node=\"pb\"]>.bz-container{padding-inline:0}\n\nbody [data-bz-node=\"pb\"]{position:relative;overflow:hidden;min-height:340px;display:flex;flex-direction:column;justify-content:flex-end;background:#16130f;padding:0 0 46px}\nbody [data-bz-node=\"pb\"]::after{content:\"\";position:absolute;inset:0;background:rgba(0,0,0,.68);z-index:1;pointer-events:none}\nbody [data-bz-node=\"pb\"]>.bz-container{max-width:var(--container)}\nbody [data-bz-node=\"pb-img\"]{position:absolute;inset:0;z-index:0}\nbody [data-bz-node=\"pb-img\"] figure{margin:0;height:100%}\nbody [data-bz-node=\"pb-img\"] img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 62%;border-radius:0}\nbody [data-bz-node=\"pb-row\"]{display:block;padding-top:96px;position:relative;z-index:2}\nbody [data-bz-node=\"pb-h\"] h1{font:700 44px/1.05 var(--font-heading);letter-spacing:0;text-transform:uppercase;color:#fff;margin:0;max-width:900px}\nbody [data-bz-node=\"pb-crumb\"]{margin-top:16px}\nbody [data-bz-node=\"pb-crumb\"] p{font:400 12.5px/1.4 var(--font-body);letter-spacing:.02em;color:rgba(255,255,255,.9);margin:0}\nbody [data-bz-node=\"pb-crumb\"] a{color:var(--accent);text-decoration:none}\nbody [data-bz-node=\"pb-crumb\"] a:hover{text-decoration:underline}\n@media (max-width:1100px){body [data-bz-node=\"pb\"]{padding:0 24px 40px}body [data-bz-node=\"pb-h\"] h1{font-size:38px}}\n@media (max-width:640px){body [data-bz-node=\"pb\"]{min-height:300px;padding:0 20px 32px}body [data-bz-node=\"pb-row\"]{padding-top:84px}body [data-bz-node=\"pb-h\"] h1{font-size:28px;line-height:1.1}}\n"
+  "css": "body :where([data-bz-node=\"pb\"]) .bz-block{padding:0}\nbody :where([data-bz-node=\"pb\"]) .bz-container{padding:0;max-width:none}\nbody [data-bz-node=\"pb\"]>.bz-container{padding-inline:0}\n\nbody [data-bz-node=\"pb\"]{position:relative;overflow:hidden;min-height:520px;display:flex;flex-direction:column;justify-content:center;background:#16130f;padding:110px 0 70px}\nbody [data-bz-node=\"pb\"]::after{content:\"\";position:absolute;inset:0;background:rgba(0,0,0,.62);z-index:1;pointer-events:none}\nbody [data-bz-node=\"pb\"]>.bz-container{max-width:var(--container)}\nbody [data-bz-node=\"pb-img\"]{position:absolute;inset:0;z-index:0}\nbody [data-bz-node=\"pb-img\"] figure{margin:0;height:100%}\nbody [data-bz-node=\"pb-img\"] img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 62%;border-radius:0}\nbody [data-bz-node=\"pb-row\"]{display:block;position:relative;z-index:2;text-align:center}\nbody [data-bz-node=\"pb-crumb\"] p{font:700 10.5px/1.4 var(--font-body);letter-spacing:.22em;text-transform:uppercase;color:#fff;margin:0 0 24px}\nbody [data-bz-node=\"pb-crumb\"] a{color:#fff;text-decoration:none}\nbody [data-bz-node=\"pb-crumb\"] a:hover{text-decoration:underline}\nbody [data-bz-node=\"pb-h\"] .bz-headingblock{text-align:center}\nbody [data-bz-node=\"pb-h\"] h1{font:700 46px/1.08 var(--font-heading);letter-spacing:0;text-transform:uppercase;color:#fff;margin:0 auto;max-width:900px}\nbody [data-bz-node=\"pb-sub\"] .bz-text{max-width:640px;margin:24px auto 0}\nbody [data-bz-node=\"pb-sub\"] p{font:400 14.5px/1.7 var(--font-body);color:rgba(255,255,255,.92);margin:0}\nbody [data-bz-node=\"pb-cta\"]{margin-top:30px}\nbody [data-bz-node=\"pb-cta\"] .bz-btns{margin:0;justify-content:center}\nbody [data-bz-node=\"pb-cta\"] .bz-btn{display:inline-flex;align-items:center;justify-content:center;height:44px;padding:0 24px;border:0;border-radius:3px;background:#fff;color:var(--ink);font:700 10.5px/1 var(--font-body);letter-spacing:.16em;text-transform:uppercase;text-decoration:none}\nbody [data-bz-node=\"pb-cta\"] .bz-btn:hover{background:#ececec}\n@media (max-width:1100px){body [data-bz-node=\"pb\"]{padding:100px 24px 56px;min-height:460px}body [data-bz-node=\"pb-h\"] h1{font-size:38px}}\n@media (max-width:640px){body [data-bz-node=\"pb\"]{padding:92px 20px 44px;min-height:420px}body [data-bz-node=\"pb-h\"] h1{font-size:28px}body [data-bz-node=\"pb-sub\"] p{font-size:13.5px}body [data-bz-node=\"pb-crumb\"] p{margin-bottom:18px}}\n"
 }

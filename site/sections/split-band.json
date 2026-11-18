@@ -1,0 +1,159 @@
+{
+  "version": 2,
+  "id": "split-band",
+  "name": "Split band (copy left, photo bleeds right)",
+  "props": [
+    {
+      "key": "eyebrow",
+      "type": "text",
+      "label": "Eyebrow (small label)"
+    },
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading"
+    },
+    {
+      "key": "text",
+      "type": "textarea",
+      "label": "Copy (blank line between paragraphs; links allowed)"
+    },
+    {
+      "key": "points",
+      "type": "list",
+      "label": "Bullet points (optional)",
+      "fields": [
+        {
+          "key": "text",
+          "type": "text",
+          "label": "Text"
+        }
+      ]
+    },
+    {
+      "key": "linkLabel",
+      "type": "text",
+      "label": "Link label (blank for none)"
+    },
+    {
+      "key": "linkUrl",
+      "type": "url",
+      "label": "Link to"
+    },
+    {
+      "key": "image",
+      "type": "image",
+      "label": "Photo"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "sb",
+      "type": "section",
+      "props": {
+        "width": "full",
+        "paddingY": 0,
+        "background": "card"
+      },
+      "children": [
+        {
+          "id": "sb-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "align": "stretch",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "sb-copy",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "sb-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "headingLevel": 2,
+                    "eyebrow": "{{eyebrow}}"
+                  }
+                },
+                {
+                  "id": "sb-text",
+                  "type": "text",
+                  "props": {
+                    "text": "{{text}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "sb-pts",
+                  "type": "row",
+                  "props": {
+                    "gap": 0,
+                    "stackOn": "never"
+                  },
+                  "children": [
+                    {
+                      "id": "sb-pt",
+                      "type": "column",
+                      "props": {
+                        "span": 12,
+                        "repeat": "points"
+                      },
+                      "children": [
+                        {
+                          "id": "sb-ptx",
+                          "type": "text",
+                          "props": {
+                            "text": "{{text}}",
+                            "width": "full"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "sb-link",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "{{linkLabel}}",
+                        "url": "{{linkUrl}}",
+                        "style": "link"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "sb-media",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "sb-img",
+                  "type": "image",
+                  "props": {
+                    "image": "{{image}}",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "css": "body :where([data-bz-node=\"sb\"]) .bz-block{padding:0}\nbody :where([data-bz-node=\"sb\"]) .bz-container{padding:0;max-width:none}\nbody [data-bz-node=\"sb\"]>.bz-container{padding-inline:0}\n\nbody [data-bz-node=\"sb\"]{background:#fff;padding:0}\nbody [data-bz-node=\"sb\"]>.bz-container{max-width:none}\nbody [data-bz-node=\"sb-row\"]{display:grid;grid-template-columns:1fr 1fr;gap:0;min-height:520px}\nbody [data-bz-node=\"sb-row\"]>.bz-col{grid-column:auto}\nbody [data-bz-node=\"sb-copy\"]{display:flex;flex-direction:column;justify-content:center;padding:80px 72px 80px max(24px,calc((100vw - 1188px)/2));box-sizing:border-box}\nbody [data-bz-node=\"sb-h\"] .bz-eyebrow{font:700 10.5px/1.4 var(--font-body);letter-spacing:.22em;text-transform:uppercase;color:#6b6b6a;margin:0 0 14px}\nbody [data-bz-node=\"sb-h\"] h2{font:700 36px/1.08 var(--font-heading);letter-spacing:0;text-transform:uppercase;color:var(--ink);margin:0;max-width:520px}\nbody [data-bz-node=\"sb-text\"] .bz-text{max-width:520px;margin-top:24px}\nbody [data-bz-node=\"sb-text\"] p{font:400 13.5px/25px var(--font-body);color:var(--ink);margin:0;margin:0 0 14px}\nbody [data-bz-node=\"sb-text\"] p:last-child{margin:0}\nbody [data-bz-node=\"sb-text\"] a{color:var(--accent);text-decoration:none}\nbody [data-bz-node=\"sb-text\"] a:hover{text-decoration:underline}\nbody [data-bz-node=\"sb-pts\"]{display:block;margin-top:24px}\nbody [data-bz-node^=\"sb-pt-\"]{display:block;margin-bottom:9px}\nbody [data-bz-node^=\"sb-ptx-\"] p{position:relative;padding-left:20px;font:400 13.5px/25px var(--font-body);color:var(--ink);margin:0}\nbody [data-bz-node^=\"sb-ptx-\"] p::before{content:\"\";position:absolute;left:2px;top:9px;width:6px;height:6px;background:var(--accent)}\nbody [data-bz-node=\"sb-link\"]{margin-top:26px}\nbody [data-bz-node=\"sb-link\"] .bz-btns{margin:0}\nbody [data-bz-node=\"sb-link\"] .bz-btn{padding:0;border:0;background:none;color:var(--ink);font:700 10.5px/1 var(--font-body);letter-spacing:.16em;text-transform:uppercase;text-decoration:none;gap:10px;height:auto;min-height:0}\nbody [data-bz-node=\"sb-link\"] .bz-btn::after{content:\"\";width:13px;height:13px;background:currentColor;-webkit-mask:url(/icons/arrow-right.svg) center/13px no-repeat;mask:url(/icons/arrow-right.svg) center/13px no-repeat}\nbody [data-bz-node=\"sb-link\"] .bz-btn:hover{color:var(--accent)}\nbody [data-bz-node=\"sb-media\"]{position:relative;min-height:420px}\nbody [data-bz-node=\"sb-media\"] .bz-block,body [data-bz-node=\"sb-media\"] .bz-container,body [data-bz-node=\"sb-media\"] figure{height:100%;margin:0}\nbody [data-bz-node=\"sb-media\"] img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:0}\n@media (max-width:1100px){\n  body [data-bz-node=\"sb-row\"]{grid-template-columns:1fr}\n  body [data-bz-node=\"sb-copy\"]{padding:56px 24px}\n  body [data-bz-node=\"sb-media\"]{min-height:0;aspect-ratio:16/10;order:-1}\n}\n@media (max-width:640px){body [data-bz-node=\"sb-copy\"]{padding:44px 20px}body [data-bz-node=\"sb-h\"] h2{font-size:26px}}\n"
+}

@@ -1,0 +1,74 @@
+{
+  "version": 2,
+  "id": "stat-tiles",
+  "name": "Stat tiles (dark)",
+  "props": [
+    {
+      "key": "tiles",
+      "type": "list",
+      "label": "Tiles",
+      "fields": [
+        {
+          "key": "value",
+          "type": "text",
+          "label": "Figure"
+        },
+        {
+          "key": "label",
+          "type": "text",
+          "label": "Label"
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "st",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "card"
+      },
+      "children": [
+        {
+          "id": "st-grid",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "st-tile",
+              "type": "column",
+              "props": {
+                "span": 4,
+                "repeat": "tiles"
+              },
+              "children": [
+                {
+                  "id": "st-value",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{value}}",
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "st-label",
+                  "type": "text",
+                  "props": {
+                    "text": "{{label}}",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "css": "body :where([data-bz-node=\"st\"]) .bz-block{padding:0}\nbody :where([data-bz-node=\"st\"]) .bz-container{padding:0;max-width:none}\nbody [data-bz-node=\"st\"]>.bz-container{padding-inline:0}\n\nbody [data-bz-node=\"st\"]{background:#fff;padding:70px 0 20px}\nbody [data-bz-node=\"st\"]>.bz-container{max-width:var(--container)}\nbody [data-bz-node=\"st-grid\"]{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:24px}\nbody [data-bz-node=\"st-grid\"]>.bz-col{grid-column:auto}\nbody [data-bz-node^=\"st-tile-\"]{display:flex;flex-direction:column;background:#2a2723;padding:34px 32px 36px;box-sizing:border-box}\nbody [data-bz-node^=\"st-value-\"] h3{font:700 40px/1 var(--font-heading);letter-spacing:0;text-transform:uppercase;color:#fff;margin:0}\nbody [data-bz-node^=\"st-label-\"]{margin-top:16px}\nbody [data-bz-node^=\"st-label-\"] p{font:700 9.5px/1.7 var(--font-body);letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.88);margin:0}\n@media (max-width:1100px){body [data-bz-node=\"st\"]{padding:48px 24px 10px}}\n@media (max-width:640px){body [data-bz-node=\"st\"]{padding:36px 20px 8px}body [data-bz-node=\"st-grid\"]{gap:14px}body [data-bz-node^=\"st-value-\"] h3{font-size:32px}}\n"
+}
