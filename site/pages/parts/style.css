@@ -1,0 +1,16 @@
+/* FAQ band (this page only) */
+body :where([data-bz-node="fq"]) .bz-block{padding:0}
+body :where([data-bz-node="fq"]) .bz-container{padding:0;max-width:none}
+body [data-bz-node="fq"]>.bz-container{padding-inline:0;max-width:var(--container)}
+body [data-bz-node="fq"]{background:#fff;padding:30px 0 90px}
+body [data-bz-node="fq"] h2{font:700 36px/1.1 var(--font-heading);letter-spacing:0;text-transform:uppercase;color:var(--ink);margin:0}
+body [data-bz-node="fq-list"]{margin-top:28px}
+body [data-bz-node="fq-list"] .bz-faqs{display:block;border-top:1px solid #d2d2d0}
+body [data-bz-node="fq-list"] .bz-faq{border-bottom:1px solid #d2d2d0;background:transparent}
+body [data-bz-node="fq-list"] .bz-faq summary{list-style:none;position:relative;padding:18px 40px 18px 34px;font:700 13.5px/1.4 var(--font-body);color:var(--ink);cursor:pointer}
+body [data-bz-node="fq-list"] .bz-faq summary::-webkit-details-marker{display:none}
+body [data-bz-node="fq-list"] .bz-faq summary::before{content:"+";position:absolute;left:4px;top:50%;transform:translateY(-50%);font:700 18px/1 var(--font-body);color:var(--accent)}
+body [data-bz-node="fq-list"] .bz-faq[open] summary::before{content:"\2212"}
+body [data-bz-node="fq-list"] .bz-faq__a{padding:0 34px 20px;font:400 13.5px/25px var(--font-body);color:var(--ink)}
+@media (max-width:1100px){body [data-bz-node="fq"]{padding:20px 24px 64px}body [data-bz-node="fq"] h2{font-size:30px}}
+@media (max-width:640px){body [data-bz-node="fq"]{padding:16px 20px 48px}body [data-bz-node="fq"] h2{font-size:26px}}

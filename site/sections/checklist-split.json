@@ -1,0 +1,117 @@
+{
+  "version": 2,
+  "id": "checklist-split",
+  "name": "Checklist split (list + photo)",
+  "props": [
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading"
+    },
+    {
+      "key": "points",
+      "type": "list",
+      "label": "Bullet points",
+      "fields": [
+        {
+          "key": "text",
+          "type": "text",
+          "label": "Text"
+        }
+      ]
+    },
+    {
+      "key": "image",
+      "type": "image",
+      "label": "Photo"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "cl",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "card",
+        "anchor": "why-parts"
+      },
+      "children": [
+        {
+          "id": "cl-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "align": "center",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "cl-copy",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "cl-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "cl-list",
+                  "type": "row",
+                  "props": {
+                    "gap": 0,
+                    "stackOn": "never"
+                  },
+                  "children": [
+                    {
+                      "id": "cl-item",
+                      "type": "column",
+                      "props": {
+                        "span": 12,
+                        "repeat": "points"
+                      },
+                      "children": [
+                        {
+                          "id": "cl-item-t",
+                          "type": "text",
+                          "props": {
+                            "text": "{{text}}",
+                            "width": "full"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "cl-media",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "cl-img",
+                  "type": "image",
+                  "props": {
+                    "image": "{{image}}",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "css": "body :where([data-bz-node=\"cl\"]) .bz-block{padding:0}\nbody :where([data-bz-node=\"cl\"]) .bz-container{padding:0;max-width:none}\nbody [data-bz-node=\"cl\"]>.bz-container{padding-inline:0}\n\nbody [data-bz-node=\"cl\"]{background:#fff;padding:90px 0}\nbody [data-bz-node=\"cl\"]>.bz-container{max-width:var(--container)}\nbody [data-bz-node=\"cl-row\"]{display:grid;grid-template-columns:1fr 1fr;gap:0 64px;align-items:center}\nbody [data-bz-node=\"cl-copy\"],body [data-bz-node=\"cl-media\"]{grid-column:auto}\nbody [data-bz-node=\"cl-h\"] h2{font:700 36px/1.1 var(--font-heading);letter-spacing:0;text-transform:uppercase;color:var(--ink);margin:0;max-width:520px}\nbody [data-bz-node=\"cl-list\"]{display:block;margin-top:26px}\nbody [data-bz-node^=\"cl-item-\"]{display:block;margin-bottom:9px}\nbody [data-bz-node^=\"cl-item-\"] p{position:relative;padding-left:20px;font:400 13.5px/25px var(--font-body);color:var(--ink);margin:0}\nbody [data-bz-node^=\"cl-item-\"] p::before{content:\"\";position:absolute;left:2px;top:9px;width:6px;height:6px;background:var(--accent)}\nbody [data-bz-node=\"cl-media\"] figure{margin:0}\nbody [data-bz-node=\"cl-media\"] img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:0}\n@media (max-width:1100px){body [data-bz-node=\"cl\"]{padding:64px 24px}body [data-bz-node=\"cl-row\"]{grid-template-columns:1fr;gap:32px}body [data-bz-node=\"cl-h\"] h2{font-size:30px}}\n@media (max-width:640px){body [data-bz-node=\"cl\"]{padding:48px 20px}body [data-bz-node=\"cl-h\"] h2{font-size:26px}}\n"
+}
