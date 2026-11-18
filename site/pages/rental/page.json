@@ -9,6 +9,9 @@
         "values": {
           "title": "Rental & Leasing",
           "crumb": "Rental & Leasing",
+          "subtitle": "Idealease offers comprehensive truck leasing, truck rentals and a dedicated maintenance solution for companies who want to manage their business, not their truck fleet.",
+          "ctaLabel": "Request lease / rental info",
+          "ctaUrl": "#lease-rental-request",
           "image": {
             "src": "/images/hero-banner-poster.jpg",
             "alt": "International trucks lined up in front of the Winslow-Gerolamy dealership",
@@ -22,8 +25,9 @@
       "id": "ar-placed",
       "type": "sharedSection",
       "props": {
-        "sectionId": "article-sections",
+        "sectionId": "intro-photos",
         "values": {
+          "eyebrow": "Idealease Peterborough",
           "heading": "Idealease Truck Rental And Leasing",
           "intro": "Idealease offers comprehensive truck leasing, truck rentals and a dedicated maintenance solution for companies who want to manage their business, not their truck fleet. Idealease Peterborough delivers expertise, responsiveness and stability to the truck transportation industry with commercial vehicle specifications fit to your needs and backed by superior service at a predictable cost.\n\nWe put our expertise to work for you, increasing your efficiency and profitability. We deliver a level of responsiveness that is unparalleled in our industry. Our responsive fleet services will keep your business running smoothly, allowing you to focus even more attention, serving your customers and growing your business.\n\nIdealease Peterborough is committed to vehicle uptime. Downtime costs money, we have a dedicated team of professionals to service our customers when problems arise. No waiting, we provide priority service to our Lease and Rental customers.",
           "photos": [
@@ -43,21 +47,94 @@
                 "height": 771
               }
             }
-          ],
-          "sections": [
+          ]
+        }
+      }
+    },
+    {
+      "id": "tiles-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "stat-tiles",
+        "values": {
+          "tiles": [
             {
-              "heading": "Full Service Lease",
-              "text": "Winslow Gerolamy Motors offers full-service leasing, a great alternative to truck ownership. Commercial truck ownership is getting more challenging and costly to manage every day. For most well-run businesses, truck leasing is a superior financial and operational alternative, improving your cash flow, truck uptime will improve and transportation costs are more consistent\n\nFull Service Lease vehicles are backed by superior fleet maintenance and fleet services such as 24/7 roadside assistance, licensing service, safety and compliance programs and much more. We are industry leading experts at seamlessly transitioning businesses from truck ownership to full-service leasing.\n\nContact us for more information on how we can reduce your costs and improve vehicle uptime so you can serve your customers better and grow your business."
+              "value": "24/7",
+              "label": "Roadside assistance from Idealnet"
             },
             {
-              "heading": "Rental",
-              "text": "Idealease Peterborough customers rely on us to provide industry-leading trucks and tractors at a moment’s notice. We can help you handle a short-term peak in your business or rent replacement vehicles when your truck is in the shop.\n\nOur straight trucks and day-cab tractors are well maintained, reliable and clean. Contact us to help you find the right truck rental to fill your need."
+              "value": "430+",
+              "label": "Idealease truck dealership locations"
             },
             {
-              "heading": "Idealnet",
-              "text": "Idealease Peterborough relies on 24/7 Roadside Assistance service from Idealnet. When an emergency happens or a vehicle breaks down, you can rely on Idealnet to get your truck back on the road as quickly as possible to meet your deadlines and keep your business running smoothly.\n\nOne call to <a href=\"tel:+18004353273\">1-800-IDEALEASE (435-3273)</a> links you and your driver to our safety net of more than 430 Idealease truck dealership locations and 34,000 selected service providers across North America."
+              "value": "34,000",
+              "label": "Selected service providers across North America"
             }
           ]
+        }
+      }
+    },
+    {
+      "id": "rc-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "card-grid",
+        "values": {
+          "eyebrow": "Lease and rental",
+          "cards": [
+            {
+              "title": "Full Service Lease",
+              "paras": [
+                {
+                  "text": "Winslow Gerolamy Motors offers full-service leasing, a great alternative to truck ownership. Commercial truck ownership is getting more challenging and costly to manage every day. For most well-run businesses, truck leasing is a superior financial and operational alternative, improving your cash flow, truck uptime will improve and transportation costs are more consistent"
+                },
+                {
+                  "text": "Full Service Lease vehicles are backed by superior fleet maintenance and fleet services such as 24/7 roadside assistance, licensing service, safety and compliance programs and much more. We are industry leading experts at seamlessly transitioning businesses from truck ownership to full-service leasing."
+                },
+                {
+                  "text": "Contact us for more information on how we can reduce your costs and improve vehicle uptime so you can serve your customers better and grow your business."
+                }
+              ],
+              "points": [],
+              "after": "",
+              "linkLabel": "",
+              "linkUrl": ""
+            },
+            {
+              "title": "Rental",
+              "paras": [
+                {
+                  "text": "Idealease Peterborough customers rely on us to provide industry-leading trucks and tractors at a moment’s notice. We can help you handle a short-term peak in your business or rent replacement vehicles when your truck is in the shop."
+                },
+                {
+                  "text": "Our straight trucks and day-cab tractors are well maintained, reliable and clean. Contact us to help you find the right truck rental to fill your need."
+                }
+              ],
+              "points": [],
+              "after": "",
+              "linkLabel": "",
+              "linkUrl": ""
+            },
+            {
+              "title": "Idealnet",
+              "paras": [
+                {
+                  "text": "Idealease Peterborough relies on 24/7 Roadside Assistance service from Idealnet. When an emergency happens or a vehicle breaks down, you can rely on Idealnet to get your truck back on the road as quickly as possible to meet your deadlines and keep your business running smoothly."
+                },
+                {
+                  "text": "One call to <a href=\"tel:+18004353273\">1-800-IDEALEASE (435-3273)</a> links you and your driver to our safety net of more than 430 Idealease truck dealership locations and 34,000 selected service providers across North America."
+                }
+              ],
+              "points": [],
+              "after": "",
+              "linkLabel": "",
+              "linkUrl": ""
+            }
+          ],
+          "heading": "",
+          "intro": "",
+          "outroHeading": "",
+          "outro": ""
         }
       }
     },
@@ -81,6 +158,24 @@
           }
         }
       ]
+    },
+    {
+      "id": "cb-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "contact-band",
+        "values": {
+          "eyebrow": "Need help?",
+          "heading": "Contact Our Team",
+          "text": "Call us or visit our dealership at 1018 Lansdowne St. West, Peterborough, Ontario.",
+          "callLabel": "(705) 742-3411",
+          "callUrl": "tel:+17057423411",
+          "emailLabel": "info@wgmotors.ca",
+          "emailUrl": "mailto:info@wgmotors.ca",
+          "ctaLabel": "Request rental info",
+          "ctaUrl": "#lease-rental-request"
+        }
+      }
     }
   ]
 }

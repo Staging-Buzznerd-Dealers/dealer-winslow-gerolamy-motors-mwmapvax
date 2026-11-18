@@ -1,27 +1,8 @@
-/* ---------- shared band rules (this page only) ---------- */
-body :where([data-bz-node="ap"],[data-bz-node="wc"],[data-bz-node="fm"],[data-bz-node="fq"]) .bz-block{padding:0}
-body :where([data-bz-node="ap"],[data-bz-node="wc"],[data-bz-node="fm"],[data-bz-node="fq"]) .bz-container{padding:0;max-width:none}
-body :is([data-bz-node="ap"],[data-bz-node="wc"],[data-bz-node="fm"],[data-bz-node="fq"])>.bz-container{padding-inline:0;max-width:var(--container)}
-body [data-bz-node="ap"]{background:var(--paper);padding:80px 0}
-body [data-bz-node="wc"]{background:var(--paper);padding:90px 0}
-body [data-bz-node="fm"]{background:#fff;padding:90px 0}
-body [data-bz-node="fq"]{background:var(--paper);padding:90px 0}
-body :is([data-bz-node="ap"],[data-bz-node="wc"],[data-bz-node="fq"]) h2{font:700 36px/1.1 var(--font-heading);letter-spacing:0;text-transform:uppercase;color:var(--ink);margin:0}
-body :is([data-bz-node="ap"],[data-bz-node="wc"],[data-bz-node="fq"],[data-bz-node="fm"]) p{font:400 13.5px/25px var(--font-body);color:var(--ink);margin:0}
-
-/* ---------- Our approach ---------- */
-body [data-bz-node="ap-text-1"]{margin-top:22px}
-body [data-bz-node="ap-text-2"]{margin-top:14px}
-body [data-bz-node="ap-h2"]{margin-top:46px}
-body [data-bz-node="ap-lists"]{display:grid;grid-template-columns:1fr 1fr;gap:0 64px;margin-top:24px;align-items:start}
-body [data-bz-node="ap-lists"]>.bz-col{grid-column:auto}
-body [data-bz-node="ap-techs-lead"] p,body [data-bz-node="ap-oem-lead"] p{margin-bottom:14px}
-body [data-bz-node="ap-techs-list"],body [data-bz-node="ap-oem-list"]{margin-top:14px}
-body [data-bz-node="ap-closing"]{margin-top:28px}
-
-/* ---------- Why choose ---------- */
-body [data-bz-node="wc-list"]{margin-top:24px}
-
+body :where([data-bz-node="fm"]) .bz-block{padding:0}
+body :where([data-bz-node="fm"]) .bz-container{padding:0;max-width:none}
+body [data-bz-node="fm"]>.bz-container{padding-inline:0;max-width:var(--container)}
+body [data-bz-node="fm"]{background:var(--paper);padding:96px 0}
+body [data-bz-node="fm"] p{font:400 13.5px/25px var(--font-body);color:var(--ink);margin:0}
 /* ---------- Service request form ---------- */
 body [data-bz-node="fm-form"] .bz-formblock{max-width:none}
 body [data-bz-node="fm-form"] .bz-form{background:none;border:0;padding:0;max-width:none;gap:16px}
@@ -54,24 +35,29 @@ body [data-bz-node="fm-form"] [data-bz-field="sr-service"]::before{content:"Desc
 body [data-bz-node="fm-form"] [data-bz-field="sr-prior"]::before{content:"Prior Service History";top:-40px;font:700 24px/1.1 var(--font-heading)}
 body [data-bz-node="fm-form"] [data-bz-field="sr-street"]::before{content:"Address";top:-28px;font:700 12.5px/1.2 var(--font-body);letter-spacing:.02em;text-transform:none}
 
-/* ---------- FAQ ---------- */
-body [data-bz-node="fq-list"]{margin-top:28px}
-body [data-bz-node="fq-list"] .bz-faqs{display:block;border-top:1px solid #d2d2d0}
-body [data-bz-node="fq-list"] .bz-faq{border-bottom:1px solid #d2d2d0;background:transparent}
-body [data-bz-node="fq-list"] .bz-faq summary{list-style:none;position:relative;padding:18px 40px 18px 34px;font:700 13.5px/1.4 var(--font-body);color:var(--ink);cursor:pointer}
+
+/* ---------- FAQ (shared look) ---------- */
+body :where([data-bz-node="fq"]) .bz-block{padding:0}
+body :where([data-bz-node="fq"]) .bz-container{padding:0;max-width:none}
+body [data-bz-node="fq"]>.bz-container{padding-inline:0;max-width:880px}
+body [data-bz-node="fq"]{background:#fff;padding:96px 0}
+body [data-bz-node="fq-h"] .bz-eyebrow{font:700 10.5px/1.4 var(--font-body);letter-spacing:.22em;text-transform:uppercase;color:#6b6b6a;margin:0 0 14px}
+body [data-bz-node="fq-h"] h2{font:700 36px/1.08 var(--font-heading);letter-spacing:0;text-transform:uppercase;color:var(--ink);margin:0}
+body [data-bz-node="fq-list"]{margin-top:36px}
+body [data-bz-node="fq-list"] .bz-faqs{display:block;border-top:1px solid #d8d8d6}
+body [data-bz-node="fq-list"] .bz-faq{border:0;border-bottom:1px solid #d8d8d6;border-radius:0;background:transparent;padding:0}
+body [data-bz-node="fq-list"] .bz-faq summary{list-style:none;position:relative;padding:22px 44px 22px 0;font:700 12.5px/1.5 var(--font-heading);letter-spacing:.02em;text-transform:uppercase;color:var(--ink);cursor:pointer}
 body [data-bz-node="fq-list"] .bz-faq summary::-webkit-details-marker{display:none}
-body [data-bz-node="fq-list"] .bz-faq summary::before{content:"+";position:absolute;left:4px;top:50%;transform:translateY(-50%);font:700 18px/1 var(--font-body);color:var(--accent)}
-body [data-bz-node="fq-list"] .bz-faq[open] summary::before{content:"\2212"}
-body [data-bz-node="fq-list"] .bz-faq__a{padding:0 34px 20px;font:400 13.5px/25px var(--font-body);color:var(--ink)}
-@media (max-width:1100px){
-  body [data-bz-node="ap"],body [data-bz-node="wc"],body [data-bz-node="fm"],body [data-bz-node="fq"]{padding:64px 24px}
-  body :is([data-bz-node="ap"],[data-bz-node="wc"],[data-bz-node="fq"]) h2,body [data-bz-node="fm-form"] h2{font-size:30px}
-}
-@media (max-width:820px){body [data-bz-node="ap-lists"]{grid-template-columns:1fr;gap:28px}}
-@media (max-width:640px){
-  body [data-bz-node="ap"],body [data-bz-node="wc"],body [data-bz-node="fm"],body [data-bz-node="fq"]{padding:48px 20px}
-  body :is([data-bz-node="ap"],[data-bz-node="wc"],[data-bz-node="fq"]) h2,body [data-bz-node="fm-form"] h2{font-size:26px}
-  body [data-bz-node="fm-form"] .bz-btn{width:100%}
+body [data-bz-node="fq-list"] .bz-faq summary::after{content:"+";position:absolute;right:6px;top:50%;transform:translateY(-50%);font:400 20px/1 var(--font-body);color:var(--ink)}
+body [data-bz-node="fq-list"] .bz-faq[open] summary::after{content:"\2212"}
+body [data-bz-node="fq-list"] .bz-faq__a{padding:0 44px 24px 0;margin:0;font:400 13px/1.8 var(--font-body);color:#555}
+@media (max-width:1100px){body [data-bz-node="fq"]{padding:64px 24px}body [data-bz-node="fq-h"] h2{font-size:30px}}
+@media (max-width:640px){body [data-bz-node="fq"]{padding:48px 20px}body [data-bz-node="fq-h"] h2{font-size:26px}}
+body [data-bz-node="tc-placed"] > section{background:var(--paper)}
+
+@media (max-width:1100px){body [data-bz-node="fm"]{padding:64px 24px}}
+@media (max-width:640px){body [data-bz-node="fm"]{padding:48px 20px}
   body [data-bz-node="fm-form"] .bz-field--half{flex-basis:100%}
   body [data-bz-node="fm-form"] [data-bz-field="sr-model"]{margin-top:0}
-}
+  body [data-bz-node="fm-form"] .bz-btn{width:100%}
+  body [data-bz-node="fm-form"] h2{font-size:26px}}

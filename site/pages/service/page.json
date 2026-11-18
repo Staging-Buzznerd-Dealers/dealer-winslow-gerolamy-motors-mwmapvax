@@ -8,7 +8,10 @@
         "sectionId": "page-banner",
         "values": {
           "title": "Heavy-Duty Truck Service & Repair In Central Ontario",
-          "crumb": "Heavy-Duty Truck Service & Repair in Central Ontario",
+          "crumb": "Service",
+          "subtitle": "Full-service maintenance and repair for heavy-duty trucks across Central Ontario, supporting both owner-operators and commercial fleets.",
+          "ctaLabel": "Schedule service",
+          "ctaUrl": "#service-request",
           "image": {
             "src": "/images/hero-banner-poster.jpg",
             "alt": "International trucks lined up in front of the Winslow-Gerolamy dealership",
@@ -19,13 +22,17 @@
       }
     },
     {
-      "id": "cs-placed",
+      "id": "si-placed",
       "type": "sharedSection",
       "props": {
-        "sectionId": "content-split",
+        "sectionId": "split-band",
         "values": {
+          "eyebrow": "Service department",
           "heading": "Certified Technicians, Fast Repairs, And Maximum Uptime",
           "text": "Winslow-Gerolamy Motors Limited provides full-service maintenance and repair for heavy-duty trucks across Central Ontario, supporting both owner-operators and commercial fleets.\n\nOur service department is focused on one priority: keeping your trucks on the road and your business moving.",
+          "points": [],
+          "linkLabel": "",
+          "linkUrl": "",
           "image": {
             "src": "/images/service-center.jpg",
             "alt": "Two Winslow-Gerolamy technicians inspecting a truck engine in the service bay",
@@ -36,152 +43,120 @@
       }
     },
     {
-      "id": "ap",
-      "type": "section",
+      "id": "tiles-placed",
+      "type": "sharedSection",
       "props": {
-        "width": "boxed",
-        "paddingY": 0,
-        "background": "paper",
-        "anchor": "approach"
-      },
-      "children": [
-        {
-          "id": "ap-h1",
-          "type": "heading",
-          "props": {
-            "text": "Our Approach To Service",
-            "headingLevel": 2
-          }
-        },
-        {
-          "id": "ap-text-1",
-          "type": "text",
-          "props": {
-            "text": "The service department at Winslow-Gerolamy Motors prides itself on delivering an outstanding customer experience supported by operational excellence.",
-            "width": "full"
-          }
-        },
-        {
-          "id": "ap-text-2",
-          "type": "text",
-          "props": {
-            "text": "Our goal is to maximize uptime through timely repairs and reduce operating costs through preventative maintenance. Our team works efficiently to ensure trucks are diagnosed accurately and returned to service as quickly as possible.",
-            "width": "full"
-          }
-        },
-        {
-          "id": "ap-h2",
-          "type": "heading",
-          "props": {
-            "text": "Certified Technicians & OEM Support",
-            "headingLevel": 2
-          }
-        },
-        {
-          "id": "ap-lists",
-          "type": "row",
-          "props": {
-            "gap": 0,
-            "align": "start",
-            "stackOn": "tablet"
-          },
-          "children": [
+        "sectionId": "stat-tiles",
+        "values": {
+          "tiles": [
             {
-              "id": "ap-techs",
-              "type": "column",
-              "props": {
-                "span": 6
-              },
-              "children": [
-                {
-                  "id": "ap-techs-lead",
-                  "type": "text",
-                  "props": {
-                    "text": "Our technicians are:",
-                    "width": "full"
-                  }
-                },
-                {
-                  "id": "ap-techs-list",
-                  "type": "bullet-list",
-                  "props": {
-                    "items": [
-                      {
-                        "text": "310T certified"
-                      },
-                      {
-                        "text": "OEM trained"
-                      },
-                      {
-                        "text": "Experienced in advanced diagnostics and repair"
-                      }
-                    ]
-                  }
-                }
-              ]
+              "value": "310T",
+              "label": "Certified, OEM-trained technicians"
             },
             {
-              "id": "ap-oem",
-              "type": "column",
-              "props": {
-                "span": 6
-              },
-              "children": [
-                {
-                  "id": "ap-oem-lead",
-                  "type": "text",
-                  "props": {
-                    "text": "Winslow-Gerolamy Motors Limited is a Certified Warranty Dealer for:",
-                    "width": "full"
-                  }
-                },
-                {
-                  "id": "ap-oem-list",
-                  "type": "bullet-list",
-                  "props": {
-                    "items": [
-                      {
-                        "text": "International"
-                      },
-                      {
-                        "text": "Cummins"
-                      },
-                      {
-                        "text": "Allison"
-                      },
-                      {
-                        "text": "Eaton"
-                      },
-                      {
-                        "text": "Meritor"
-                      }
-                    ]
-                  }
-                }
-              ]
+              "value": "5",
+              "label": "Warranty brands: International, Cummins, Allison, Eaton, Meritor"
+            },
+            {
+              "value": "Next day",
+              "label": "DPF units typically ready for pickup"
             }
           ]
-        },
-        {
-          "id": "ap-closing",
-          "type": "text",
-          "props": {
-            "text": "All service and warranty work is completed to manufacturer standards using approved procedures and tools.",
-            "width": "full"
-          }
         }
-      ]
+      }
+    },
+    {
+      "id": "ap-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "card-grid",
+        "values": {
+          "eyebrow": "Our approach",
+          "heading": "Our Approach To Service",
+          "intro": "The service department at Winslow-Gerolamy Motors prides itself on delivering an outstanding customer experience supported by operational excellence.\n\nOur goal is to maximize uptime through timely repairs and reduce operating costs through preventative maintenance. Our team works efficiently to ensure trucks are diagnosed accurately and returned to service as quickly as possible.",
+          "cards": [],
+          "outroHeading": "",
+          "outro": ""
+        }
+      }
+    },
+    {
+      "id": "tc-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "card-grid-2",
+        "values": {
+          "eyebrow": "Certified",
+          "heading": "Certified Technicians & OEM Support",
+          "cards": [
+            {
+              "title": "",
+              "paras": [
+                {
+                  "text": "Our technicians are:"
+                }
+              ],
+              "points": [
+                {
+                  "text": "310T certified"
+                },
+                {
+                  "text": "OEM trained"
+                },
+                {
+                  "text": "Experienced in advanced diagnostics and repair"
+                }
+              ],
+              "after": "",
+              "linkLabel": "",
+              "linkUrl": ""
+            },
+            {
+              "title": "",
+              "paras": [
+                {
+                  "text": "Winslow-Gerolamy Motors Limited is a Certified Warranty Dealer for:"
+                }
+              ],
+              "points": [
+                {
+                  "text": "International"
+                },
+                {
+                  "text": "Cummins"
+                },
+                {
+                  "text": "Allison"
+                },
+                {
+                  "text": "Eaton"
+                },
+                {
+                  "text": "Meritor"
+                }
+              ],
+              "after": "",
+              "linkLabel": "",
+              "linkUrl": ""
+            }
+          ],
+          "outro": "All service and warranty work is completed to manufacturer standards using approved procedures and tools.",
+          "intro": "",
+          "outroHeading": ""
+        }
+      }
     },
     {
       "id": "sc-placed",
       "type": "sharedSection",
       "props": {
-        "sectionId": "service-cards",
+        "sectionId": "card-grid-2",
         "values": {
+          "eyebrow": "What we service",
           "cards": [
             {
               "title": "Full-Service Repair Capabilities",
-              "before": [
+              "paras": [
                 {
                   "text": "We provide a complete range of repair and maintenance services, including:"
                 }
@@ -203,11 +178,13 @@
                   "text": "Emissions system service and repair"
                 }
               ],
-              "after": "Our team focuses on identifying issues accurately and completing repairs efficiently to reduce downtime."
+              "after": "Our team focuses on identifying issues accurately and completing repairs efficiently to reduce downtime.",
+              "linkLabel": "",
+              "linkUrl": ""
             },
             {
               "title": "Preventative Maintenance Programs",
-              "before": [
+              "paras": [
                 {
                   "text": "Preventative maintenance plays a key role in reducing unexpected breakdowns and extending vehicle life."
                 },
@@ -232,11 +209,13 @@
                   "text": "Emissions system service and repair"
                 }
               ],
-              "after": "These programs help lower long-term operating costs and improve overall reliability."
+              "after": "These programs help lower long-term operating costs and improve overall reliability.",
+              "linkLabel": "",
+              "linkUrl": ""
             },
             {
               "title": "DPF Cleaning & Emissions Service",
-              "before": [
+              "paras": [
                 {
                   "text": "We provide Diesel Particulate Filter (DPF) and Diesel Oxidation Catalyst (DOC) cleaning services."
                 },
@@ -258,11 +237,13 @@
                   "text": "Testing before return"
                 }
               ],
-              "after": "DPF units can be dropped off at the service department and are typically ready for pickup the following day."
+              "after": "DPF units can be dropped off at the service department and are typically ready for pickup the following day.",
+              "linkLabel": "",
+              "linkUrl": ""
             },
             {
               "title": "Supporting Fleet Operations",
-              "before": [
+              "paras": [
                 {
                   "text": "We work with fleets to support uptime and performance through:"
                 }
@@ -281,68 +262,65 @@
                   "text": "Coordinated service support"
                 }
               ],
-              "after": "Our service department is structured to help keep fleet vehicles operating reliably and consistently."
+              "after": "Our service department is structured to help keep fleet vehicles operating reliably and consistently.",
+              "linkLabel": "",
+              "linkUrl": ""
             }
-          ]
+          ],
+          "heading": "",
+          "intro": "",
+          "outroHeading": "",
+          "outro": ""
         }
       }
     },
     {
-      "id": "wc",
-      "type": "section",
-      "props": {
-        "width": "boxed",
-        "paddingY": 0,
-        "background": "paper",
-        "anchor": "why-choose"
-      },
-      "children": [
-        {
-          "id": "wc-h",
-          "type": "heading",
-          "props": {
-            "text": "Why Choose Winslow-Gerolamy Motors Limited",
-            "headingLevel": 2
-          }
-        },
-        {
-          "id": "wc-list",
-          "type": "bullet-list",
-          "props": {
-            "items": [
-              {
-                "text": "Family-owned International dealer since 1952"
-              },
-              {
-                "text": "310T certified and OEM-trained technicians"
-              },
-              {
-                "text": "Certified warranty provider for major OEMs"
-              },
-              {
-                "text": "Strong focus on uptime and efficient repairs"
-              },
-              {
-                "text": "Proven experience supporting fleets and owner-operators"
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "hb-placed",
+      "id": "wc-placed",
       "type": "sharedSection",
       "props": {
-        "sectionId": "hours-banner",
+        "sectionId": "split-band-reverse",
         "values": {
+          "eyebrow": "Why choose us",
+          "heading": "Why Choose Winslow-Gerolamy Motors Limited",
+          "text": "",
+          "points": [
+            {
+              "text": "Family-owned International dealer since 1952"
+            },
+            {
+              "text": "310T certified and OEM-trained technicians"
+            },
+            {
+              "text": "Certified warranty provider for major OEMs"
+            },
+            {
+              "text": "Strong focus on uptime and efficient repairs"
+            },
+            {
+              "text": "Proven experience supporting fleets and owner-operators"
+            }
+          ],
+          "linkLabel": "",
+          "linkUrl": "",
           "image": {
             "src": "/images/location-peterborough.jpg",
             "alt": "Winslow-Gerolamy Motors dealership on Lansdowne Street West, Peterborough",
             "width": 1600,
             "height": 1149
-          },
+          }
+        }
+      }
+    },
+    {
+      "id": "hc-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "hours-cards",
+        "values": {
+          "eyebrow": "Service department hours",
           "heading": "Hours Of Operation",
+          "intro": "",
+          "cardTitle": "Service department",
           "days": [
             {
               "text": "Monday: 6:00AM to 11:00PM"
@@ -363,7 +341,10 @@
               "text": "Saturday: Closed until Further Notice"
             }
           ],
-          "tollLabel": "Toll Free"
+          "darkTitle": "Toll Free",
+          "darkText": "",
+          "darkLabel": "1.800.461.8417",
+          "darkUrl": "tel:+18004618417"
         }
       }
     },
@@ -394,7 +375,7 @@
       "props": {
         "width": "boxed",
         "paddingY": 0,
-        "background": "paper",
+        "background": "card",
         "anchor": "faq"
       },
       "children": [
@@ -403,7 +384,8 @@
           "type": "heading",
           "props": {
             "text": "Frequently Asked Questions",
-            "headingLevel": 2
+            "headingLevel": 2,
+            "eyebrow": "Service FAQs"
           }
         },
         {
@@ -442,6 +424,24 @@
           }
         }
       ]
+    },
+    {
+      "id": "cb-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "contact-band",
+        "values": {
+          "eyebrow": "Need help?",
+          "heading": "Contact Our Service Department",
+          "text": "Call us or visit our dealership at 1018 Lansdowne St. West, Peterborough, Ontario.",
+          "callLabel": "(705) 742-3411",
+          "callUrl": "tel:+17057423411",
+          "emailLabel": "info@wgmotors.ca",
+          "emailUrl": "mailto:info@wgmotors.ca",
+          "ctaLabel": "Schedule service",
+          "ctaUrl": "#service-request"
+        }
+      }
     }
   ]
 }

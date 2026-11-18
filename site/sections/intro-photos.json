@@ -1,0 +1,93 @@
+{
+  "version": 2,
+  "id": "intro-photos",
+  "name": "Intro with photo pair",
+  "props": [
+    {
+      "key": "eyebrow",
+      "type": "text",
+      "label": "Eyebrow (small label)"
+    },
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading"
+    },
+    {
+      "key": "intro",
+      "type": "textarea",
+      "label": "Intro (blank line between paragraphs)"
+    },
+    {
+      "key": "photos",
+      "type": "list",
+      "label": "Photos",
+      "fields": [
+        {
+          "key": "image",
+          "type": "image",
+          "label": "Photo"
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "ip",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "card"
+      },
+      "children": [
+        {
+          "id": "ip-h",
+          "type": "heading",
+          "props": {
+            "text": "{{heading}}",
+            "headingLevel": 2,
+            "eyebrow": "{{eyebrow}}"
+          }
+        },
+        {
+          "id": "ip-intro",
+          "type": "text",
+          "props": {
+            "text": "{{intro}}",
+            "width": "full"
+          }
+        },
+        {
+          "id": "ip-photos",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "ip-photo",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "repeat": "photos"
+              },
+              "children": [
+                {
+                  "id": "ip-img",
+                  "type": "image",
+                  "props": {
+                    "image": "{{image}}",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "css": "body :where([data-bz-node=\"ip\"]) .bz-block{padding:0}\nbody :where([data-bz-node=\"ip\"]) .bz-container{padding:0;max-width:none}\nbody [data-bz-node=\"ip\"]>.bz-container{padding-inline:0}\n\nbody [data-bz-node=\"ip-h\"] .bz-eyebrow{font:700 10.5px/1.4 var(--font-body);letter-spacing:.22em;text-transform:uppercase;color:#6b6b6a;margin:0 0 14px}\nbody [data-bz-node=\"ip-h\"] h2{font:700 36px/1.08 var(--font-heading);letter-spacing:0;text-transform:uppercase;color:var(--ink);margin:0}\nbody [data-bz-node=\"ip-h\"] h2:empty{display:none}\nbody [data-bz-node=\"ip-intro\"] .bz-text{max-width:760px;margin-top:22px}\nbody [data-bz-node=\"ip-intro\"] p{font:400 13.5px/25px var(--font-body);color:var(--ink);margin:0;margin:0 0 14px}\nbody [data-bz-node=\"ip-intro\"] p:last-child{margin:0}\nbody [data-bz-node=\"ip-intro\"] a{color:var(--accent);text-decoration:none}\n\nbody [data-bz-node=\"ip\"]{background:#fff;padding:96px 0 0}\nbody [data-bz-node=\"ip\"]>.bz-container{max-width:var(--container)}\nbody [data-bz-node=\"ip-photos\"]{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:40px}\nbody [data-bz-node=\"ip-photos\"]>.bz-col{grid-column:auto}\nbody [data-bz-node^=\"ip-photo-\"] figure{margin:0}\nbody [data-bz-node^=\"ip-photo-\"] img{width:100%;aspect-ratio:1413/771;object-fit:cover;border-radius:0}\n@media (max-width:1100px){body [data-bz-node=\"ip\"]{padding:64px 24px 0}body [data-bz-node=\"ip-h\"] h2{font-size:30px}}\n@media (max-width:640px){body [data-bz-node=\"ip\"]{padding:48px 20px 0}body [data-bz-node=\"ip-h\"] h2{font-size:26px}body [data-bz-node=\"ip-photos\"]{grid-template-columns:1fr;gap:16px}}\n"
+}

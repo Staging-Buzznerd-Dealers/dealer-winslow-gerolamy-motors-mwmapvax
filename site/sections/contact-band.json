@@ -1,0 +1,107 @@
+{
+  "version": 2,
+  "id": "contact-band",
+  "name": "Contact band (dark)",
+  "props": [
+    {
+      "key": "eyebrow",
+      "type": "text",
+      "label": "Eyebrow"
+    },
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading"
+    },
+    {
+      "key": "text",
+      "type": "textarea",
+      "label": "Copy"
+    },
+    {
+      "key": "callLabel",
+      "type": "text",
+      "label": "Phone button label"
+    },
+    {
+      "key": "callUrl",
+      "type": "url",
+      "label": "Phone link"
+    },
+    {
+      "key": "emailLabel",
+      "type": "text",
+      "label": "Email button label"
+    },
+    {
+      "key": "emailUrl",
+      "type": "url",
+      "label": "Email link"
+    },
+    {
+      "key": "ctaLabel",
+      "type": "text",
+      "label": "Extra button label (optional)"
+    },
+    {
+      "key": "ctaUrl",
+      "type": "url",
+      "label": "Extra button link"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "cb",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "ink"
+      },
+      "children": [
+        {
+          "id": "cb-h",
+          "type": "heading",
+          "props": {
+            "text": "{{heading}}",
+            "headingLevel": 2,
+            "eyebrow": "{{eyebrow}}"
+          }
+        },
+        {
+          "id": "cb-text",
+          "type": "text",
+          "props": {
+            "text": "{{text}}",
+            "width": "full"
+          }
+        },
+        {
+          "id": "cb-btns",
+          "type": "buttons",
+          "props": {
+            "items": [
+              {
+                "label": "{{callLabel}}",
+                "url": "{{callUrl}}",
+                "style": "secondary"
+              },
+              {
+                "label": "{{emailLabel}}",
+                "url": "{{emailUrl}}",
+                "style": "secondary"
+              },
+              {
+                "label": "{{ctaLabel}}",
+                "url": "{{ctaUrl}}",
+                "style": "secondary"
+              }
+            ],
+            "align": "left"
+          }
+        }
+      ]
+    }
+  ],
+  "css": "body :where([data-bz-node=\"cb\"]) .bz-block{padding:0}\nbody :where([data-bz-node=\"cb\"]) .bz-container{padding:0;max-width:none}\nbody [data-bz-node=\"cb\"]>.bz-container{padding-inline:0}\n\nbody [data-bz-node=\"cb\"]{background:#2a2723;padding:90px 0}\nbody [data-bz-node=\"cb\"]>.bz-container{max-width:var(--container)}\nbody [data-bz-node=\"cb-h\"] .bz-eyebrow{font:700 10.5px/1.4 var(--font-body);letter-spacing:.22em;text-transform:uppercase;color:#6b6b6a;margin:0 0 14px;color:rgba(255,255,255,.8)}\nbody [data-bz-node=\"cb-h\"] h2{font:700 36px/1.08 var(--font-heading);letter-spacing:0;text-transform:uppercase;color:var(--ink);margin:0;color:#fff}\nbody [data-bz-node=\"cb-text\"] .bz-text{max-width:640px;margin-top:20px}\nbody [data-bz-node=\"cb-text\"] p{font:400 13.5px/25px var(--font-body);color:var(--ink);margin:0;color:rgba(255,255,255,.9)}\nbody [data-bz-node=\"cb-btns\"]{margin-top:28px}\nbody [data-bz-node=\"cb-btns\"] .bz-btns{margin:0;gap:12px}\nbody [data-bz-node=\"cb-btns\"] .bz-btn{display:inline-flex;align-items:center;justify-content:center;height:44px;padding:0 24px;border:0;border-radius:3px;background:#fff;color:var(--ink);font:700 10.5px/1 var(--font-body);letter-spacing:.16em;text-transform:uppercase;text-decoration:none;padding:0 22px}\nbody [data-bz-node=\"cb-btns\"] .bz-btn:hover{background:#ececec}\n@media (max-width:1100px){body [data-bz-node=\"cb\"]{padding:64px 24px}body [data-bz-node=\"cb-h\"] h2{font-size:30px}}\n@media (max-width:640px){body [data-bz-node=\"cb\"]{padding:48px 20px}body [data-bz-node=\"cb-h\"] h2{font-size:26px}}\n"
+}

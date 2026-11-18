@@ -18,3 +18,4 @@ body [data-bz-node="fm-form"] .bz-btn{display:inline-flex;align-items:center;jus
 body [data-bz-node="fm-form"] .bz-btn:hover{background:var(--accent-dark)}
 @media (max-width:1100px){body [data-bz-node="fm"]{padding:40px 24px 64px}body [data-bz-node="fm-form"] h2{font-size:30px}}
 @media (max-width:640px){body [data-bz-node="fm"]{padding:32px 20px 48px}body [data-bz-node="fm-form"] h2{font-size:26px}body [data-bz-node="fm-form"] .bz-field--half{flex-basis:100%}body [data-bz-node="fm-form"] .bz-btn{width:100%}}
+body [data-bz-node="rc-placed"] > section{background:var(--paper)}
