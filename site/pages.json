@@ -143,5 +143,23 @@
       "footer": null,
       "utilityNav": null
     }
+  },
+  {
+    "slug": "service-parts-locations",
+    "title": "Truck Service & Parts Locations in Central Ontario",
+    "description": "Truck sales, service and parts support for fleets and owner-operators across Central Ontario, including Peterborough, Kawartha Lakes, Durham Region, the GTA and Eastern Ontario.",
+    "path": "/service-parts-locations",
+    "out": "service-parts-locations/index.html",
+    "dir": "service-parts-locations",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
   }
 ]

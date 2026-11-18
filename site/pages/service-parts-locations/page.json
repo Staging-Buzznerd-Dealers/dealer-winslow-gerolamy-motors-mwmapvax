@@ -1,0 +1,327 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "pb-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "page-banner",
+        "values": {
+          "title": "Truck Service & Parts Locations In Central Ontario",
+          "crumb": "Truck Service & Parts Locations in Central Ontario",
+          "subtitle": "",
+          "ctaLabel": "",
+          "ctaUrl": "",
+          "image": {
+            "src": "/images/hero-banner-poster.jpg",
+            "alt": "International trucks lined up in front of the Winslow-Gerolamy dealership",
+            "width": 1440,
+            "height": 780
+          }
+        }
+      }
+    },
+    {
+      "id": "in-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "split-band",
+        "values": {
+          "eyebrow": "Our locations",
+          "heading": "Supporting Fleets And Owner-Operators Across The Region",
+          "text": "Winslow-Gerolamy Motors Limited provides truck sales, service, and parts support to customers across Central Ontario.\n\nWith a strong regional presence and decades of experience, we support owner-operators and fleets with reliable service, fast parts availability, and consistent operational support.",
+          "points": [],
+          "textAfter": "",
+          "linkLabel": "",
+          "linkUrl": "",
+          "image": {
+            "src": "/images/dpf-shop-lift.jpg",
+            "alt": "A yellow dump truck and a truck raised on lifts in the Winslow-Gerolamy service shop",
+            "width": 804,
+            "height": 435
+          }
+        }
+      }
+    },
+    {
+      "id": "sv-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "text-columns",
+        "values": {
+          "textColumns": [
+            {
+              "eyebrow": "Where we serve",
+              "heading": "Serving Central Ontario’s Trucking Industry",
+              "text": "We proudly serve customers throughout Central Ontario, including:",
+              "points": [
+                {
+                  "text": "Peterborough"
+                },
+                {
+                  "text": "Kawartha Lakes"
+                },
+                {
+                  "text": "Durham Region"
+                },
+                {
+                  "text": "Greater Toronto Area (GTA)"
+                },
+                {
+                  "text": "Eastern Ontario"
+                },
+                {
+                  "text": "Surrounding regional and rural communities"
+                }
+              ],
+              "items": [],
+              "textAfter": "Our dealership is positioned to support both local and regional operations, including long-haul and vocational applications.",
+              "linkLabel": "",
+              "linkUrl": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cd-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "card-grid-2",
+        "values": {
+          "eyebrow": "",
+          "heading": "",
+          "intro": "",
+          "outroHeading": "",
+          "outro": "",
+          "cards": [
+            {
+              "title": "Full-Service Support Across The Region",
+              "paras": [
+                {
+                  "text": "Customers across Central Ontario rely on Winslow-Gerolamy Motors Limited for:"
+                }
+              ],
+              "points": [
+                {
+                  "text": "New and used truck sales"
+                },
+                {
+                  "text": "Preventative maintenance and repair"
+                },
+                {
+                  "text": "Engine diagnostics and emissions service"
+                },
+                {
+                  "text": "OEM and aftermarket parts"
+                },
+                {
+                  "text": "Fleet maintenance planning and support"
+                }
+              ],
+              "after": "Our goal is to provide consistent, reliable service regardless of where your trucks operate.",
+              "linkLabel": "",
+              "linkUrl": ""
+            },
+            {
+              "title": "Supporting Fleet Operations",
+              "paras": [
+                {
+                  "text": "We work with fleets across the region to help maintain uptime and improve operational efficiency."
+                },
+                {
+                  "text": "Our regional support includes:"
+                }
+              ],
+              "points": [
+                {
+                  "text": "Scheduled maintenance planning"
+                },
+                {
+                  "text": "Fast repair turnaround"
+                },
+                {
+                  "text": "Coordinated service scheduling"
+                },
+                {
+                  "text": "Parts availability and delivery"
+                }
+              ],
+              "after": "We understand the demands of operating across multiple locations and help fleets stay on schedule.",
+              "linkLabel": "",
+              "linkUrl": ""
+            },
+            {
+              "title": "Parts Availability & Regional Delivery",
+              "paras": [
+                {
+                  "text": "We provide daily parts delivery across Central Ontario, helping customers receive the parts they need quickly and efficiently."
+                },
+                {
+                  "text": "With access to a large inventory and over 100 suppliers, we support both urgent repairs and routine maintenance requirements."
+                }
+              ],
+              "points": [],
+              "after": "",
+              "linkLabel": "Learn more",
+              "linkUrl": "/parts"
+            },
+            {
+              "title": "Service Area Coverage",
+              "paras": [
+                {
+                  "text": "Our service area is designed to support:"
+                }
+              ],
+              "points": [
+                {
+                  "text": "Local owner-operators"
+                },
+                {
+                  "text": "Regional trucking companies"
+                },
+                {
+                  "text": "Long-haul carriers operating through Ontario"
+                },
+                {
+                  "text": "Construction and vocational fleets"
+                }
+              ],
+              "after": "We provide the same level of service and support across all areas we serve.",
+              "linkLabel": "",
+              "linkUrl": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "wc-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "split-band",
+        "values": {
+          "eyebrow": "",
+          "heading": "Why Choose Winslow-Gerolamy Motors Limited",
+          "text": "",
+          "points": [
+            {
+              "text": "Family-owned International dealer since 1952"
+            },
+            {
+              "text": "Established presence in Central Ontario"
+            },
+            {
+              "text": "Full-service dealership with sales, service, and parts"
+            },
+            {
+              "text": "Strong focus on uptime and operational efficiency"
+            },
+            {
+              "text": "Trusted by fleets and owner-operators across the region"
+            }
+          ],
+          "textAfter": "",
+          "linkLabel": "Learn more about our history",
+          "linkUrl": "/about",
+          "image": {
+            "src": "/images/dealership-storefront.jpg",
+            "alt": "The Winslow-Gerolamy International dealership building and parking lot on a sunny day",
+            "width": 1044,
+            "height": 684
+          }
+        }
+      }
+    },
+    {
+      "id": "oc-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "text-columns",
+        "values": {
+          "textColumns": [
+            {
+              "eyebrow": "Operating conditions",
+              "heading": "Supporting Ontario’s Operating Conditions",
+              "text": "We understand the unique challenges of operating in Central Ontario, including:",
+              "points": [
+                {
+                  "text": "Seasonal weather conditions"
+                },
+                {
+                  "text": "Traffic congestion in urban areas"
+                },
+                {
+                  "text": "Mixed highway and local driving environments"
+                },
+                {
+                  "text": "High utilization demands"
+                }
+              ],
+              "items": [],
+              "textAfter": "Our services are designed to help customers operate reliably under these conditions.",
+              "linkLabel": "",
+              "linkUrl": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "fq",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "card",
+        "anchor": "faq"
+      },
+      "children": [
+        {
+          "id": "fq-h",
+          "type": "heading",
+          "props": {
+            "text": "Frequently Asked Questions",
+            "headingLevel": 2,
+            "eyebrow": "Locations & coverage FAQs"
+          }
+        },
+        {
+          "id": "fq-list",
+          "type": "widget",
+          "props": {
+            "widget": "faq",
+            "config": {
+              "items": [
+                {
+                  "q": "What areas do you serve?",
+                  "a": "We serve customers across Central Ontario, including Peterborough, the GTA, Eastern Ontario, and surrounding regions."
+                },
+                {
+                  "q": "Do you support fleet operations across multiple locations?",
+                  "a": ""
+                },
+                {
+                  "q": "Do you offer parts delivery outside your immediate area?",
+                  "a": ""
+                },
+                {
+                  "q": "Can I access service if my trucks operate regionally?",
+                  "a": ""
+                },
+                {
+                  "q": "Do you work with long-haul carriers?",
+                  "a": ""
+                },
+                {
+                  "q": "What services are available across your service area?",
+                  "a": ""
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
