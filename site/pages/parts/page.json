@@ -1,0 +1,252 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "pb-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "page-banner",
+        "values": {
+          "title": "Heavy-Duty Truck Parts In Central Ontario",
+          "crumb": "Heavy-Duty Truck Parts in Central Ontario",
+          "image": {
+            "src": "/images/hero-banner-poster.jpg",
+            "alt": "International trucks lined up in front of the Winslow-Gerolamy dealership",
+            "width": 1440,
+            "height": 780
+          }
+        }
+      }
+    },
+    {
+      "id": "pi-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "parts-intro",
+        "values": {
+          "heading": "Large Inventory, Fast Delivery, And Accurate Parts Support",
+          "text": "Winslow-Gerolamy Motors Limited provides one of the largest inventories of heavy-duty truck parts in Central Ontario, supporting owner-operators and fleets with fast, accurate, and reliable parts supply.\n\nOur parts department is focused on one priority: getting the right part, when you need it, to keep your trucks on the road.",
+          "subheading": "Extensive Parts Inventory & Supplier Network",
+          "text2": "We maintain a large in-stock inventory of truck parts to support routine maintenance, repairs, and fleet operations.\n\nWith access to over 100 major suppliers and a showroom of product samples, we provide a wide range of components across all major truck systems. This allows us to support both common and specialized parts requirements quickly and efficiently.",
+          "image": {
+            "src": "/images/parts-collage.jpg",
+            "alt": "Parts counter, warehouse aisle and showroom shelves at the Winslow-Gerolamy parts department",
+            "width": 996,
+            "height": 687
+          }
+        }
+      }
+    },
+    {
+      "id": "cp-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "capabilities",
+        "values": {
+          "heading": "OEM & Aftermarket Parts Solutions",
+          "cards": [
+            {
+              "title": "OEM Parts",
+              "paras": [
+                {
+                  "text": "We supply OEM parts for International trucks and major component manufacturers, ensuring proper fit, reliability, and long-term performance."
+                },
+                {
+                  "text": "International™ and OEM parts include a 12-month, unlimited mileage warranty, covering new and renewed parts with a warrantable failure."
+                }
+              ],
+              "ctaLabel": "",
+              "ctaUrl": ""
+            },
+            {
+              "title": "Aftermarket Parts",
+              "paras": [
+                {
+                  "text": "We also offer high quality aftermarket parts as cost-effective alternatives when appropriate. Our team works with customers to select the best option based on application, performance needs, and budget."
+                }
+              ],
+              "ctaLabel": "",
+              "ctaUrl": ""
+            },
+            {
+              "title": "Knowledgeable Parts Team",
+              "paras": [
+                {
+                  "text": "Our parts department is supported by a team of knowledgeable, trained parts specialists available on-site to assist with part selection, compatibility, and ordering."
+                },
+                {
+                  "text": "We also have a team of Outside Parts Sales Representatives who travel daily to support customers and fulfill parts requirements across the region."
+                }
+              ],
+              "ctaLabel": "",
+              "ctaUrl": ""
+            }
+          ],
+          "cardsMore": [
+            {
+              "title": "Fast Availability & Delivery",
+              "paras": [
+                {
+                  "text": "Most commonly used parts are available directly from inventory."
+                },
+                {
+                  "text": "For parts not currently in stock, we can typically order and have them available for pickup or delivery the next business day."
+                },
+                {
+                  "text": "We also offer daily parts delivery to customers across Central Ontario, helping reduce downtime and keep repairs moving."
+                }
+              ],
+              "ctaLabel": "",
+              "ctaUrl": ""
+            },
+            {
+              "title": "Parts Ordering Technology",
+              "paras": [
+                {
+                  "text": "We utilize leading-edge technology and equipment to support efficient parts sourcing, ordering, and fulfillment."
+                },
+                {
+                  "text": "Customers can also order parts online through Fleetrite.com, providing access to International Truck, IC Bus, and all-makes parts in a convenient digital platform."
+                }
+              ],
+              "ctaLabel": "",
+              "ctaUrl": ""
+            },
+            {
+              "title": "Fleet Parts Support",
+              "paras": [
+                {
+                  "text": "We work closely with fleets to streamline parts management and support ongoing operations."
+                },
+                {
+                  "text": "Our team helps ensure consistent parts availability for maintenance schedules, repairs, and day-to-day fleet requirements."
+                }
+              ],
+              "ctaLabel": "",
+              "ctaUrl": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cl-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "checklist-split",
+        "values": {
+          "heading": "Why Choose Winslow-Gerolamy Motors Limited For Parts",
+          "points": [
+            {
+              "text": "One of the largest parts inventories in Central Ontario"
+            },
+            {
+              "text": "Access to over 100 major suppliers"
+            },
+            {
+              "text": "OEM and aftermarket parts solutions"
+            },
+            {
+              "text": "Knowledgeable parts specialists and outside sales support"
+            },
+            {
+              "text": "Daily parts delivery"
+            },
+            {
+              "text": "Next business day availability for most non-stock parts"
+            },
+            {
+              "text": "12-month unlimited mileage warranty on OEM parts"
+            }
+          ],
+          "image": {
+            "src": "/images/parts-department.jpg",
+            "alt": "Parts counter shelves stocked with oils, fluids and truck parts",
+            "width": 830,
+            "height": 520
+          }
+        }
+      }
+    },
+    {
+      "id": "pc-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "promo-cards",
+        "values": {
+          "heading": "Parts Promotions",
+          "intro": "We offer rotating parts promotions throughout the year, including brake specials and parts flyers with limited-time pricing. Availability and pricing are subject to change based on inventory.",
+          "promos": [
+            {
+              "image": {
+                "src": "/images/parts-promo-skid-lot-sale.jpg",
+                "alt": "Pre-Winter Skid Lot Sale flyer: special pricing valid until October 31, 2026",
+                "width": 669,
+                "height": 441
+              },
+              "title": "Parts Special – Pre-Winter Skid Lot Sale",
+              "text": "Prices valid while supplies last.",
+              "ctaLabel": "Read more »",
+              "ctaUrl": "/store/parts"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "fq",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "card",
+        "anchor": "faq"
+      },
+      "children": [
+        {
+          "id": "fq-h",
+          "type": "heading",
+          "props": {
+            "text": "Frequently Asked Questions",
+            "headingLevel": 2
+          }
+        },
+        {
+          "id": "fq-list",
+          "type": "widget",
+          "props": {
+            "widget": "faq",
+            "config": {
+              "items": [
+                {
+                  "q": "Do you carry OEM parts for International trucks?",
+                  "a": ""
+                },
+                {
+                  "q": "Do you offer aftermarket parts?",
+                  "a": ""
+                },
+                {
+                  "q": "How quickly can I get parts?",
+                  "a": "Most in-stock parts are available immediately, and most non-stock parts are available the next business day."
+                },
+                {
+                  "q": "Do you offer parts delivery?",
+                  "a": ""
+                },
+                {
+                  "q": "Can I order parts online?",
+                  "a": ""
+                },
+                {
+                  "q": "Do you support fleet parts needs?",
+                  "a": ""
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

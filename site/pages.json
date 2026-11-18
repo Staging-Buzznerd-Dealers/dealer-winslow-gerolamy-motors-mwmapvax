@@ -53,5 +53,23 @@
       "footer": null,
       "utilityNav": null
     }
+  },
+  {
+    "slug": "parts",
+    "title": "Heavy-Duty Truck Parts in Central Ontario",
+    "description": "One of the largest inventories of heavy-duty truck parts in Central Ontario: OEM and aftermarket parts, daily delivery and a knowledgeable parts team.",
+    "path": "/parts",
+    "out": "parts/index.html",
+    "dir": "parts",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
   }
 ]
