@@ -1,0 +1,238 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "pb-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "page-banner",
+        "values": {
+          "title": "About Us",
+          "crumb": "About us",
+          "image": {
+            "src": "/images/hero-banner-poster.jpg",
+            "alt": "International trucks lined up in front of the Winslow-Gerolamy dealership",
+            "width": 1440,
+            "height": 780
+          }
+        }
+      }
+    },
+    {
+      "id": "ai-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "about-intro",
+        "values": {
+          "heading": "About Winslow-Gerolamy",
+          "subheading": "International Truck Dealership & Fleet Service Provider In Ontario Since 1952",
+          "text": "Winslow-Gerolamy Motors Limited is a family-owned International Truck dealership serving the commercial trucking industry across Ontario since 1952.\n\nWe provide full-service support for heavy-duty trucks, including <a href=\"/store/inventory\">sales</a>, <a href=\"/service\">service</a>, diagnostics, emissions systems, parts, and <a href=\"/#rental\">leasing solutions</a>. Our focus is on helping owner-operators and fleets maintain uptime, improve performance, and reduce operating costs.",
+          "image": {
+            "src": "/images/about-history.jpg",
+            "alt": "Winslow Motors dealership in 1960, with trucks parked out front",
+            "width": 1320,
+            "height": 938
+          }
+        }
+      }
+    },
+    {
+      "id": "hi-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "history-band",
+        "values": {
+          "image": {
+            "src": "/images/location-peterborough.jpg",
+            "alt": "Winslow-Gerolamy Motors dealership on Lansdowne Street West, Peterborough",
+            "width": 1600,
+            "height": 1149
+          },
+          "heading": "Our History",
+          "text": "It all began in 1952 when Al Winslow started Winslow Motors in Peterborough, Ontario, representing International® Truck. A decade later, Dave Gerolamy joined the growing company, forming Winslow-Gerolamy Motors Limited.\n\nToday, the business continues to be family-owned and operated across four generations of the Winslow and Gerolamy families, maintaining a long-standing commitment to the trucking industry.",
+          "ctaLabel": "Learn More",
+          "ctaUrl": "#leadership"
+        }
+      }
+    },
+    {
+      "id": "ld-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "leadership-split",
+        "values": {
+          "image": {
+            "src": "/images/about-leadership-collage.jpg",
+            "alt": "Three vintage photographs of the Winslow Motors dealership and parts counter",
+            "width": 915,
+            "height": 405
+          },
+          "heading": "Multi-Generational Leadership",
+          "text": "Winslow-Gerolamy Motors Limited has developed its leadership through hands-on experience across all areas of the dealership.\n\nMike Winslow progressed from the parts department through sales, leasing, and general management to his current role as President. Tom Gerolamy has led parts operations and has been recognized repeatedly by International® for outstanding parts performance. Steve Gerolamy has built a strong track record in new and used truck sales.\n\nThe third generation continues this tradition, with leadership across service, sales, leasing, and parts operations. The fourth generation is now entering the business through technician apprenticeships, supporting continued growth and long-term stability."
+        }
+      }
+    },
+    {
+      "id": "ic-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "info-cards",
+        "values": {
+          "cards": [
+            {
+              "title": "Workforce & Experience",
+              "paras": [
+                {
+                  "text": "Winslow-Gerolamy Motors Limited employs over 60 team members, including 11 employees with more than 30 years of experience and 22 employees with more than 20 years of experience."
+                },
+                {
+                  "text": "This level of experience supports consistent service quality, accurate diagnostics, and efficient repairs across all departments."
+                }
+              ],
+              "ctaLabel": "",
+              "ctaUrl": ""
+            },
+            {
+              "title": "Industry Recognition",
+              "paras": [
+                {
+                  "text": "Winslow-Gerolamy Motors Limited has been recognized by International® for performance and service excellence."
+                },
+                {
+                  "text": "The dealership is a 12-time recipient of the International® Prestige / President's Award, including multiple awards in recent years, reflecting continued operational performance and customer support."
+                }
+              ],
+              "ctaLabel": "",
+              "ctaUrl": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cp-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "capabilities",
+        "values": {
+          "heading": "Full-Service Dealership Capabilities",
+          "cards": [
+            {
+              "title": "Truck Sales",
+              "paras": [
+                {
+                  "text": "We offer a full selection of new and pre-owned International trucks to meet a wide range of commercial applications, supported by financing options and fleet solutions."
+                }
+              ],
+              "ctaLabel": "View Inventory",
+              "ctaUrl": "/store/inventory"
+            },
+            {
+              "title": "Service & Maintenance",
+              "paras": [
+                {
+                  "text": "Our service department provides preventative maintenance, diagnostics, repairs, emissions system service, and warranty support. We focus on minimizing downtime through efficient workflows and accurate diagnostics."
+                }
+              ],
+              "ctaLabel": "Learn More",
+              "ctaUrl": "/service"
+            },
+            {
+              "title": "Parts & Support",
+              "paras": [
+                {
+                  "text": "We maintain a large inventory of OEM and aftermarket parts, supported by VIN-based matching, parts delivery, and supplier access to ensure fast and accurate fulfillment."
+                }
+              ],
+              "ctaLabel": "Learn More",
+              "ctaUrl": "/store/parts"
+            },
+            {
+              "title": "Leasing & Rental",
+              "paras": [
+                {
+                  "text": "As an Idealease location, we provide full-service leasing and rental solutions to support fleet expansion and operational flexibility."
+                }
+              ],
+              "ctaLabel": "Learn More",
+              "ctaUrl": "/#rental"
+            }
+          ],
+          "cardsMore": [
+            {
+              "title": "Our Approach To Service",
+              "paras": [
+                {
+                  "text": "For over 70 years, Winslow-Gerolamy Motors Limited has operated with a clear understanding that downtime directly impacts business performance."
+                },
+                {
+                  "text": "Our approach is focused on accurate diagnostics, timely repairs, and preventative maintenance strategies that support long-term fleet performance and reliability."
+                }
+              ],
+              "ctaLabel": "",
+              "ctaUrl": ""
+            },
+            {
+              "title": "Serving Ontario's Trucking Industry",
+              "paras": [
+                {
+                  "text": "We support a wide range of customers across Ontario, including owner-operators, regional fleets, long-haul carriers, and transportation and logistics companies."
+                },
+                {
+                  "text": "Our services are designed to meet the demands of real-world operating conditions, including seasonal weather, traffic, and delivery schedules."
+                }
+              ],
+              "ctaLabel": "Learn More",
+              "ctaUrl": "/#location"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "vp-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "value-proposition",
+        "values": {
+          "heading": "Value Proposition",
+          "intro": "At Winslow Gerolamy Motors Limited, we understand that for our customers in the trucking industry, time is money. For over 70 years as a full line International Truck Dealership, we have been committed to ensuring maximum uptime for your fleet. Our value proposition is centered on three key pillars:",
+          "cards": [
+            {
+              "title": "Unbeatable Selection",
+              "paras": [
+                {
+                  "text": "We offer an extensive selection of new and pre-owned trucks to suit every need and budget. Our knowledgeable sales team will work with you to find the perfect truck that meets your unique requirements. Combined with the largest selection of parts and the most factory trained technicians in the area we can offer the best uptime for our customers."
+                }
+              ],
+              "ctaLabel": "",
+              "ctaUrl": ""
+            },
+            {
+              "title": "Unmatched Service",
+              "paras": [
+                {
+                  "text": "At Winslow Gerolamy Motors, we understand that every minute your truck is off the road is lost revenue. That's why we have a team of certified technicians who are trained to get your truck back on the road as quickly as possible. We also offer scheduled maintenance plans for all makes and models to help prevent breakdowns and keep your truck running smoothly. Couple this with our connected service offerings we can help monitor the health of your fleet in real time."
+                }
+              ],
+              "ctaLabel": "",
+              "ctaUrl": ""
+            },
+            {
+              "title": "Exceptional Value",
+              "paras": [
+                {
+                  "text": "We believe that maximizing uptime doesn't have to come at a premium price. That's why we offer competitive pricing on all of our trucks and services. We also offer financing options to help make your purchase more affordable. We are also an Idealease location that offers full-service leases and rental trucks that expand our offerings in the trucking industry."
+                }
+              ],
+              "ctaLabel": "",
+              "ctaUrl": ""
+            }
+          ],
+          "aheadHeading": "Looking Ahead",
+          "aheadText": "Winslow-Gerolamy Motors Limited continues to evolve alongside the trucking industry, integrating advanced diagnostics, emissions expertise, and fleet maintenance strategies while maintaining the same commitment established in 1952: delivering reliable service, minimizing downtime, and supporting long-term customer success."
+        }
+      }
+    }
+  ]
+}

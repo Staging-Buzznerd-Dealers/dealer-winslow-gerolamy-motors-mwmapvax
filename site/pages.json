@@ -35,5 +35,23 @@
       "footer": null,
       "utilityNav": null
     }
+  },
+  {
+    "slug": "about",
+    "title": "About Us",
+    "description": "Winslow-Gerolamy Motors Limited is a family-owned International Truck dealership serving the commercial trucking industry across Ontario since 1952.",
+    "path": "/about",
+    "out": "about/index.html",
+    "dir": "about",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
   }
 ]

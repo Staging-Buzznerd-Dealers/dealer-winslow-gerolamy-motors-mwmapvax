@@ -1,0 +1,160 @@
+{
+  "version": 2,
+  "id": "value-proposition",
+  "name": "Value proposition",
+  "props": [
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading"
+    },
+    {
+      "key": "intro",
+      "type": "textarea",
+      "label": "Intro"
+    },
+    {
+      "key": "cards",
+      "type": "list",
+      "label": "Pillars",
+      "fields": [
+        {
+          "key": "title",
+          "type": "text",
+          "label": "Title"
+        },
+        {
+          "key": "paras",
+          "type": "list",
+          "label": "Paragraphs",
+          "fields": [
+            {
+              "key": "text",
+              "type": "textarea",
+              "label": "Paragraph"
+            }
+          ]
+        },
+        {
+          "key": "ctaLabel",
+          "type": "text",
+          "label": "Button label (leave blank for none)"
+        },
+        {
+          "key": "ctaUrl",
+          "type": "url",
+          "label": "Button link"
+        }
+      ]
+    },
+    {
+      "key": "aheadHeading",
+      "type": "text",
+      "label": "Closing heading"
+    },
+    {
+      "key": "aheadText",
+      "type": "textarea",
+      "label": "Closing copy"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "vp",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "card",
+        "anchor": "value-proposition"
+      },
+      "children": [
+        {
+          "id": "vp-h",
+          "type": "heading",
+          "props": {
+            "text": "{{heading}}",
+            "headingLevel": 2
+          }
+        },
+        {
+          "id": "vp-intro",
+          "type": "text",
+          "props": {
+            "text": "{{intro}}",
+            "width": "full"
+          }
+        },
+        {
+          "id": "vp-grid",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "align": "stretch",
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "vp-card",
+              "type": "column",
+              "props": {
+                "span": 3,
+                "repeat": "cards"
+              },
+              "children": [
+                {
+                  "id": "vp-title",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{title}}",
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "vp-para",
+                  "type": "text",
+                  "props": {
+                    "text": "{{text}}",
+                    "width": "full",
+                    "repeat": "paras"
+                  }
+                },
+                {
+                  "id": "vp-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "{{ctaLabel}}",
+                        "url": "{{ctaUrl}}",
+                        "style": "primary"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "vp-ahead-h",
+          "type": "heading",
+          "props": {
+            "text": "{{aheadHeading}}",
+            "headingLevel": 2
+          }
+        },
+        {
+          "id": "vp-ahead",
+          "type": "text",
+          "props": {
+            "text": "{{aheadText}}",
+            "width": "full"
+          }
+        }
+      ]
+    }
+  ],
+  "css": "body :where([data-bz-node=\"vp\"]) .bz-block{padding:0}\nbody :where([data-bz-node=\"vp\"]) .bz-container{padding:0;max-width:none}\nbody [data-bz-node=\"vp\"]>.bz-container{padding-inline:0}\n\nbody [data-bz-node=\"vp\"]{background:#fff;padding:90px 0}\nbody [data-bz-node=\"vp\"]>.bz-container{max-width:var(--container)}\nbody [data-bz-node=\"vp-h\"] h2{font:700 36px/1.1 var(--font-heading);letter-spacing:0;text-transform:uppercase;color:var(--ink);margin:0}\nbody [data-bz-node=\"vp-intro\"] .bz-text{margin-top:22px}\nbody [data-bz-node=\"vp-intro\"] p{font:400 13.5px/25px var(--font-body);color:var(--ink);margin:0}\nbody [data-bz-node=\"vp-grid\"]{margin-top:34px}\nbody [data-bz-node=\"vp-grid\"]{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:24px;align-items:stretch}\n\nbody [data-bz-node^=\"vp-card-\"]{grid-column:auto;display:flex;flex-direction:column;background:#fff;border:1px solid #d4d4d2;padding:32px 30px 34px;box-sizing:border-box}\nbody [data-bz-node^=\"vp-title-\"] h3{font:700 22px/1.15 var(--font-heading);letter-spacing:0;text-transform:uppercase;color:var(--ink);margin:0 0 18px}\nbody [data-bz-node^=\"vp-para-\"]{display:block;margin-bottom:14px}\nbody [data-bz-node^=\"vp-para-\"] p{font:400 13.5px/25px var(--font-body);color:var(--ink);margin:0;margin:0}\nbody [data-bz-node^=\"vp-cta-\"]{margin-top:auto;padding-top:10px}\nbody [data-bz-node^=\"vp-cta-\"] .bz-btns{margin:0}\nbody [data-bz-node^=\"vp-cta-\"] .bz-btn{display:inline-flex;align-items:center;justify-content:center;height:44px;padding:0 24px;border:0;border-radius:2px;background:var(--accent);color:#fff;font:700 11px/1 var(--font-body);letter-spacing:.18em;text-transform:uppercase;text-decoration:none}\nbody [data-bz-node^=\"vp-cta-\"] .bz-btn:hover{background:var(--accent-dark)}\n\nbody [data-bz-node=\"vp-grid\"]>.bz-col{grid-column:auto}\nbody [data-bz-node=\"vp-ahead-h\"] h2{font:700 26px/1.1 var(--font-heading);letter-spacing:0;text-transform:uppercase;color:var(--ink);margin:56px 0 0}\nbody [data-bz-node=\"vp-ahead\"] .bz-text{margin-top:18px}\nbody [data-bz-node=\"vp-ahead\"] p{font:400 13.5px/25px var(--font-body);color:var(--ink);margin:0}\n@media (max-width:1100px){body [data-bz-node=\"vp\"]{padding:64px 24px}body [data-bz-node=\"vp-h\"] h2{font-size:30px}}\n@media (max-width:640px){body [data-bz-node=\"vp\"]{padding:48px 20px}body [data-bz-node=\"vp-h\"] h2{font-size:26px}body [data-bz-node=\"vp-ahead-h\"] h2{font-size:22px;margin-top:40px}body [data-bz-node^=\"vp-card-\"]{padding:24px 20px 26px}body [data-bz-node^=\"vp-title-\"] h3{font-size:19px}}\n"
+}
