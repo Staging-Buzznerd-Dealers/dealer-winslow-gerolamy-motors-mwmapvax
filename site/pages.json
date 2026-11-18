@@ -107,5 +107,23 @@
       "footer": null,
       "utilityNav": null
     }
+  },
+  {
+    "slug": "fleet-maintenance",
+    "title": "Fleet Maintenance",
+    "description": "Data-driven fleet maintenance for trucking companies across Central Ontario: connected vehicle technology, VIN-level preventative maintenance, remote diagnostics and tire pressure monitoring.",
+    "path": "/fleet-maintenance",
+    "out": "fleet-maintenance/index.html",
+    "dir": "fleet-maintenance",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
   }
 ]

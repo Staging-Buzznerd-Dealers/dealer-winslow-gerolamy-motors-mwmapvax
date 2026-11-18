@@ -146,6 +146,12 @@
               "label": "ELD",
               "type": "page",
               "ref": "eld"
+            },
+            {
+              "id": "hm-svc-fleet",
+              "label": "Fleet Maintenance",
+              "type": "page",
+              "ref": "fleet-maintenance"
             }
           ]
         },

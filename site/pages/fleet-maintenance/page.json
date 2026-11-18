@@ -1,0 +1,360 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "pb-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "page-banner",
+        "values": {
+          "title": "Fleet Maintenance",
+          "crumb": "<a href=\"/service\">Service</a> / Fleet Maintenance",
+          "subtitle": "",
+          "ctaLabel": "",
+          "ctaUrl": "",
+          "image": {
+            "src": "/images/hero-banner-poster.jpg",
+            "alt": "International trucks lined up in front of the Winslow-Gerolamy dealership",
+            "width": 1440,
+            "height": 780
+          }
+        }
+      }
+    },
+    {
+      "id": "fm1-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "split-band",
+        "values": {
+          "eyebrow": "Fleet maintenance",
+          "heading": "Data-Driven Maintenance, Uptime Optimization, And Connected Fleet Support",
+          "text": "Winslow-Gerolamy Motors Limited provides fleet maintenance solutions designed to improve productivity, reduce downtime, and lower total cost of ownership for trucking companies across Central Ontario.\n\nTaking your productivity and profitability to the next level, we use data analytics and connected vehicle technology to deliver predictive and proactive maintenance insights that keep your fleet operating efficiently.",
+          "points": [],
+          "textAfter": "",
+          "linkLabel": "",
+          "linkUrl": "",
+          "image": {
+            "src": "/images/fleet-highway-truck.jpg",
+            "alt": "A blue International truck pulling a trailer along a mountain highway",
+            "width": 771,
+            "height": 477
+          }
+        }
+      }
+    },
+    {
+      "id": "fm2-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "split-band-reverse",
+        "values": {
+          "eyebrow": "Our approach",
+          "heading": "A Data-Driven Approach To Fleet Maintenance",
+          "text": "Winslow-Gerolamy Motors uses advanced tools and reporting systems to help fleets move beyond reactive repairs and into proactive maintenance planning.\n\nOur approach focuses on:",
+          "points": [
+            {
+              "text": "Predicting potential failures before they occur"
+            },
+            {
+              "text": "Reducing unplanned downtime"
+            },
+            {
+              "text": "Improving maintenance scheduling"
+            },
+            {
+              "text": "Supporting long-term fleet performance"
+            }
+          ],
+          "textAfter": "Our tools and reports are designed to take your uptime to new heights.",
+          "linkLabel": "",
+          "linkUrl": "",
+          "image": {
+            "src": "/images/fleet-monitors.jpg",
+            "alt": "A fleet manager using a fleet maintenance dashboard on two monitors",
+            "width": 645,
+            "height": 426
+          }
+        }
+      }
+    },
+    {
+      "id": "cf-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "card-grid",
+        "values": {
+          "eyebrow": "OnCommand Connection & International 360",
+          "heading": "Connected Fleet Technology",
+          "intro": "OnCommand Connection and International 360 are included standard for 5 years on new Class 6-8 International Truck models.\n\nThese connected vehicle platforms allow fleet operators to monitor performance, receive alerts, and manage maintenance more effectively.",
+          "cards": [],
+          "outroHeading": "",
+          "outro": ""
+        }
+      }
+    },
+    {
+      "id": "i360-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "split-band-reverse",
+        "values": {
+          "eyebrow": "",
+          "heading": "International 360",
+          "text": "International 360 creates seamless, transparent service communication designed to accelerate the service process and get trucks back on the road faster.\n\nFeatures include:",
+          "points": [
+            {
+              "text": "Real-time repair status updates"
+            },
+            {
+              "text": "Online service request initiation"
+            },
+            {
+              "text": "Online estimate approvals"
+            },
+            {
+              "text": "Improved communication throughout the service process"
+            }
+          ],
+          "textAfter": "These tools help streamline operations and improve uptime.",
+          "linkLabel": "",
+          "linkUrl": "",
+          "image": {
+            "src": "/images/fleet-international-360.jpg",
+            "alt": "International 360 diagram connecting fleet managers, dealers and service centers, connected fleet providers and all-makes fleet assets",
+            "width": 459,
+            "height": 423
+          }
+        }
+      }
+    },
+    {
+      "id": "pm-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "split-band",
+        "values": {
+          "eyebrow": "VIN-Level Maintenance Planning",
+          "heading": "Advance Preventative Maintenance",
+          "text": "We use VIN-level, data-driven preventative maintenance interval recommendations designed to:",
+          "points": [
+            {
+              "text": "Extend oil life"
+            },
+            {
+              "text": "Reduce unnecessary maintenance"
+            },
+            {
+              "text": "Optimize service timing"
+            }
+          ],
+          "textAfter": "We proactively alert customers to upcoming service intervals and schedule maintenance based on preference and availability.",
+          "linkLabel": "Learn more",
+          "linkUrl": "/service",
+          "image": {
+            "src": "/images/fleet-mechanic.jpg",
+            "alt": "A technician in safety glasses changing a filter on a truck engine",
+            "width": 642,
+            "height": 318
+          }
+        }
+      }
+    },
+    {
+      "id": "fh-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "split-band-reverse",
+        "values": {
+          "eyebrow": "OnCommand Advanced Remote Diagnostics",
+          "heading": "Fleet Health Monitoring",
+          "text": "We monitor vehicles using OnCommand Advanced Remote Diagnostics to identify trucks at high risk of breakdown or derate conditions.\n\nThis allows for:",
+          "points": [
+            {
+              "text": "Early detection of potential failures"
+            },
+            {
+              "text": "Proactive service scheduling"
+            },
+            {
+              "text": "Reduced roadside breakdowns"
+            }
+          ],
+          "textAfter": "",
+          "linkLabel": "",
+          "linkUrl": "",
+          "image": {
+            "src": "/images/fleet-remote-diagnostics.jpg",
+            "alt": "A fleet specialist monitoring truck locations on a map across two screens",
+            "width": 645,
+            "height": 429
+          }
+        }
+      }
+    },
+    {
+      "id": "tp-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "split-band",
+        "values": {
+          "eyebrow": "",
+          "heading": "Tire Pressure Monitoring System",
+          "text": "We monitor and communicate tire pressure across your fleet to improve performance and efficiency.\n\nBenefits include:",
+          "points": [
+            {
+              "text": "Improved fuel efficiency"
+            },
+            {
+              "text": "Extended tire life"
+            },
+            {
+              "text": "Reduced risk of roadside issues"
+            }
+          ],
+          "textAfter": "",
+          "linkLabel": "",
+          "linkUrl": "",
+          "image": {
+            "src": "/images/fleet-tire.jpg",
+            "alt": "Close-up of an International truck front wheel and bumper",
+            "width": 624,
+            "height": 429
+          }
+        }
+      }
+    },
+    {
+      "id": "sp-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "split-band-reverse",
+        "values": {
+          "eyebrow": "",
+          "heading": "Supporting Fleet Productivity",
+          "text": "Our fleet maintenance services are designed to support:",
+          "points": [
+            {
+              "text": "Consistent vehicle performance"
+            },
+            {
+              "text": "Reduced operating costs"
+            },
+            {
+              "text": "Improved scheduling efficiency"
+            },
+            {
+              "text": "Increased uptime across the fleet"
+            }
+          ],
+          "textAfter": "By combining preventative maintenance, diagnostics, and connected technology, we help fleets operate more efficiently and reliably.",
+          "linkLabel": "Learn more",
+          "linkUrl": "/service",
+          "image": {
+            "src": "/images/fleet-dump-trucks.jpg",
+            "alt": "A white concrete mixer and a yellow dump truck on a quarry site",
+            "width": 639,
+            "height": 426
+          }
+        }
+      }
+    },
+    {
+      "id": "wc-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "split-band",
+        "values": {
+          "eyebrow": "",
+          "heading": "Why Choose Winslow-Gerolamy Motors Limited",
+          "text": "",
+          "points": [
+            {
+              "text": "Family-owned International dealer since 1952"
+            },
+            {
+              "text": "Data-driven fleet maintenance solutions"
+            },
+            {
+              "text": "Access to connected vehicle platforms"
+            },
+            {
+              "text": "Advanced diagnostics and monitoring tools"
+            },
+            {
+              "text": "Strong focus on uptime and cost control"
+            },
+            {
+              "text": "Proven experience supporting fleets across Central Ontario"
+            }
+          ],
+          "textAfter": "",
+          "linkLabel": "Learn more about us",
+          "linkUrl": "/about",
+          "image": {
+            "src": "/images/fleet-tire.jpg",
+            "alt": "Close-up of an International truck front wheel and bumper",
+            "width": 624,
+            "height": 429
+          }
+        }
+      }
+    },
+    {
+      "id": "fq",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "card",
+        "anchor": "faq"
+      },
+      "children": [
+        {
+          "id": "fq-h",
+          "type": "heading",
+          "props": {
+            "text": "Frequently Asked Questions",
+            "headingLevel": 2,
+            "eyebrow": "Fleet maintenance FAQs"
+          }
+        },
+        {
+          "id": "fq-list",
+          "type": "widget",
+          "props": {
+            "widget": "faq",
+            "config": {
+              "items": [
+                {
+                  "q": "What is fleet maintenance planning?",
+                  "a": "Fleet maintenance planning involves scheduling and managing service to reduce downtime, improve performance, and extend vehicle life."
+                },
+                {
+                  "q": "How does connected vehicle technology improve fleet performance?",
+                  "a": ""
+                },
+                {
+                  "q": "What is OnCommand Connection?",
+                  "a": ""
+                },
+                {
+                  "q": "What is International 360?",
+                  "a": ""
+                },
+                {
+                  "q": "How does preventative maintenance reduce costs?",
+                  "a": ""
+                },
+                {
+                  "q": "What is fleet health monitoring?",
+                  "a": ""
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
