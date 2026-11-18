@@ -1,0 +1,90 @@
+{
+  "version": 2,
+  "id": "leadership-split",
+  "name": "Leadership split (photo left, copy right)",
+  "props": [
+    {
+      "key": "image",
+      "type": "image",
+      "label": "Photo"
+    },
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading"
+    },
+    {
+      "key": "text",
+      "type": "textarea",
+      "label": "Copy (blank line between paragraphs)"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "ld",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "card",
+        "anchor": "leadership"
+      },
+      "children": [
+        {
+          "id": "ld-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "align": "center",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "ld-media",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "ld-img",
+                  "type": "image",
+                  "props": {
+                    "image": "{{image}}",
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "ld-copy",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "ld-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "ld-text",
+                  "type": "text",
+                  "props": {
+                    "text": "{{text}}",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "css": "body :where([data-bz-node=\"ld\"]) .bz-block{padding:0}\nbody :where([data-bz-node=\"ld\"]) .bz-container{padding:0;max-width:none}\nbody [data-bz-node=\"ld\"]>.bz-container{padding-inline:0}\n\nbody [data-bz-node=\"ld\"]{background:#fff;padding:90px 0 60px}\nbody [data-bz-node=\"ld\"]>.bz-container{max-width:var(--container)}\nbody [data-bz-node=\"ld-row\"]{display:grid;grid-template-columns:1fr 1fr;gap:0 64px;align-items:center}\nbody [data-bz-node=\"ld-media\"],body [data-bz-node=\"ld-copy\"]{grid-column:auto}\nbody [data-bz-node=\"ld-media\"] figure{margin:0}\nbody [data-bz-node=\"ld-media\"] img{width:100%;height:auto;border-radius:0}\nbody [data-bz-node=\"ld-h\"] h2{font:700 36px/1.1 var(--font-heading);letter-spacing:0;text-transform:uppercase;color:var(--ink);margin:0;max-width:520px}\nbody [data-bz-node=\"ld-text\"] .bz-text{max-width:540px;margin-top:22px}\nbody [data-bz-node=\"ld-text\"] p{font:400 13.5px/25px var(--font-body);color:var(--ink);margin:0;margin:0 0 14px}\nbody [data-bz-node=\"ld-text\"] p:last-child{margin:0}\n@media (max-width:1100px){body [data-bz-node=\"ld\"]{padding:64px 24px 40px}body [data-bz-node=\"ld-row\"]{grid-template-columns:1fr;gap:32px}body [data-bz-node=\"ld-h\"] h2{font-size:30px}}\n@media (max-width:640px){body [data-bz-node=\"ld\"]{padding:48px 20px 32px}body [data-bz-node=\"ld-h\"] h2{font-size:26px}}\n"
+}

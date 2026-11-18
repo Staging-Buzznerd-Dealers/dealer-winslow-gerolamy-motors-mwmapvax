@@ -146,14 +146,14 @@
         {
           "id": "hm-about",
           "label": "About us",
-          "type": "url",
-          "url": "/#about",
+          "type": "page",
+          "ref": "about",
           "children": [
             {
               "id": "hm-about-story",
               "label": "Our story",
-              "type": "url",
-              "url": "/#about"
+              "type": "page",
+              "ref": "about"
             },
             {
               "id": "hm-about-why",
@@ -258,8 +258,8 @@
         {
           "id": "fc-about",
           "label": "About Us",
-          "type": "url",
-          "url": "/#about"
+          "type": "page",
+          "ref": "about"
         },
         {
           "id": "fc-career",

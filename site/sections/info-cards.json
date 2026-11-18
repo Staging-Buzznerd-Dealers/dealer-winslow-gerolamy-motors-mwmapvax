@@ -1,0 +1,107 @@
+{
+  "version": 2,
+  "id": "info-cards",
+  "name": "Info cards",
+  "props": [
+    {
+      "key": "cards",
+      "type": "list",
+      "label": "Cards",
+      "fields": [
+        {
+          "key": "title",
+          "type": "text",
+          "label": "Title"
+        },
+        {
+          "key": "paras",
+          "type": "list",
+          "label": "Paragraphs",
+          "fields": [
+            {
+              "key": "text",
+              "type": "textarea",
+              "label": "Paragraph"
+            }
+          ]
+        },
+        {
+          "key": "ctaLabel",
+          "type": "text",
+          "label": "Button label (leave blank for none)"
+        },
+        {
+          "key": "ctaUrl",
+          "type": "url",
+          "label": "Button link"
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "ic",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "card"
+      },
+      "children": [
+        {
+          "id": "ic-grid",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "align": "stretch",
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "ic-card",
+              "type": "column",
+              "props": {
+                "span": 3,
+                "repeat": "cards"
+              },
+              "children": [
+                {
+                  "id": "ic-title",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{title}}",
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "ic-para",
+                  "type": "text",
+                  "props": {
+                    "text": "{{text}}",
+                    "width": "full",
+                    "repeat": "paras"
+                  }
+                },
+                {
+                  "id": "ic-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "{{ctaLabel}}",
+                        "url": "{{ctaUrl}}",
+                        "style": "primary"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "css": "body :where([data-bz-node=\"ic\"]) .bz-block{padding:0}\nbody :where([data-bz-node=\"ic\"]) .bz-container{padding:0;max-width:none}\nbody [data-bz-node=\"ic\"]>.bz-container{padding-inline:0}\n\nbody [data-bz-node=\"ic\"]{background:#fff;padding:20px 0 90px}\nbody [data-bz-node=\"ic\"]>.bz-container{max-width:var(--container)}\nbody [data-bz-node=\"ic-grid\"]{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:24px;align-items:stretch}\n\nbody [data-bz-node^=\"ic-card-\"]{grid-column:auto;display:flex;flex-direction:column;background:#fff;border:1px solid #d4d4d2;padding:32px 30px 34px;box-sizing:border-box}\nbody [data-bz-node^=\"ic-title-\"] h3{font:700 22px/1.15 var(--font-heading);letter-spacing:0;text-transform:uppercase;color:var(--ink);margin:0 0 18px}\nbody [data-bz-node^=\"ic-para-\"]{display:block;margin-bottom:14px}\nbody [data-bz-node^=\"ic-para-\"] p{font:400 13.5px/25px var(--font-body);color:var(--ink);margin:0;margin:0}\nbody [data-bz-node^=\"ic-cta-\"]{margin-top:auto;padding-top:10px}\nbody [data-bz-node^=\"ic-cta-\"] .bz-btns{margin:0}\nbody [data-bz-node^=\"ic-cta-\"] .bz-btn{display:inline-flex;align-items:center;justify-content:center;height:44px;padding:0 24px;border:0;border-radius:2px;background:var(--accent);color:#fff;font:700 11px/1 var(--font-body);letter-spacing:.18em;text-transform:uppercase;text-decoration:none}\nbody [data-bz-node^=\"ic-cta-\"] .bz-btn:hover{background:var(--accent-dark)}\n\nbody [data-bz-node=\"ic-grid\"]>.bz-col{grid-column:auto}\n@media (max-width:1100px){body [data-bz-node=\"ic\"]{padding:20px 24px 64px}}\n@media (max-width:640px){body [data-bz-node=\"ic\"]{padding:16px 20px 48px}body [data-bz-node^=\"ic-card-\"]{padding:24px 20px 26px}body [data-bz-node^=\"ic-title-\"] h3{font-size:19px}}\n"
+}
