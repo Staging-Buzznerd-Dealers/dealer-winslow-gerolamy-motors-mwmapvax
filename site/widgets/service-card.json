@@ -1,0 +1,42 @@
+{
+  "id": "service-card",
+  "label": "Service card",
+  "props": [
+    {
+      "key": "title",
+      "type": "text",
+      "label": "Title"
+    },
+    {
+      "key": "before",
+      "type": "list",
+      "label": "Paragraphs before the list",
+      "fields": [
+        {
+          "key": "text",
+          "type": "textarea",
+          "label": "Paragraph"
+        }
+      ]
+    },
+    {
+      "key": "points",
+      "type": "list",
+      "label": "Bullet points",
+      "fields": [
+        {
+          "key": "text",
+          "type": "text",
+          "label": "Text"
+        }
+      ]
+    },
+    {
+      "key": "after",
+      "type": "textarea",
+      "label": "Closing paragraph"
+    }
+  ],
+  "html": "<article class=\"card\"><h3>{{title}}</h3>{{#each before}}<p>{{text}}</p>{{/each}}<ul class=\"bl\">{{#each points}}<li>{{text}}</li>{{/each}}</ul>{{#if after}}<p class=\"after\">{{after}}</p>{{/if}}</article>",
+  "css": ".card{height:100%;box-sizing:border-box;background:#fff;border:1px solid #d4d4d2;padding:32px 32px 34px}.card h3{font:700 22px/1.15 var(--font-heading);letter-spacing:0;text-transform:uppercase;color:var(--ink);margin:0 0 18px}.card p{font:400 13.5px/24px var(--font-body);color:var(--ink);margin:0 0 14px}.card .bl{list-style:none;margin:0 0 16px;padding:0}.bl li{position:relative;padding-left:20px;margin:0 0 7px;font:400 13.5px/24px var(--font-body);color:var(--ink)}.bl li:last-child{margin-bottom:0}.bl li::before{content:\"\";position:absolute;left:2px;top:9px;width:6px;height:6px;background:var(--accent)}.card .bl:empty{display:none}.card .after{margin:0}&.bz-block{padding:0;height:100%}@media (max-width:640px){.card{padding:24px 20px 26px}.card h3{font-size:19px}}"
+}

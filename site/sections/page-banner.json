@@ -1,0 +1,78 @@
+{
+  "version": 2,
+  "id": "page-banner",
+  "name": "Page banner",
+  "props": [
+    {
+      "key": "title",
+      "type": "text",
+      "label": "Page title"
+    },
+    {
+      "key": "crumb",
+      "type": "text",
+      "label": "Breadcrumb (current page)"
+    },
+    {
+      "key": "image",
+      "type": "image",
+      "label": "Background photo"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "pb",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "ink"
+      },
+      "children": [
+        {
+          "id": "pb-img",
+          "type": "image",
+          "props": {
+            "image": "{{image}}",
+            "width": "full"
+          }
+        },
+        {
+          "id": "pb-row",
+          "type": "row",
+          "props": {
+            "gap": 0
+          },
+          "children": [
+            {
+              "id": "pb-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "pb-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{title}}",
+                    "headingLevel": 1
+                  }
+                },
+                {
+                  "id": "pb-crumb",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"/\">Home</a> » {{crumb}}",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "css": "body :where([data-bz-node=\"pb\"]) .bz-block{padding:0}\nbody :where([data-bz-node=\"pb\"]) .bz-container{padding:0;max-width:none}\nbody [data-bz-node=\"pb\"]>.bz-container{padding-inline:0}\n\nbody [data-bz-node=\"pb\"]{position:relative;overflow:hidden;min-height:340px;display:flex;flex-direction:column;justify-content:flex-end;background:#16130f;padding:0 0 46px}\nbody [data-bz-node=\"pb\"]::after{content:\"\";position:absolute;inset:0;background:rgba(0,0,0,.68);z-index:1;pointer-events:none}\nbody [data-bz-node=\"pb\"]>.bz-container{max-width:var(--container)}\nbody [data-bz-node=\"pb-img\"]{position:absolute;inset:0;z-index:0}\nbody [data-bz-node=\"pb-img\"] figure{margin:0;height:100%}\nbody [data-bz-node=\"pb-img\"] img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 62%;border-radius:0}\nbody [data-bz-node=\"pb-row\"]{display:block;padding-top:96px;position:relative;z-index:2}\nbody [data-bz-node=\"pb-h\"] h1{font:700 44px/1.05 var(--font-heading);letter-spacing:0;text-transform:uppercase;color:#fff;margin:0;max-width:900px}\nbody [data-bz-node=\"pb-crumb\"]{margin-top:16px}\nbody [data-bz-node=\"pb-crumb\"] p{font:400 12.5px/1.4 var(--font-body);letter-spacing:.02em;color:rgba(255,255,255,.9);margin:0}\nbody [data-bz-node=\"pb-crumb\"] a{color:var(--accent);text-decoration:none}\nbody [data-bz-node=\"pb-crumb\"] a:hover{text-decoration:underline}\n@media (max-width:1100px){body [data-bz-node=\"pb\"]{padding:0 24px 40px}body [data-bz-node=\"pb-h\"] h1{font-size:38px}}\n@media (max-width:640px){body [data-bz-node=\"pb\"]{min-height:300px;padding:0 20px 32px}body [data-bz-node=\"pb-row\"]{padding-top:84px}body [data-bz-node=\"pb-h\"] h1{font-size:28px;line-height:1.1}}\n"
+}
