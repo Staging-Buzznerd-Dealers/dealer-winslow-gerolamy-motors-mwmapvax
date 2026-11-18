@@ -72,5 +72,14 @@
     "intent": "rental-request",
     "newTab": false,
     "active": true
+  },
+  {
+    "id": "toll-free",
+    "label": "1.800.461.8417",
+    "url": "tel:+18004618417",
+    "style": "primary",
+    "intent": "call-dealer",
+    "newTab": false,
+    "active": true
   }
 ]

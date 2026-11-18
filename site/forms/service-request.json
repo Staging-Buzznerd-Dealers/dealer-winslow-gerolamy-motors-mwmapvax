@@ -1,0 +1,234 @@
+{
+  "id": "service-request",
+  "name": "Service request",
+  "status": "live",
+  "surfaces": [
+    "page"
+  ],
+  "intent": "book-service",
+  "submitLabel": "Submit",
+  "successMessage": "Thanks — we have received your service request.",
+  "consent": {
+    "enabled": false,
+    "required": false,
+    "text": ""
+  },
+  "fields": [
+    {
+      "id": "sr-first",
+      "type": "first_name",
+      "label": "First Name",
+      "required": true,
+      "width": "half",
+      "placeholder": "First Name"
+    },
+    {
+      "id": "sr-last",
+      "type": "last_name",
+      "label": "Last Name",
+      "required": true,
+      "width": "half",
+      "placeholder": "Last Name"
+    },
+    {
+      "id": "sr-email",
+      "type": "email",
+      "label": "Email",
+      "required": true,
+      "width": "half",
+      "placeholder": "Email Address"
+    },
+    {
+      "id": "sr-phone",
+      "type": "phone",
+      "label": "Phone",
+      "required": false,
+      "width": "half",
+      "placeholder": "Phone Number"
+    },
+    {
+      "id": "sr-street",
+      "type": "single_line",
+      "label": "Street Address",
+      "required": true
+    },
+    {
+      "id": "sr-city",
+      "type": "single_line",
+      "label": "City",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "sr-province",
+      "type": "dropdown",
+      "label": "Province",
+      "required": true,
+      "width": "half",
+      "options": [
+        {
+          "value": "Alberta",
+          "label": "Alberta"
+        },
+        {
+          "value": "British Columbia",
+          "label": "British Columbia"
+        },
+        {
+          "value": "Manitoba",
+          "label": "Manitoba"
+        },
+        {
+          "value": "New Brunswick",
+          "label": "New Brunswick"
+        },
+        {
+          "value": "Newfoundland and Labrador",
+          "label": "Newfoundland and Labrador"
+        },
+        {
+          "value": "Northwest Territories",
+          "label": "Northwest Territories"
+        },
+        {
+          "value": "Nova Scotia",
+          "label": "Nova Scotia"
+        },
+        {
+          "value": "Nunavut",
+          "label": "Nunavut"
+        },
+        {
+          "value": "Ontario",
+          "label": "Ontario"
+        },
+        {
+          "value": "Prince Edward Island",
+          "label": "Prince Edward Island"
+        },
+        {
+          "value": "Quebec",
+          "label": "Quebec"
+        },
+        {
+          "value": "Saskatchewan",
+          "label": "Saskatchewan"
+        },
+        {
+          "value": "Yukon",
+          "label": "Yukon"
+        }
+      ]
+    },
+    {
+      "id": "sr-postal",
+      "type": "single_line",
+      "label": "Postal Code",
+      "required": true
+    },
+    {
+      "id": "sr-make",
+      "type": "single_line",
+      "label": "Make",
+      "required": true,
+      "width": "half",
+      "placeholder": "Make"
+    },
+    {
+      "id": "sr-model",
+      "type": "single_line",
+      "label": "Model",
+      "required": true,
+      "width": "half",
+      "placeholder": "Model"
+    },
+    {
+      "id": "sr-year",
+      "type": "single_line",
+      "label": "Year",
+      "required": true,
+      "width": "half",
+      "placeholder": "Year"
+    },
+    {
+      "id": "sr-ser",
+      "type": "single_line",
+      "label": "SER#",
+      "required": false,
+      "width": "half",
+      "placeholder": "SER#"
+    },
+    {
+      "id": "sr-mileage",
+      "type": "single_line",
+      "label": "Mileage",
+      "required": false,
+      "placeholder": "Mileage"
+    },
+    {
+      "id": "sr-service",
+      "type": "paragraph",
+      "label": "What kind of service do you need done?",
+      "required": true,
+      "placeholder": "What kind of service do you need done?"
+    },
+    {
+      "id": "sr-appt",
+      "type": "date",
+      "label": "Appointment",
+      "required": true
+    },
+    {
+      "id": "sr-prior",
+      "type": "radio",
+      "label": "Have we serviced your vehicle before?",
+      "required": true,
+      "options": [
+        {
+          "value": "yes",
+          "label": "Yes"
+        },
+        {
+          "value": "no",
+          "label": "No"
+        }
+      ]
+    },
+    {
+      "id": "sr-lastin",
+      "type": "single_line",
+      "label": "Last In",
+      "required": false,
+      "width": "half",
+      "placeholder": "Last In"
+    },
+    {
+      "id": "sr-work",
+      "type": "single_line",
+      "label": "Work Done",
+      "required": false,
+      "width": "half",
+      "placeholder": "Work Done"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "sr-default",
+      "name": "Service requests",
+      "logic": "AND",
+      "rules": [],
+      "targetType": "role",
+      "roleId": "service-advisor",
+      "scopeMode": "dynamic"
+    }
+  ],
+  "confirmations": [
+    {
+      "id": "sr-thanks",
+      "name": "Thanks",
+      "type": "message",
+      "rules": [],
+      "message": "Thanks — we have received your service request."
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   {
     "slug": "home",
     "title": "International Truck Sales, Service & Parts",
-    "description": "Central Ontario's full-line International truck dealer since 1952 \u2014 new and used trucks, certified service, same-day parts and rental & leasing in Peterborough, Ontario.",
+    "description": "Central Ontario's full-line International truck dealer since 1952 — new and used trucks, certified service, same-day parts and rental & leasing in Peterborough, Ontario.",
     "path": "/",
     "out": "index.html",
     "dir": "home",
@@ -17,5 +17,23 @@
       "utilityNav": null
     },
     "pageType": "Home"
+  },
+  {
+    "slug": "service",
+    "title": "Heavy-Duty Truck Service & Repair in Central Ontario",
+    "description": "Full-service maintenance and repair for heavy-duty trucks across Central Ontario, supporting both owner-operators and commercial fleets.",
+    "path": "/service",
+    "out": "service/index.html",
+    "dir": "service",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
   }
 ]

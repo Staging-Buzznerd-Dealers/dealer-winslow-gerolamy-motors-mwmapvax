@@ -1,0 +1,447 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "pb-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "page-banner",
+        "values": {
+          "title": "Heavy-Duty Truck Service & Repair In Central Ontario",
+          "crumb": "Heavy-Duty Truck Service & Repair in Central Ontario",
+          "image": {
+            "src": "/images/hero-banner-poster.jpg",
+            "alt": "International trucks lined up in front of the Winslow-Gerolamy dealership",
+            "width": 1440,
+            "height": 780
+          }
+        }
+      }
+    },
+    {
+      "id": "cs-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "content-split",
+        "values": {
+          "heading": "Certified Technicians, Fast Repairs, And Maximum Uptime",
+          "text": "Winslow-Gerolamy Motors Limited provides full-service maintenance and repair for heavy-duty trucks across Central Ontario, supporting both owner-operators and commercial fleets.\n\nOur service department is focused on one priority: keeping your trucks on the road and your business moving.",
+          "image": {
+            "src": "/images/service-center.jpg",
+            "alt": "Two Winslow-Gerolamy technicians inspecting a truck engine in the service bay",
+            "width": 1024,
+            "height": 1024
+          }
+        }
+      }
+    },
+    {
+      "id": "ap",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "paper",
+        "anchor": "approach"
+      },
+      "children": [
+        {
+          "id": "ap-h1",
+          "type": "heading",
+          "props": {
+            "text": "Our Approach To Service",
+            "headingLevel": 2
+          }
+        },
+        {
+          "id": "ap-text-1",
+          "type": "text",
+          "props": {
+            "text": "The service department at Winslow-Gerolamy Motors prides itself on delivering an outstanding customer experience supported by operational excellence.",
+            "width": "full"
+          }
+        },
+        {
+          "id": "ap-text-2",
+          "type": "text",
+          "props": {
+            "text": "Our goal is to maximize uptime through timely repairs and reduce operating costs through preventative maintenance. Our team works efficiently to ensure trucks are diagnosed accurately and returned to service as quickly as possible.",
+            "width": "full"
+          }
+        },
+        {
+          "id": "ap-h2",
+          "type": "heading",
+          "props": {
+            "text": "Certified Technicians & OEM Support",
+            "headingLevel": 2
+          }
+        },
+        {
+          "id": "ap-lists",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "align": "start",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "ap-techs",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "ap-techs-lead",
+                  "type": "text",
+                  "props": {
+                    "text": "Our technicians are:",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "ap-techs-list",
+                  "type": "bullet-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "310T certified"
+                      },
+                      {
+                        "text": "OEM trained"
+                      },
+                      {
+                        "text": "Experienced in advanced diagnostics and repair"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "ap-oem",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "ap-oem-lead",
+                  "type": "text",
+                  "props": {
+                    "text": "Winslow-Gerolamy Motors Limited is a Certified Warranty Dealer for:",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "ap-oem-list",
+                  "type": "bullet-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "International"
+                      },
+                      {
+                        "text": "Cummins"
+                      },
+                      {
+                        "text": "Allison"
+                      },
+                      {
+                        "text": "Eaton"
+                      },
+                      {
+                        "text": "Meritor"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ap-closing",
+          "type": "text",
+          "props": {
+            "text": "All service and warranty work is completed to manufacturer standards using approved procedures and tools.",
+            "width": "full"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sc-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "service-cards",
+        "values": {
+          "cards": [
+            {
+              "title": "Full-Service Repair Capabilities",
+              "before": [
+                {
+                  "text": "We provide a complete range of repair and maintenance services, including:"
+                }
+              ],
+              "points": [
+                {
+                  "text": "Preventative maintenance"
+                },
+                {
+                  "text": "Engine diagnostics and repair"
+                },
+                {
+                  "text": "Electrical diagnostics"
+                },
+                {
+                  "text": "Drivetrain and component repair"
+                },
+                {
+                  "text": "Emissions system service and repair"
+                }
+              ],
+              "after": "Our team focuses on identifying issues accurately and completing repairs efficiently to reduce downtime."
+            },
+            {
+              "title": "Preventative Maintenance Programs",
+              "before": [
+                {
+                  "text": "Preventative maintenance plays a key role in reducing unexpected breakdowns and extending vehicle life."
+                },
+                {
+                  "text": "We offer:"
+                }
+              ],
+              "points": [
+                {
+                  "text": "Scheduled maintenance services"
+                },
+                {
+                  "text": "Inspections based on usage and operating conditions"
+                },
+                {
+                  "text": "Electrical diagnostics"
+                },
+                {
+                  "text": "Drivetrain and component repair"
+                },
+                {
+                  "text": "Emissions system service and repair"
+                }
+              ],
+              "after": "These programs help lower long-term operating costs and improve overall reliability."
+            },
+            {
+              "title": "DPF Cleaning & Emissions Service",
+              "before": [
+                {
+                  "text": "We provide Diesel Particulate Filter (DPF) and Diesel Oxidation Catalyst (DOC) cleaning services."
+                },
+                {
+                  "text": "Uncontrolled soot and ash buildup can damage filters and reduce system performance. Regular cleaning helps extend filter life and maintain proper operation."
+                },
+                {
+                  "text": "Our process includes:"
+                }
+              ],
+              "points": [
+                {
+                  "text": "Inspection"
+                },
+                {
+                  "text": "Cleaning"
+                },
+                {
+                  "text": "Testing before return"
+                }
+              ],
+              "after": "DPF units can be dropped off at the service department and are typically ready for pickup the following day."
+            },
+            {
+              "title": "Supporting Fleet Operations",
+              "before": [
+                {
+                  "text": "We work with fleets to support uptime and performance through:"
+                }
+              ],
+              "points": [
+                {
+                  "text": "Efficient repair scheduling"
+                },
+                {
+                  "text": "Timely diagnostics"
+                },
+                {
+                  "text": "Maintenance planning"
+                },
+                {
+                  "text": "Coordinated service support"
+                }
+              ],
+              "after": "Our service department is structured to help keep fleet vehicles operating reliably and consistently."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "wc",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "paper",
+        "anchor": "why-choose"
+      },
+      "children": [
+        {
+          "id": "wc-h",
+          "type": "heading",
+          "props": {
+            "text": "Why Choose Winslow-Gerolamy Motors Limited",
+            "headingLevel": 2
+          }
+        },
+        {
+          "id": "wc-list",
+          "type": "bullet-list",
+          "props": {
+            "items": [
+              {
+                "text": "Family-owned International dealer since 1952"
+              },
+              {
+                "text": "310T certified and OEM-trained technicians"
+              },
+              {
+                "text": "Certified warranty provider for major OEMs"
+              },
+              {
+                "text": "Strong focus on uptime and efficient repairs"
+              },
+              {
+                "text": "Proven experience supporting fleets and owner-operators"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "hb-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "hours-banner",
+        "values": {
+          "image": {
+            "src": "/images/location-peterborough.jpg",
+            "alt": "Winslow-Gerolamy Motors dealership on Lansdowne Street West, Peterborough",
+            "width": 1600,
+            "height": 1149
+          },
+          "heading": "Hours Of Operation",
+          "days": [
+            {
+              "text": "Monday: 6:00AM to 11:00PM"
+            },
+            {
+              "text": "Tuesday: 6:00AM to 11:00PM"
+            },
+            {
+              "text": "Wednesday: 6:00AM to 11:00PM"
+            },
+            {
+              "text": "Thursday: 6:00AM to 11:00PM"
+            },
+            {
+              "text": "Friday: 6:00am to 5:00pm"
+            },
+            {
+              "text": "Saturday: Closed until Further Notice"
+            }
+          ],
+          "tollLabel": "Toll Free"
+        }
+      }
+    },
+    {
+      "id": "fm",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "card",
+        "anchor": "service-request"
+      },
+      "children": [
+        {
+          "id": "fm-form",
+          "type": "form",
+          "props": {
+            "formId": "service-request",
+            "heading": "Service Request",
+            "headingLevel": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "fq",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "paper",
+        "anchor": "faq"
+      },
+      "children": [
+        {
+          "id": "fq-h",
+          "type": "heading",
+          "props": {
+            "text": "Frequently Asked Questions",
+            "headingLevel": 2
+          }
+        },
+        {
+          "id": "fq-list",
+          "type": "widget",
+          "props": {
+            "widget": "faq",
+            "config": {
+              "items": [
+                {
+                  "q": "What types of trucks do you service?",
+                  "a": "We service heavy-duty trucks, specializing in International and Cummins-powered systems."
+                },
+                {
+                  "q": "Are your technicians certified?",
+                  "a": ""
+                },
+                {
+                  "q": "Do you provide warranty repairs?",
+                  "a": ""
+                },
+                {
+                  "q": "Do you offer preventative maintenance programs?",
+                  "a": ""
+                },
+                {
+                  "q": "How quickly can repairs be completed?",
+                  "a": ""
+                },
+                {
+                  "q": "Do you offer DPF cleaning services?",
+                  "a": ""
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

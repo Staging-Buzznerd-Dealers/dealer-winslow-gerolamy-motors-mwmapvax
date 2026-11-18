@@ -126,20 +126,20 @@
         {
           "id": "hm-service",
           "label": "Service",
-          "type": "url",
-          "url": "#service",
+          "type": "page",
+          "ref": "service",
           "children": [
             {
               "id": "hm-svc-center",
               "label": "Service center",
-              "type": "url",
-              "url": "#service"
+              "type": "page",
+              "ref": "service"
             },
             {
               "id": "hm-svc-contact",
               "label": "Talk to service",
               "type": "url",
-              "url": "#contact"
+              "url": "/#contact"
             }
           ]
         },
@@ -147,31 +147,31 @@
           "id": "hm-about",
           "label": "About us",
           "type": "url",
-          "url": "#about",
+          "url": "/#about",
           "children": [
             {
               "id": "hm-about-story",
               "label": "Our story",
               "type": "url",
-              "url": "#about"
+              "url": "/#about"
             },
             {
               "id": "hm-about-why",
               "label": "Why Winslow-Gerolamy",
               "type": "url",
-              "url": "#why"
+              "url": "/#why"
             },
             {
               "id": "hm-about-loc",
               "label": "Location & coverage",
               "type": "url",
-              "url": "#location"
+              "url": "/#location"
             },
             {
               "id": "hm-about-news",
               "label": "News & specials",
               "type": "url",
-              "url": "#news"
+              "url": "/#news"
             }
           ]
         },
@@ -185,13 +185,13 @@
           "id": "hm-rental",
           "label": "Rental & Leasing",
           "type": "url",
-          "url": "#rental",
+          "url": "/#rental",
           "children": [
             {
               "id": "hm-rental-info",
               "label": "Rental & leasing solutions",
               "type": "url",
-              "url": "#rental"
+              "url": "/#rental"
             },
             {
               "id": "hm-rental-trucks",
@@ -205,7 +205,7 @@
           "id": "hm-brochures",
           "label": "Brochures & Spec Sheets",
           "type": "url",
-          "url": "#contact"
+          "url": "/#contact"
         }
       ]
     },
@@ -259,19 +259,19 @@
           "id": "fc-about",
           "label": "About Us",
           "type": "url",
-          "url": "#about"
+          "url": "/#about"
         },
         {
           "id": "fc-career",
           "label": "Career",
           "type": "url",
-          "url": "#contact"
+          "url": "/#contact"
         },
         {
           "id": "fc-rental",
           "label": "Rental & Leasing",
           "type": "url",
-          "url": "#rental"
+          "url": "/#rental"
         }
       ]
     },
@@ -301,25 +301,25 @@
           "id": "fk-parts",
           "label": "Parts Request",
           "type": "url",
-          "url": "#contact"
+          "url": "/#contact"
         },
         {
           "id": "fk-service",
           "label": "Service Request",
           "type": "url",
-          "url": "#contact"
+          "url": "/service#service-request"
         },
         {
           "id": "fk-rental",
           "label": "Rental/Lease Request",
           "type": "url",
-          "url": "#rental"
+          "url": "/#rental"
         },
         {
           "id": "fk-general",
           "label": "General Inquiries",
           "type": "url",
-          "url": "#contact"
+          "url": "/#contact"
         }
       ]
     }
