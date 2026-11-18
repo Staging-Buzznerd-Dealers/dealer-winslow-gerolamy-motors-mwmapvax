@@ -4,8 +4,8 @@
   "name": "Winslow-Gerolamy Motors",
   "shortName": "Winslow-Gerolamy",
   "channelToken": "winslow-gerolamy-motors-mwmapvax",
-  "domain": "dealer-winslow-gerolamy-motors-mwmapvax.vercel.app",
-  "url": "https://dealer-winslow-gerolamy-motors-mwmapvax.vercel.app",
+  "domain": "dealer-winslow-gerolamy-motors-mwma.vercel.app",
+  "url": "https://dealer-winslow-gerolamy-motors-mwma.vercel.app",
   "storefrontOrigin": "https://winslow-gerolamy-motors.ai4dealerships.com",
   "storefrontPrefix": "store",
   "logo": "/images/logo-international-wg.png",
@@ -35,7 +35,7 @@
   "seo": {
     "defaultTitle": "Winslow-Gerolamy Motors | International Truck Sales, Service & Parts",
     "titleTemplate": "%s | Winslow-Gerolamy Motors",
-    "defaultDescription": "Central Ontario's full-line International truck dealer since 1952 \u2014 new and used trucks, certified service, same-day parts and rental & leasing in Peterborough, Ontario.",
+    "defaultDescription": "Central Ontario's full-line International truck dealer since 1952 — new and used trucks, certified service, same-day parts and rental & leasing in Peterborough, Ontario.",
     "ogImage": "/og-default.jpg",
     "locale": "en_US",
     "themeColor": "#161616"
