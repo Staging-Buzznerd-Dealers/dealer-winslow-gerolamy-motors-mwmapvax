@@ -161,5 +161,23 @@
       "footer": null,
       "utilityNav": null
     }
+  },
+  {
+    "slug": "international-truck-sales",
+    "title": "International Truck Sales in Central Ontario",
+    "description": "New and pre-owned International trucks, financing and leasing options, and fleet solutions from a family-owned dealership serving Central Ontario since 1952.",
+    "path": "/international-truck-sales",
+    "out": "international-truck-sales/index.html",
+    "dir": "international-truck-sales",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
   }
 ]

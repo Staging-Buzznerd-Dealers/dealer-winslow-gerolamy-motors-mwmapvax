@@ -120,6 +120,12 @@
               "label": "Used trucks",
               "type": "inventory",
               "ref": "inventory?condition=used"
+            },
+            {
+              "id": "hm-inv-sales",
+              "label": "International truck sales",
+              "type": "page",
+              "ref": "international-truck-sales"
             }
           ]
         },

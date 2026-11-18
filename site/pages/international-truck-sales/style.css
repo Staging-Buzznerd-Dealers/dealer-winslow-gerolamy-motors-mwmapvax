@@ -1,0 +1,24 @@
+/* ---------- FAQ (shared look) ---------- */
+body :where([data-bz-node="fq"]) .bz-block{padding:0}
+body :where([data-bz-node="fq"]) .bz-container{padding:0;max-width:none}
+body [data-bz-node="fq"]>.bz-container{padding-inline:0;max-width:880px}
+body [data-bz-node="fq"]{background:#fff;padding:96px 0}
+body [data-bz-node="fq-h"] .bz-eyebrow{font:700 10.5px/1.4 var(--font-body);letter-spacing:.22em;text-transform:uppercase;color:#6b6b6a;margin:0 0 14px}
+body [data-bz-node="fq-h"] h2{font:700 36px/1.08 var(--font-heading);letter-spacing:0;text-transform:uppercase;color:var(--ink);margin:0}
+body [data-bz-node="fq-list"]{margin-top:36px}
+body [data-bz-node="fq-list"] .bz-faqs{display:block;border-top:1px solid #d8d8d6}
+body [data-bz-node="fq-list"] .bz-faq{border:0;border-bottom:1px solid #d8d8d6;border-radius:0;background:transparent;padding:0}
+body [data-bz-node="fq-list"] .bz-faq summary{list-style:none;position:relative;padding:22px 44px 22px 0;font:700 12.5px/1.5 var(--font-heading);letter-spacing:.02em;text-transform:uppercase;color:var(--ink);cursor:pointer}
+body [data-bz-node="fq-list"] .bz-faq summary::-webkit-details-marker{display:none}
+body [data-bz-node="fq-list"] .bz-faq summary::after{content:"+";position:absolute;right:6px;top:50%;transform:translateY(-50%);font:400 20px/1 var(--font-body);color:var(--ink)}
+body [data-bz-node="fq-list"] .bz-faq[open] summary::after{content:"\2212"}
+body [data-bz-node="fq-list"] .bz-faq__a{padding:0 44px 24px 0;margin:0;font:400 13px/1.8 var(--font-body);color:#555}
+@media (max-width:1100px){body [data-bz-node="fq"]{padding:64px 24px}body [data-bz-node="fq-h"] h2{font-size:30px}}
+@media (max-width:640px){body [data-bz-node="fq"]{padding:48px 20px}body [data-bz-node="fq-h"] h2{font-size:26px}}
+body [data-bz-node="fl-placed"] > section{background:var(--paper)}
+body [data-bz-node="fn-placed"] > section{background:var(--paper)}
+body [data-bz-node="fq"]{background:var(--paper)}
+body [data-bz-node="fn-placed"] [data-bz-node^="cx-pt-"] a{color:var(--accent);text-decoration:none}
+body [data-bz-node="fn-placed"] [data-bz-node^="cx-pt-"] a:hover{text-decoration:underline}
+body [data-bz-node="ni-placed"] [data-bz-node^="cx-link-"]{padding-top:28px}
+body [data-bz-node="ni-placed"] [data-bz-node="cx-grid"],body [data-bz-node="fn-placed"] [data-bz-node="cx-grid"]{margin-top:0}

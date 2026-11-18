@@ -1,0 +1,329 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "pb-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "page-banner",
+        "values": {
+          "title": "International Truck Sales In Central Ontario",
+          "crumb": "International Truck Sales in Central Ontario",
+          "subtitle": "",
+          "ctaLabel": "",
+          "ctaUrl": "",
+          "image": {
+            "src": "/images/hero-banner-poster.jpg",
+            "alt": "International trucks lined up in front of the Winslow-Gerolamy dealership",
+            "width": 1440,
+            "height": 780
+          }
+        }
+      }
+    },
+    {
+      "id": "in-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "split-band",
+        "values": {
+          "eyebrow": "Truck sales",
+          "heading": "New & Used Inventory, Financing, And Fleet Solutions",
+          "text": "Winslow-Gerolamy Motors Limited offers a full selection of new and pre-owned International trucks, supporting owner-operators and fleets across Central Ontario.\n\nAs a family-owned International dealership since 1952, we provide reliable truck solutions backed by industry experience, strong manufacturer relationships, and full-service support.",
+          "points": [],
+          "textAfter": "",
+          "linkLabel": "View inventory",
+          "linkUrl": "/store/inventory",
+          "image": {
+            "src": "/images/sales-service-trucks.jpg",
+            "alt": "Two white International service trucks, one with a bucket lift, parked on a work site under power lines",
+            "width": 1008,
+            "height": 627
+          }
+        }
+      }
+    },
+    {
+      "id": "ni-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "card-grid-2",
+        "values": {
+          "eyebrow": "",
+          "heading": "",
+          "intro": "",
+          "outroHeading": "",
+          "outro": "",
+          "cards": [
+            {
+              "title": "New International Truck Inventory",
+              "paras": [
+                {
+                  "text": "We offer a full lineup of new International trucks designed for a wide range of applications, including:"
+                }
+              ],
+              "points": [
+                {
+                  "text": "Long-haul transportation"
+                },
+                {
+                  "text": "Regional and vocational use"
+                },
+                {
+                  "text": "Construction and heavy-duty applications"
+                },
+                {
+                  "text": "Municipal and specialized operations"
+                }
+              ],
+              "after": "Our team works with customers to match the right truck configuration based on performance requirements, load demands, and operating conditions.",
+              "linkLabel": "Explore new inventory",
+              "linkUrl": "/store/inventory?condition=new"
+            },
+            {
+              "title": "Pre-Owned Truck Inventory",
+              "paras": [
+                {
+                  "text": "Our pre-owned inventory includes a range of inspected and maintained trucks ready for immediate use."
+                },
+                {
+                  "text": "Benefits of purchasing a used truck include:"
+                }
+              ],
+              "points": [
+                {
+                  "text": "Lower upfront cost"
+                },
+                {
+                  "text": "Faster availability"
+                },
+                {
+                  "text": "Proven performance history"
+                }
+              ],
+              "after": "Each unit is reviewed to ensure reliability and suitability for commercial use.",
+              "linkLabel": "Explore used inventory",
+              "linkUrl": "/store/inventory?condition=used"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "fl-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "split-band",
+        "values": {
+          "eyebrow": "Fleet sales",
+          "heading": "Fleet Sales & Custom Solutions",
+          "text": "We work closely with fleets to provide scalable truck solutions that support operational needs.\n\nFleet services include:",
+          "points": [
+            {
+              "text": "Bulk purchasing support"
+            },
+            {
+              "text": "Specification guidance"
+            },
+            {
+              "text": "ConstructionTruck configuration planning and heavy-duty applications"
+            },
+            {
+              "text": "Long-term fleet growth strategies"
+            }
+          ],
+          "textAfter": "Our goal is to help fleets operate efficiently with equipment tailored to their specific applications.",
+          "linkLabel": "Learn more",
+          "linkUrl": "/fleet-maintenance",
+          "image": {
+            "src": "/images/sales-fleet-truck.jpg",
+            "alt": "A white International tractor-trailer driving along a desert highway past red rock cliffs",
+            "width": 981,
+            "height": 606
+          }
+        }
+      }
+    },
+    {
+      "id": "fn-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "card-grid-2",
+        "values": {
+          "eyebrow": "",
+          "heading": "",
+          "intro": "",
+          "outroHeading": "",
+          "outro": "",
+          "cards": [
+            {
+              "title": "Financing & Leasing Options",
+              "paras": [
+                {
+                  "text": "We offer financing and leasing solutions to help customers acquire equipment while managing cash flow."
+                },
+                {
+                  "text": "Options include:"
+                }
+              ],
+              "points": [
+                {
+                  "text": "Commercial truck financing"
+                },
+                {
+                  "text": "Flexible payment structures"
+                },
+                {
+                  "text": "<a href=\"/rental\">Leasing programs through Idealease</a>"
+                }
+              ],
+              "after": "These solutions are designed to support both individual operators and large fleets.",
+              "linkLabel": "",
+              "linkUrl": ""
+            },
+            {
+              "title": "Dealership Support Beyond The Sale",
+              "paras": [
+                {
+                  "text": "Every truck purchase is supported by full dealership services, including:"
+                }
+              ],
+              "points": [
+                {
+                  "text": "<a href=\"/service\">Certified service and repair</a>"
+                },
+                {
+                  "text": "<a href=\"/fleet-maintenance\">Preventative maintenance programs</a>"
+                },
+                {
+                  "text": "<a href=\"/dpf-emissions\">Diagnostics and emissions support</a>"
+                },
+                {
+                  "text": "<a href=\"/parts\">Parts availability and delivery</a>"
+                }
+              ],
+              "after": "This ensures long-term performance and reliability after the sale.",
+              "linkLabel": "",
+              "linkUrl": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "wc-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "split-band",
+        "values": {
+          "eyebrow": "",
+          "heading": "Why Choose Winslow-Gerolamy Motors Limited",
+          "text": "",
+          "points": [
+            {
+              "text": "Family-owned International dealer since 1952"
+            },
+            {
+              "text": "Extensive experience in truck sales and fleet support"
+            },
+            {
+              "text": "Full-service dealership with service, parts, and diagnostics"
+            },
+            {
+              "text": "Strong focus on uptime and long-term performance"
+            },
+            {
+              "text": "Trusted by owner-operators and fleets across Central Ontario"
+            }
+          ],
+          "textAfter": "",
+          "linkLabel": "Learn more about our history",
+          "linkUrl": "/about",
+          "image": {
+            "src": "/images/dealership-storefront.jpg",
+            "alt": "The Winslow-Gerolamy International dealership building and parking lot on a sunny day",
+            "width": 1044,
+            "height": 684
+          }
+        }
+      }
+    },
+    {
+      "id": "op-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "text-columns",
+        "values": {
+          "textColumns": [
+            {
+              "eyebrow": "Our customers",
+              "heading": "Supporting Central Ontario Trucking Operations",
+              "text": "We serve customers across Central Ontario, supporting a wide range of industries and applications.\n\nOur team understands the demands of regional and long-haul operations, including seasonal conditions, traffic, and delivery requirements.",
+              "points": [],
+              "items": [],
+              "textAfter": "",
+              "linkLabel": "",
+              "linkUrl": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "fq",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "card",
+        "anchor": "faq"
+      },
+      "children": [
+        {
+          "id": "fq-h",
+          "type": "heading",
+          "props": {
+            "text": "Frequently Asked Questions",
+            "headingLevel": 2,
+            "eyebrow": "Truck sales FAQs"
+          }
+        },
+        {
+          "id": "fq-list",
+          "type": "widget",
+          "props": {
+            "widget": "faq",
+            "config": {
+              "items": [
+                {
+                  "q": "What types of International trucks do you sell?",
+                  "a": "We offer new and pre-owned International trucks for long-haul, regional, vocational, and specialized applications."
+                },
+                {
+                  "q": "Do you offer financing options?",
+                  "a": ""
+                },
+                {
+                  "q": "Can you help with fleet purchases?",
+                  "a": ""
+                },
+                {
+                  "q": "Are used trucks inspected before sale?",
+                  "a": ""
+                },
+                {
+                  "q": "Do you provide service after purchase?",
+                  "a": ""
+                },
+                {
+                  "q": "Do you offer leasing options?",
+                  "a": ""
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
