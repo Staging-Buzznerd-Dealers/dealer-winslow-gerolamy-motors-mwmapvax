@@ -186,6 +186,12 @@
               "url": "/#location"
             },
             {
+              "id": "hm-about-locs",
+              "label": "Service & parts locations",
+              "type": "page",
+              "ref": "service-parts-locations"
+            },
+            {
               "id": "hm-about-news",
               "label": "News & specials",
               "type": "url",
