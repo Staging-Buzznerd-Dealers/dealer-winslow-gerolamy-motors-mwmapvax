@@ -1,0 +1,345 @@
+{
+  "version": 2,
+  "id": "location-coverage",
+  "name": "Location & coverage",
+  "props": [
+    {
+      "key": "eyebrow",
+      "type": "text",
+      "label": "Eyebrow"
+    },
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading"
+    },
+    {
+      "key": "intro",
+      "type": "textarea",
+      "label": "Intro"
+    },
+    {
+      "key": "departmentsLabel",
+      "type": "text",
+      "label": "Departments label"
+    },
+    {
+      "key": "departments",
+      "type": "list",
+      "label": "Departments",
+      "fields": [
+        {
+          "key": "name",
+          "type": "text",
+          "label": "Name"
+        }
+      ]
+    },
+    {
+      "key": "coverageLabel",
+      "type": "text",
+      "label": "Coverage label"
+    },
+    {
+      "key": "areas",
+      "type": "list",
+      "label": "Coverage areas",
+      "fields": [
+        {
+          "key": "name",
+          "type": "text",
+          "label": "Name"
+        }
+      ]
+    },
+    {
+      "key": "cardName",
+      "type": "text",
+      "label": "Location name"
+    },
+    {
+      "key": "cardTag",
+      "type": "text",
+      "label": "Province tag"
+    },
+    {
+      "key": "address",
+      "type": "textarea",
+      "label": "Address"
+    },
+    {
+      "key": "phones",
+      "type": "textarea",
+      "label": "Phone and fax"
+    },
+    {
+      "key": "email",
+      "type": "textarea",
+      "label": "Email"
+    },
+    {
+      "key": "directionsLabel",
+      "type": "text",
+      "label": "Directions label"
+    },
+    {
+      "key": "directionsUrl",
+      "type": "url",
+      "label": "Directions link"
+    },
+    {
+      "key": "contactLabel",
+      "type": "text",
+      "label": "Contact label"
+    },
+    {
+      "key": "contactUrl",
+      "type": "url",
+      "label": "Contact link"
+    },
+    {
+      "key": "photo",
+      "type": "image",
+      "label": "Location photo"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "lc",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "card",
+        "anchor": "location"
+      },
+      "children": [
+        {
+          "id": "lc-top",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "align": "start",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "lc-left",
+              "type": "column",
+              "props": {
+                "span": 8
+              },
+              "children": [
+                {
+                  "id": "lc-head",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "headingLevel": 2,
+                    "eyebrow": "{{eyebrow}}",
+                    "align": "left"
+                  }
+                },
+                {
+                  "id": "lc-intro",
+                  "type": "text",
+                  "props": {
+                    "text": "{{intro}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "lc-depts",
+                  "type": "row",
+                  "props": {
+                    "gap": 0,
+                    "stackOn": "never"
+                  },
+                  "children": [
+                    {
+                      "id": "lc-depts-label",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "children": [
+                        {
+                          "id": "lc-depts-label-t",
+                          "type": "text",
+                          "props": {
+                            "text": "{{departmentsLabel}}",
+                            "width": "full"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "lc-dept",
+                      "type": "column",
+                      "props": {
+                        "span": 12,
+                        "repeat": "departments"
+                      },
+                      "children": [
+                        {
+                          "id": "lc-depttext",
+                          "type": "text",
+                          "props": {
+                            "text": "{{name}}",
+                            "width": "full"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "lc-right",
+              "type": "column",
+              "props": {
+                "span": 4
+              },
+              "children": [
+                {
+                  "id": "lc-cov-label",
+                  "type": "text",
+                  "props": {
+                    "text": "{{coverageLabel}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "lc-areas",
+                  "type": "row",
+                  "props": {
+                    "gap": 0,
+                    "stackOn": "never"
+                  },
+                  "children": [
+                    {
+                      "id": "lc-area",
+                      "type": "column",
+                      "props": {
+                        "span": 12,
+                        "repeat": "areas"
+                      },
+                      "children": [
+                        {
+                          "id": "lc-areaname",
+                          "type": "heading",
+                          "props": {
+                            "text": "{{name}}",
+                            "headingLevel": 3
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "lc-bottom",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "align": "stretch",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "lc-card",
+              "type": "column",
+              "props": {
+                "span": 4
+              },
+              "children": [
+                {
+                  "id": "lc-name",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{cardName}}",
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "lc-tag",
+                  "type": "text",
+                  "props": {
+                    "text": "{{cardTag}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "lc-addr",
+                  "type": "text",
+                  "props": {
+                    "text": "{{address}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "lc-phones",
+                  "type": "text",
+                  "props": {
+                    "text": "{{phones}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "lc-email",
+                  "type": "text",
+                  "props": {
+                    "text": "{{email}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "lc-actions",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "{{directionsLabel}}",
+                        "url": "{{directionsUrl}}",
+                        "style": "link"
+                      },
+                      {
+                        "label": "{{contactLabel}}",
+                        "url": "{{contactUrl}}",
+                        "style": "link"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "lc-photo",
+              "type": "column",
+              "props": {
+                "span": 8
+              },
+              "children": [
+                {
+                  "id": "lc-img",
+                  "type": "image",
+                  "props": {
+                    "image": "{{photo}}",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "css": "body :where([data-bz-node=\"lc\"]) .bz-block{padding:0}\nbody :where([data-bz-node=\"lc\"]) .bz-container{padding:0;max-width:none}\nbody [data-bz-node=\"lc\"]>.bz-container{padding-inline:0}\n\nbody [data-bz-node=\"lc\"]{background:#fff;padding:100px 0 100px}\nbody [data-bz-node=\"lc\"]>.bz-container{max-width:var(--container)}\nbody [data-bz-node=\"lc-top\"]{display:grid;grid-template-columns:1fr 296px;gap:0 56px;align-items:start}\nbody [data-bz-node=\"lc-left\"],body [data-bz-node=\"lc-right\"]{grid-column:auto}\nbody [data-bz-node=\"lc-head\"] .bz-eyebrow{font:700 11px/1.4 var(--font-body);letter-spacing:.2em;text-transform:uppercase;color:#6b6b6a;margin:0 0 6px;margin-bottom:7px}\nbody [data-bz-node=\"lc-head\"] h2{font:700 42.4px/1.1 var(--font-heading);letter-spacing:0;text-transform:uppercase;color:var(--ink);margin:0}\nbody [data-bz-node=\"lc-intro\"] .bz-text{max-width:420px;margin-top:16px}\nbody [data-bz-node=\"lc-intro\"] p{font:400 13.5px/25px var(--font-body);color:var(--ink);margin:0}\nbody [data-bz-node=\"lc-depts\"]{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:21px}\nbody [data-bz-node=\"lc-depts-label\"],body [data-bz-node^=\"lc-dept-\"]{grid-column:auto}\nbody [data-bz-node=\"lc-depts-label\"]{margin-right:12px}\nbody [data-bz-node=\"lc-depts-label\"] p{font:700 11px/1 var(--font-body);letter-spacing:.2em;text-transform:uppercase;color:var(--ink);margin:0}\nbody [data-bz-node^=\"lc-dept-\"] p{display:flex;align-items:center;justify-content:center;height:42px;padding:0 14px;border:1px solid #d0d0ce;font:700 10.5px/1 var(--font-body);letter-spacing:.15em;text-transform:uppercase;color:var(--ink);margin:0}\nbody [data-bz-node=\"lc-cov-label\"] p{font:700 11px/1.4 var(--font-body);letter-spacing:.2em;text-transform:uppercase;color:#6b6b6a;margin:12px 0 24px}\nbody [data-bz-node=\"lc-areas\"]{display:block}\nbody [data-bz-node^=\"lc-area-\"]{grid-column:auto;display:block;padding:0}\nbody [data-bz-node^=\"lc-area-\"] h3{font:700 23px/41.2px var(--font-heading);letter-spacing:0;text-transform:uppercase;color:var(--ink);margin:0;border-bottom:2px solid transparent}\nbody [data-bz-node^=\"lc-area-\"]:first-child h3{border-bottom-color:var(--ink)}\nbody [data-bz-node=\"lc-bottom\"]{display:grid;grid-template-columns:390px 1fr;gap:16px;margin:47px 1px 0;align-items:stretch}\nbody [data-bz-node=\"lc-card\"],body [data-bz-node=\"lc-photo\"]{grid-column:auto}\nbody [data-bz-node=\"lc-card\"]{position:relative;border:1px solid #d4d4d2;background:#fff;padding:24px 24px 23px;display:flex;flex-direction:column;box-sizing:border-box;min-height:300px}\nbody [data-bz-node=\"lc-name\"] h3{font:700 22px/35px var(--font-heading);letter-spacing:0;text-transform:uppercase;color:var(--ink);margin:0;max-width:260px}\nbody [data-bz-node=\"lc-tag\"]{position:absolute;top:61px;right:24px}\nbody [data-bz-node=\"lc-tag\"] p{font:700 11px/1 var(--font-body);letter-spacing:.15em;color:#555;margin:0}\nbody [data-bz-node=\"lc-addr\"]{margin-top:21px}\nbody [data-bz-node=\"lc-addr\"] p{font:400 12.5px/21px var(--font-body);color:#555;margin:0}\nbody [data-bz-node=\"lc-phones\"]{margin-top:6px}\nbody [data-bz-node=\"lc-phones\"] p{font:400 12.5px/20px var(--font-body);color:var(--ink);margin:0}\nbody [data-bz-node=\"lc-phones\"] a,body [data-bz-node=\"lc-email\"] a{color:inherit}\nbody [data-bz-node=\"lc-email\"]{margin-top:6px}\nbody [data-bz-node=\"lc-email\"] p{font:400 12.5px/20px var(--font-body);color:var(--ink);margin:0}\nbody [data-bz-node=\"lc-actions\"]{margin-top:auto}\nbody [data-bz-node=\"lc-actions\"] .bz-btns{margin:0;gap:21px}\nbody [data-bz-node=\"lc-actions\"] .bz-btn{padding:0 0 0 26px;border:0;background:none;color:var(--ink);font:500 12.5px/18px var(--font-body);text-decoration:none;position:relative;height:18px}\nbody [data-bz-node=\"lc-actions\"] .bz-btn::before{content:\"\";position:absolute;left:2px;top:0;width:16px;height:16px;background:var(--ink);-webkit-mask:url(/icons/directions.svg) center/16px no-repeat;mask:url(/icons/directions.svg) center/16px no-repeat}\nbody [data-bz-node=\"lc-actions\"] .bz-btn:nth-child(2)::before{-webkit-mask-image:url(/icons/mail.svg);mask-image:url(/icons/mail.svg)}\nbody [data-bz-node=\"lc-actions\"] .bz-btn:hover{color:var(--accent)}\nbody [data-bz-node=\"lc-photo\"]{position:relative;min-height:300px;border:1px solid #d4d4d2;box-sizing:border-box}\nbody [data-bz-node=\"lc-photo\"] .bz-block,body [data-bz-node=\"lc-photo\"] .bz-container,body [data-bz-node=\"lc-photo\"] figure{height:100%;margin:0}\nbody [data-bz-node=\"lc-photo\"] img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:0}\n@media (max-width:1100px){\n  body [data-bz-node=\"lc\"]{padding:72px 24px}\n  body [data-bz-node=\"lc-head\"] h2{font-size:34px}\n  body [data-bz-node=\"lc-top\"]{grid-template-columns:1fr;gap:36px}\n  body [data-bz-node=\"lc-bottom\"]{grid-template-columns:1fr;margin-top:48px}\n  body [data-bz-node=\"lc-photo\"]{min-height:0;aspect-ratio:16/9}\n}\n@media (max-width:640px){\n  body [data-bz-node=\"lc\"]{padding:56px 20px}\n  body [data-bz-node=\"lc-head\"] h2{font-size:28px}\n  body [data-bz-node^=\"lc-area-\"] h3{font-size:19px;line-height:38px}\n  body [data-bz-node=\"lc-depts-label\"]{flex:0 0 100%}\n  body [data-bz-node=\"lc-card\"]{padding:20px}\n  body [data-bz-node=\"lc-tag\"]{top:20px;right:20px}\n  body [data-bz-node=\"lc-name\"] h3{font-size:19px;line-height:30px;max-width:220px}\n}\n"
+}

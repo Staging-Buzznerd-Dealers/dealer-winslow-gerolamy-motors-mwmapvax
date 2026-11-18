@@ -1,7 +1,64 @@
-.hero{padding:var(--space-7) 0 var(--space-6)}
-.eyebrow{text-transform:uppercase;letter-spacing:.12em;font-size:var(--text-eyebrow);font-weight:700;color:var(--accent);margin:0 0 var(--space-3)}
-.hero h1{letter-spacing:-.02em}
-.hero .lede{font-size:var(--text-h3);color:var(--muted);max-width:60ch}
-.hero-actions{display:flex;gap:var(--space-3);margin-top:var(--space-6);flex-wrap:wrap}
-.btn-ghost{color:var(--ink);background:transparent;border-color:var(--line)}
-.btn-ghost:hover{background:var(--card)}
+/* ---------- Hero (banner video) ---------- */
+body [data-bz-node="hero"]{min-height:780px;display:flex;flex-direction:column;justify-content:center;padding:62px 0 0;background-color:#16130f;text-align:center;color:#fff}
+body [data-bz-node="hero"]::after{content:"";position:absolute;inset:0;background:rgba(0,0,0,.68);z-index:0;pointer-events:none}
+body [data-bz-node="hero"]>.bz-container{max-width:none;padding:0}
+body [data-bz-node="hero-row"]{display:block;position:relative;z-index:1}
+body [data-bz-node="hero-col"]{display:flex;flex-direction:column;align-items:center}
+body [data-bz-node="hero"] .bz-block{padding:0;width:100%}
+body [data-bz-node="hero"] .bz-container{max-width:none;padding:0}
+body [data-bz-node="hero-h"] .bz-eyebrow{font:700 11px/1.4 var(--font-body);letter-spacing:.17em;color:#fff;margin:0 0 27px}
+body [data-bz-node="hero-h"] h1{max-width:760px;margin:0 auto;font:700 55.6px/53px var(--font-heading);letter-spacing:-.02em;text-transform:uppercase;color:#fff}
+body [data-bz-node="hero-p"] .bz-text{max-width:548px;margin:22px auto 0}
+body [data-bz-node="hero-p"] p{font:400 14px/24px var(--font-body);color:rgba(255,255,255,.95);margin:0}
+body [data-bz-node="hero-search"]{margin-top:37px}
+body [data-bz-node="hero-search"] .bz-searchbar{flex-wrap:nowrap;justify-content:center;gap:9px}
+body [data-bz-node="hero-search"] .bz-input{flex:0 0 340px;width:340px;height:43px;min-height:43px;padding:0 15px;background:#dcdcdb;border:0;border-radius:0;font:400 12px/1 Arial,"Liberation Sans",Helvetica,sans-serif;color:#161616}
+body [data-bz-node="hero-search"] .bz-input::placeholder{color:#6f6f6f;opacity:1}
+body [data-bz-node="hero-search"] .bz-btn{flex:0 0 129px;height:43px;min-height:43px;padding:0;border:0;border-radius:2px;background:var(--accent);color:#fff;font:700 12px/1 var(--font-body);letter-spacing:.14em;text-transform:uppercase;gap:10px}
+body [data-bz-node="hero-search"] .bz-btn::before{content:"";width:15px;height:15px;background:#fff;-webkit-mask:url(/icons/search.svg) center/15px no-repeat;mask:url(/icons/search.svg) center/15px no-repeat}
+body [data-bz-node="hero-search"] .bz-btn:hover{background:var(--accent-dark)}
+body [data-bz-node="hero-links"]{margin-top:26px}
+body [data-bz-node="hero-links"] .bz-menu{justify-content:center}
+body [data-bz-node="hero-links"] .bz-nav{gap:42px;flex-wrap:wrap;justify-content:center}
+body [data-bz-node="hero-links"] .bz-navitem>a{padding:6px 0;font:700 10.5px/1 var(--font-body);letter-spacing:.2em;text-transform:uppercase;color:#fff}
+body [data-bz-node="hero-links"] .bz-navitem>a:hover{color:var(--accent)}
+
+/* ---------- About split ---------- */
+body [data-bz-node="about"]{padding:0;background:var(--paper)}
+body [data-bz-node="about"]>.bz-container{max-width:none;padding:0}
+body [data-bz-node="about-row"]>.bz-col{grid-column:auto}
+body [data-bz-node="about-row"]{display:grid;grid-template-columns:1fr 1fr;gap:0;min-height:520px}
+body [data-bz-node="about-copy"]{display:flex;flex-direction:column;justify-content:center;padding:0 48px 0 max(24px,calc((100vw - 1188px)/2));box-sizing:border-box}
+body [data-bz-node="about-copy"] .bz-block{padding:0}
+body [data-bz-node="about-copy"] .bz-container{padding:0}
+body [data-bz-node="about-h"] h2{margin:0 0 47px;max-width:520px;font:700 38px/38px var(--font-heading);letter-spacing:-.02em;text-transform:uppercase;color:var(--ink)}
+body [data-bz-node="about-text"] .bz-text{max-width:520px}
+body [data-bz-node="about-text"] p{font:400 13.5px/25px var(--font-body);letter-spacing:0;color:var(--ink);margin:0 0 14px}
+body [data-bz-node="about-link"]{margin-top:32px}
+body [data-bz-node="about-link"] .bz-btns{margin:0}
+body [data-bz-node="about-link"] .bz-btn{padding:0 0 6px;border:0;border-bottom:1px solid var(--ink);border-radius:0;background:none;color:var(--ink);font:700 12px/1 var(--font-body);letter-spacing:.14em;text-transform:uppercase;gap:10px;text-decoration:none}
+body [data-bz-node="about-link"] .bz-btn::after{content:"";width:14px;height:14px;background:currentColor;-webkit-mask:url(/icons/arrow-right.svg) center/14px no-repeat;mask:url(/icons/arrow-right.svg) center/14px no-repeat}
+body [data-bz-node="about-photo"]{position:relative;min-height:520px}
+body [data-bz-node="about-photo"] .bz-block,body [data-bz-node="about-photo"] .bz-container,body [data-bz-node="about-photo"] figure{padding:0;height:100%;margin:0}
+body [data-bz-node="about-photo"] img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:0}
+@media (max-width:1100px){
+  body [data-bz-node="hero"]{min-height:640px}
+  body [data-bz-node="hero-h"] h1{font-size:44px;line-height:1.05;max-width:620px;padding:0 24px}
+  body [data-bz-node="hero-p"] .bz-text{padding:0 24px}
+  body [data-bz-node="about-row"]{grid-template-columns:1fr}
+  body [data-bz-node="about-copy"]{padding:64px 24px}
+  body [data-bz-node="about-photo"]{min-height:0;aspect-ratio:1320/938}
+}
+@media (max-width:640px){
+  body [data-bz-node="hero"]{min-height:620px;padding-top:70px}
+  body [data-bz-node="hero-h"] .bz-eyebrow{font-size:11px;padding:0 20px;margin-bottom:18px}
+  body [data-bz-node="hero-h"] h1{font-size:34px;line-height:1.08;padding:0 20px}
+  body [data-bz-node="hero-p"] p{font-size:14px;line-height:22px}
+  body [data-bz-node="hero-p"] .bz-text{padding:0 20px}
+  body [data-bz-node="hero-search"]{padding:0 20px;box-sizing:border-box;margin-top:28px}
+  body [data-bz-node="hero-search"] .bz-searchbar{flex-wrap:wrap}
+  body [data-bz-node="hero-search"] .bz-input{flex:1 1 100%;width:100%}
+  body [data-bz-node="hero-search"] .bz-btn{flex:1 1 100%}
+  body [data-bz-node="hero-links"] .bz-nav{gap:8px 28px}
+  body [data-bz-node="about-h"] h2{font-size:28px;line-height:32px}
+}

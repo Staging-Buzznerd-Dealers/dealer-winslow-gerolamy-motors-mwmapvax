@@ -1,106 +1,592 @@
 {
-  "version": 1,
-  "blocks": [
+  "version": 2,
+  "nodes": [
     {
       "id": "hero",
-      "type": "hero",
+      "type": "section",
       "props": {
-        "headingLevel": 1,
-        "eyebrow": "Trucks · Parts · Service",
-        "headline": "Your trusted partner on the road.",
-        "subhead": "New and used trucks, expert service, and genuine parts — all from one dealer you can rely on.",
-        "showSearch": true,
-        "ctas": [{ "ctaId": "browse-inventory" }, { "ctaId": "request-quote", "style": "secondary" }]
-      }
-    },
-    {
-      "id": "quick",
-      "type": "iconGrid",
-      "props": {
-        "heading": "How can we help?",
-        "items": [
-          {
-            "label": "In-stock inventory",
-            "desc": "New and used trucks and trailers, priced and ready to move.",
-            "url": "/store"
+        "width": "full",
+        "paddingY": 0,
+        "background": "ink",
+        "anchor": "top",
+        "backgroundVideo": {
+          "src": "/videos/hero-placeholder.mp4",
+          "poster": "/images/hero-banner-poster.jpg"
+        }
+      },
+      "children": [
+        {
+          "id": "hero-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "align": "start"
           },
-          {
-            "label": "Parts counter",
-            "desc": "OEM and aftermarket parts, shipped or ready at the counter.",
-            "url": "/store"
-          },
-          {
-            "label": "Service & repair",
-            "desc": "Factory-trained technicians for inspections, warranty and repair.",
-            "url": "/contact"
-          },
-          {
-            "label": "Financing",
-            "desc": "Flexible terms for owner-operators, with fast pre-approval.",
-            "url": "/contact"
-          }
-        ]
-      }
-    },
-    {
-      "id": "featured",
-      "type": "widget",
-      "props": {
-        "widget": "inventory-carousel",
-        "config": { "heading": "Featured inventory", "limit": 4 }
-      }
-    },
-    {
-      "id": "band",
-      "type": "statBand",
-      "props": {
-        "heading": "Keeping your fleet on the road",
-        "body": "Every unit we sell is inspected in our own shop. When you buy from us you get a direct line to the people who worked on it.",
-        "ctas": [{ "ctaId": "about-us" }],
-        "stats": [
-          { "value": "39", "label": "Years in business" },
-          { "value": "12k+", "label": "Units delivered" },
-          { "value": "4", "label": "Sales & service centers" },
-          { "value": "48hr", "label": "Avg. parts turnaround" }
-        ]
-      }
-    },
-    {
-      "id": "locations",
-      "type": "widget",
-      "props": {
-        "widget": "locations-map",
-        "config": { "heading": "Find a location", "showMap": true }
-      }
-    },
-    {
-      "id": "contact-row",
-      "type": "row",
-      "props": {
-        "align": "start",
-        "columns": [
-          [
+          "children": [
             {
-              "id": "contact-copy",
-              "type": "heading",
-              "props": { "text": "Talk to someone who knows the equipment", "headingLevel": 2 }
-            },
-            {
-              "id": "contact-text",
-              "type": "text",
+              "id": "hero-col",
+              "type": "column",
               "props": {
-                "text": "Tell us what the job needs and we will spec it, price it and tell you honestly what is in stock.\n\nPrefer the phone? <a href=\"tel:+15551234567\">Call us</a> during business hours."
-              }
-            }
-          ],
-          [
-            {
-              "id": "contact-form",
-              "type": "form",
-              "props": { "formId": "request-info" }
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "hero-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Central Ontario's Full-Line International Dealer",
+                    "headingLevel": 1,
+                    "eyebrow": "International Truck Dealer Since 1952",
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "hero-p",
+                  "type": "text",
+                  "props": {
+                    "text": "For over 70 years, Winslow-Gerolamy Motors has kept fleets and owner-operators across Peterborough, the GTA and Eastern Ontario on the road — with new and used International trucks, certified service, and same-day parts.",
+                    "width": "full",
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "hero-search",
+                  "type": "widget",
+                  "props": {
+                    "widget": "inventory-search",
+                    "config": {
+                      "placeholder": "Search by stock #, model, or VIN"
+                    }
+                  }
+                },
+                {
+                  "id": "hero-links",
+                  "type": "menu",
+                  "props": {
+                    "menuId": "hero-links",
+                    "layout": "horizontal",
+                    "align": "center"
+                  }
+                }
+              ]
             }
           ]
-        ]
+        }
+      ]
+    },
+    {
+      "id": "about",
+      "type": "section",
+      "props": {
+        "width": "full",
+        "paddingY": 0,
+        "background": "paper",
+        "anchor": "about"
+      },
+      "children": [
+        {
+          "id": "about-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "align": "stretch",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "about-copy",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "about-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Winslow-Gerolamy Motors",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "about-text",
+                  "type": "text",
+                  "props": {
+                    "text": "At Winslow Gerolamy Motors Limited, we understand that for our customers in the trucking industry, time is money. For over 70 years as a full line International Truck Dealership, we have been committed to ensuring maximum uptime for your fleet.\n\nOur value proposition is centered on three key pillars: Unbeatable Selection, Unmatched Service, and Exceptional Value.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "about-link",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "Visit us",
+                        "url": "#location",
+                        "style": "link"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "about-photo",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "about-img",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/images/about-history.jpg",
+                      "alt": "Winslow Motors dealership in the early days, with service trucks parked out front",
+                      "width": 1320,
+                      "height": 938
+                    },
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "why-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "why-stats",
+        "values": {
+          "eyebrow": "Why Winslow-Gerolamy",
+          "heading": "Family-Owned Since 1952",
+          "items": [
+            {
+              "icon": {
+                "src": "/icons/calendar.svg",
+                "alt": "Calendar",
+                "width": 24,
+                "height": 24
+              },
+              "value": "70+",
+              "label": "Years Serving Central Ontario"
+            },
+            {
+              "icon": {
+                "src": "/icons/package.svg",
+                "alt": "Parts",
+                "width": 24,
+                "height": 24
+              },
+              "value": "100+",
+              "label": "Parts Suppliers on Call"
+            },
+            {
+              "icon": {
+                "src": "/icons/truck-front.svg",
+                "alt": "Truck",
+                "width": 24,
+                "height": 24
+              },
+              "value": "Daily",
+              "label": "Regional Parts Delivery"
+            },
+            {
+              "icon": {
+                "src": "/icons/users.svg",
+                "alt": "Family",
+                "width": 24,
+                "height": 24
+              },
+              "value": "4th",
+              "label": "Generation Family-Owned"
+            },
+            {
+              "icon": {
+                "src": "/icons/star.svg",
+                "alt": "Star",
+                "width": 24,
+                "height": 24
+              },
+              "value": "Full-Line",
+              "label": "International Truck Dealer"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "fl-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "featured-listings",
+        "values": {
+          "eyebrow": "Inventory",
+          "heading": "Featured Listings",
+          "viewAllLabel": "View all inventory",
+          "viewAllUrl": "/store/inventory",
+          "listings": [
+            {
+              "photo": {
+                "src": "/images/truck-hx620.jpg",
+                "alt": "2026 International HX620 SBA tri axle dump truck",
+                "width": 1200,
+                "height": 1600
+              },
+              "title": "2026 International HX620 SBA Tri Axle Dump",
+              "location": "Peterborough, ON",
+              "tags": [
+                {
+                  "value": "2026",
+                  "label": "Year"
+                },
+                {
+                  "value": "565 hp",
+                  "label": "Cummins X15"
+                },
+                {
+                  "value": "New",
+                  "label": "Condition"
+                }
+              ],
+              "price": "Call for price"
+            },
+            {
+              "photo": {
+                "src": "/images/truck-mv607-2026.jpg",
+                "alt": "2026 International MV607 SBA 4x2 cab and chassis",
+                "width": 1200,
+                "height": 900
+              },
+              "title": "2026 International MV607 SBA 4x2",
+              "location": "Peterborough, ON",
+              "tags": [
+                {
+                  "value": "2026",
+                  "label": "Year"
+                },
+                {
+                  "value": "250 hp",
+                  "label": "Cummins 6.7L"
+                },
+                {
+                  "value": "New",
+                  "label": "Condition"
+                }
+              ],
+              "price": "Call for price"
+            },
+            {
+              "photo": {
+                "src": "/images/truck-mv607-2017.jpg",
+                "alt": "2017 International MV607 SBA 4x2 flat deck and crane",
+                "width": 1200,
+                "height": 912
+              },
+              "title": "2017 International MV607 SBA 4x2 Flat Deck & Crane",
+              "location": "Peterborough, ON",
+              "tags": [
+                {
+                  "value": "2017",
+                  "label": "Year"
+                },
+                {
+                  "value": "Flat Deck",
+                  "label": "Configuration"
+                },
+                {
+                  "value": "Used",
+                  "label": "Condition"
+                }
+              ],
+              "price": "$85,000"
+            },
+            {
+              "photo": {
+                "src": "/images/truck-kenworth-t880.jpg",
+                "alt": "2018 Kenworth T880 day cab tractor",
+                "width": 1200,
+                "height": 900
+              },
+              "title": "2018 Kenworth T880",
+              "location": "Peterborough, ON",
+              "tags": [
+                {
+                  "value": "2018",
+                  "label": "Year"
+                },
+                {
+                  "value": "Trade-In",
+                  "label": "Source"
+                },
+                {
+                  "value": "Used",
+                  "label": "Condition"
+                }
+              ],
+              "price": "$78,500"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "bp-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "brand-partners",
+        "values": {
+          "heading": "Our Brand Partners",
+          "brands": [
+            {
+              "logo": {
+                "src": "/images/brand-cummins.png",
+                "alt": "Cummins logo",
+                "width": 206,
+                "height": 381
+              },
+              "name": "Cummins"
+            },
+            {
+              "logo": {
+                "src": "/images/brand-eaton.png",
+                "alt": "Eaton logo",
+                "width": 409,
+                "height": 481
+              },
+              "name": "Eaton"
+            },
+            {
+              "logo": {
+                "src": "/images/brand-international.png",
+                "alt": "International logo",
+                "width": 127,
+                "height": 236
+              },
+              "name": "International"
+            },
+            {
+              "logo": {
+                "src": "/images/brand-meritor.png",
+                "alt": "Meritor logo",
+                "width": 409,
+                "height": 481
+              },
+              "name": "Meritor"
+            },
+            {
+              "logo": {
+                "src": "/images/brand-idealease.png",
+                "alt": "Idealease logo",
+                "width": 319,
+                "height": 381
+              },
+              "name": "Idealease"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "lc-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "location-coverage",
+        "values": {
+          "eyebrow": "Location & Coverage",
+          "heading": "Visit Us in Peterborough",
+          "intro": "Central Ontario's full-line International Truck dealer, serving Peterborough, the GTA and Eastern Ontario with new and used truck sales, certified service, and OEM parts since 1952.",
+          "departmentsLabel": "Departments",
+          "departments": [
+            {
+              "name": "Sales"
+            },
+            {
+              "name": "Parts"
+            },
+            {
+              "name": "Service"
+            },
+            {
+              "name": "Rental"
+            }
+          ],
+          "coverageLabel": "Regional Coverage",
+          "areas": [
+            {
+              "name": "Peterborough"
+            },
+            {
+              "name": "Kawartha Lakes"
+            },
+            {
+              "name": "Durham Region"
+            },
+            {
+              "name": "Greater Toronto Area"
+            },
+            {
+              "name": "Eastern Ontario"
+            }
+          ],
+          "cardName": "Winslow-Gerolamy Motors",
+          "cardTag": "ON",
+          "address": "1018 Lansdowne St. West, P.O. Box 6,\n\nPeterborough, Ontario K9J 6Y5, Canada",
+          "phones": "Tel <a href=\"tel:+17057423411\">(705) 742-3411</a>  ·  Fax (705) 742-2551",
+          "email": "<a href=\"mailto:info@wgmotors.ca\">info@wgmotors.ca</a>",
+          "directionsLabel": "Directions",
+          "directionsUrl": "https://www.google.com/maps/search/?api=1&query=1018+Lansdowne+St+W+Peterborough+ON+K9J+6Y5",
+          "contactLabel": "Contact",
+          "contactUrl": "#contact",
+          "photo": {
+            "src": "/images/location-peterborough.jpg",
+            "alt": "Winslow-Gerolamy Motors dealership on Lansdowne Street West, Peterborough",
+            "width": 1600,
+            "height": 1149
+          }
+        }
+      }
+    },
+    {
+      "id": "fs-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "feature-splits",
+        "values": {
+          "items": [
+            {
+              "anchor": "service",
+              "eyebrow": "Service Center",
+              "heading": "Preventative Maintenance & Diagnostics",
+              "text": "Certified technicians handle everything from ELD compliance and fleet maintenance planning to DPF cleaning and emissions system service — built around your uptime.",
+              "ctaLabel": "Schedule service",
+              "ctaUrl": "#contact",
+              "image": {
+                "src": "/images/service-center.jpg",
+                "alt": "Two Winslow-Gerolamy technicians inspecting a truck engine in the service bay",
+                "width": 1024,
+                "height": 1024
+              }
+            },
+            {
+              "anchor": "parts",
+              "eyebrow": "Parts Department",
+              "heading": "OEM & Aftermarket Parts, Delivered Daily",
+              "text": "Access to over 100 suppliers and daily delivery across Central Ontario means the part you need is rarely far away.",
+              "ctaLabel": "Order parts",
+              "ctaUrl": "/store/parts",
+              "image": {
+                "src": "/images/parts-department.jpg",
+                "alt": "Parts counter shelves stocked with oils, fluids and truck parts",
+                "width": 830,
+                "height": 520
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "nw-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "news-list",
+        "values": {
+          "eyebrow": "News",
+          "heading": "News & Specials",
+          "items": [
+            {
+              "num": "01",
+              "title": "International Truck Preventive Maintenance Schedules for Ontario Fleets",
+              "excerpt": "Service intervals, seasonal planning, and uptime strategies. Winslow-Gerolamy Motors helps fleets across Ontario develop preventive maintenance schedules that reduce downtime and control operating costs.",
+              "date": "May 15, 2026",
+              "ctaLabel": "Read more",
+              "url": "/blog"
+            },
+            {
+              "num": "02",
+              "title": "OEM vs. Aftermarket Parts for International Trucks",
+              "excerpt": "Performance, cost, and long-term reliability for fleet operations. We help fleets and owner-operators choose between OEM and aftermarket parts based on performance, cost, and reliability.",
+              "date": "May 15, 2026",
+              "ctaLabel": "Read more",
+              "url": "/blog"
+            },
+            {
+              "num": "03",
+              "title": "Fleet Maintenance Planning for Central Ontario Trucking Companies",
+              "excerpt": "Preventative maintenance, downtime reduction, and efficient repair scheduling. We help trucking companies across Central Ontario develop structured fleet maintenance plans that reduce downtime.",
+              "date": "May 15, 2026",
+              "ctaLabel": "Read more",
+              "url": "/blog"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "tm-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "customer-reviews",
+        "values": {
+          "eyebrow": "Customers",
+          "heading": "What Our Customers Say",
+          "items": [
+            {
+              "quote": "Easy parking, plenty of parts on hand for every make, and some of the best prices in town.",
+              "name": "Cathy Brown",
+              "source": "Google Review"
+            },
+            {
+              "quote": "The best place in Peterborough for semi-truck parts — and the most affordable in the city.",
+              "name": "Wolf Train Services Ltd",
+              "source": "Google Review"
+            },
+            {
+              "quote": "Great people with a lot of experience and good help every time.",
+              "name": "Ned Foley",
+              "source": "Google Review"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "ct-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "contact-split",
+        "values": {
+          "photo": {
+            "src": "/images/contact-sign.jpg",
+            "alt": "Winslow Gerolamy Motors sign pylon beside the International dealership",
+            "width": 1600,
+            "height": 2133
+          },
+          "eyebrow": "Get in Touch",
+          "heading": "Talk to Our Team",
+          "intro": "Questions about inventory, service, parts, or rental? Send a message and we'll respond within one business day."
+        }
+      }
+    },
+    {
+      "id": "rt-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "rental-cta",
+        "values": {
+          "heading": "Rental & Leasing Solutions",
+          "text": "Short and long-term truck rental and leasing options to keep your fleet moving between purchases.",
+          "phoneLead": "Call us today ·",
+          "phone": "(705) 742-3411",
+          "phoneUrl": "tel:+17057423411"
+        }
       }
     }
   ]

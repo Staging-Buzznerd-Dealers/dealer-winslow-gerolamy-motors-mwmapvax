@@ -1,0 +1,132 @@
+{
+  "version": 2,
+  "id": "feature-splits",
+  "name": "Feature splits (photo + copy)",
+  "props": [
+    {
+      "key": "items",
+      "type": "list",
+      "label": "Features",
+      "fields": [
+        {
+          "key": "anchor",
+          "type": "text",
+          "label": "Anchor id"
+        },
+        {
+          "key": "eyebrow",
+          "type": "text",
+          "label": "Eyebrow"
+        },
+        {
+          "key": "heading",
+          "type": "text",
+          "label": "Heading"
+        },
+        {
+          "key": "text",
+          "type": "textarea",
+          "label": "Copy"
+        },
+        {
+          "key": "ctaLabel",
+          "type": "text",
+          "label": "Button label"
+        },
+        {
+          "key": "ctaUrl",
+          "type": "url",
+          "label": "Button link"
+        },
+        {
+          "key": "image",
+          "type": "image",
+          "label": "Photo"
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "fs",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "card"
+      },
+      "children": [
+        {
+          "id": "fs-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "align": "stretch",
+            "stackOn": "tablet",
+            "repeat": "items"
+          },
+          "children": [
+            {
+              "id": "fs-copy",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "fs-head",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "headingLevel": 2,
+                    "eyebrow": "{{eyebrow}}",
+                    "anchor": "{{anchor}}"
+                  }
+                },
+                {
+                  "id": "fs-text",
+                  "type": "text",
+                  "props": {
+                    "text": "{{text}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fs-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "{{ctaLabel}}",
+                        "url": "{{ctaUrl}}"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "fs-media",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "fs-img",
+                  "type": "image",
+                  "props": {
+                    "image": "{{image}}",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "css": "body :where([data-bz-node=\"fs\"]) .bz-block{padding:0}\nbody :where([data-bz-node=\"fs\"]) .bz-container{padding:0;max-width:none}\nbody [data-bz-node=\"fs\"]>.bz-container{padding-inline:0}\n\nbody [data-bz-node=\"fs\"]{background:#fff;padding:100px 0 96px}\nbody [data-bz-node=\"fs\"]>.bz-container{max-width:var(--container)}\nbody [data-bz-node^=\"fs-row-\"]{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid #d4d4d2;background:#fff;min-height:409px;box-sizing:border-box;margin-bottom:73px}\nbody [data-bz-node^=\"fs-row-\"]:last-child{margin-bottom:0}\nbody [data-bz-node^=\"fs-copy-\"],body [data-bz-node^=\"fs-media-\"]{grid-column:auto}\nbody [data-bz-node^=\"fs-row-\"]:nth-child(even) [data-bz-node^=\"fs-media-\"]{order:-1}\nbody [data-bz-node^=\"fs-row-\"]:nth-child(even) [data-bz-node^=\"fs-copy-\"]{padding-left:33px}\nbody [data-bz-node^=\"fs-copy-\"]{display:flex;flex-direction:column;justify-content:center;padding:40px 38px;box-sizing:border-box}\nbody [data-bz-node^=\"fs-head-\"]{scroll-margin-top:220px}\nbody [data-bz-node^=\"fs-head-\"] .bz-eyebrow{font:700 11px/1.4 var(--font-body);letter-spacing:.2em;text-transform:uppercase;color:#6b6b6a;margin:0 0 6px;margin-bottom:6px}\nbody [data-bz-node^=\"fs-head-\"] h2{font:700 30.3px/32px var(--font-heading);letter-spacing:0;text-transform:uppercase;color:var(--ink);margin:0;max-width:500px}\nbody [data-bz-node^=\"fs-text-\"] .bz-text{max-width:520px;margin-top:18px}\nbody [data-bz-node^=\"fs-text-\"] p{font:400 12.5px/23px var(--font-body);color:var(--ink);margin:0}\nbody [data-bz-node^=\"fs-cta-\"]{margin-top:21px}\nbody [data-bz-node^=\"fs-cta-\"] .bz-btns{margin:0}\nbody [data-bz-node^=\"fs-cta-\"] .bz-btn{display:inline-flex;align-items:center;justify-content:center;height:50px;padding:0 20px;border:0;border-radius:2px;background:var(--accent);color:#fff;font:700 11px/1 var(--font-body);letter-spacing:.18em;text-transform:uppercase;text-decoration:none;height:52px}\nbody [data-bz-node^=\"fs-cta-\"] .bz-btn:hover{background:var(--accent-dark)}\nbody [data-bz-node^=\"fs-media-\"]{position:relative;min-height:409px}\nbody [data-bz-node^=\"fs-media-\"] .bz-block,body [data-bz-node^=\"fs-media-\"] .bz-container,body [data-bz-node^=\"fs-media-\"] figure{height:100%;margin:0}\nbody [data-bz-node^=\"fs-media-\"] img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:0}\n@media (max-width:1100px){\n  body [data-bz-node=\"fs\"]{padding:0 24px 72px}\n  body [data-bz-node^=\"fs-row-\"]{grid-template-columns:1fr;margin-bottom:40px}\n  body [data-bz-node^=\"fs-row-\"]:nth-child(even) [data-bz-node^=\"fs-media-\"]{order:0}\n  body [data-bz-node^=\"fs-media-\"]{order:-1;min-height:0;aspect-ratio:16/10}\n  body [data-bz-node^=\"fs-row-\"]:nth-child(even) [data-bz-node^=\"fs-media-\"]{order:-1}\n  body [data-bz-node^=\"fs-copy-\"]{padding:36px 28px}\n}\n@media (max-width:640px){\n  body [data-bz-node=\"fs\"]{padding:0 20px 56px}\n  body [data-bz-node^=\"fs-copy-\"]{padding:28px 20px}\n  body [data-bz-node^=\"fs-head-\"] h2{font-size:24px;line-height:28px}\n}\n"
+}

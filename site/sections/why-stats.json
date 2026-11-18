@@ -1,0 +1,127 @@
+{
+  "version": 2,
+  "id": "why-stats",
+  "name": "Why us: stat cards",
+  "props": [
+    {
+      "key": "eyebrow",
+      "type": "text",
+      "label": "Eyebrow"
+    },
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading"
+    },
+    {
+      "key": "items",
+      "type": "list",
+      "label": "Stat cards",
+      "fields": [
+        {
+          "key": "icon",
+          "type": "image",
+          "label": "Icon"
+        },
+        {
+          "key": "value",
+          "type": "text",
+          "label": "Figure"
+        },
+        {
+          "key": "label",
+          "type": "text",
+          "label": "Label"
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "why",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "card",
+        "anchor": "why"
+      },
+      "children": [
+        {
+          "id": "why-head-row",
+          "type": "row",
+          "props": {
+            "gap": 0
+          },
+          "children": [
+            {
+              "id": "why-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "why-head",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "headingLevel": 2,
+                    "eyebrow": "{{eyebrow}}",
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "why-grid",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "align": "stretch",
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "why-card",
+              "type": "column",
+              "props": {
+                "span": 2,
+                "repeat": "items"
+              },
+              "children": [
+                {
+                  "id": "why-icon",
+                  "type": "image",
+                  "props": {
+                    "image": "{{icon}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "why-value",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{value}}",
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "why-label",
+                  "type": "text",
+                  "props": {
+                    "text": "{{label}}",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "css": "body :where([data-bz-node=\"why\"]) .bz-block{padding:0}\nbody :where([data-bz-node=\"why\"]) .bz-container{padding:0;max-width:none}\nbody [data-bz-node=\"why\"]>.bz-container{padding-inline:0}\n\nbody [data-bz-node=\"why\"]{background:#fff;padding:100px 0 101px}\nbody [data-bz-node=\"why\"]>.bz-container{max-width:var(--container)}\nbody [data-bz-node=\"why-head\"] .bz-headingblock{text-align:center}\nbody [data-bz-node=\"why-head\"] .bz-eyebrow{font:700 11px/1.4 var(--font-body);letter-spacing:.2em;text-transform:uppercase;color:#6b6b6a;margin:0 0 6px;margin-bottom:8px}\nbody [data-bz-node=\"why-head\"] h2{font:700 42.4px/1.1 var(--font-heading);letter-spacing:0;text-transform:uppercase;color:var(--ink);margin:0;font-size:42.4px}\nbody [data-bz-node=\"why-grid\"]{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin:38px 1px 0}\nbody [data-bz-node^=\"why-card-\"]{grid-column:auto;display:flex;flex-direction:column;align-items:center;text-align:center;border:1px solid #d4d4d2;background:#fff;padding:30px 12px 0;height:176px;box-sizing:border-box}\nbody [data-bz-node^=\"why-icon-\"]{width:46px;height:46px;border:1px solid var(--ink);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:13px;flex:0 0 auto}\nbody [data-bz-node^=\"why-icon-\"] .bz-container,body [data-bz-node^=\"why-icon-\"] figure{display:contents}\nbody [data-bz-node^=\"why-icon-\"] img{width:26px;height:26px}\nbody [data-bz-node^=\"why-value-\"] h3{font:700 30px/1.1 var(--font-heading);letter-spacing:0;text-transform:uppercase;margin:0;color:var(--ink)}\nbody [data-bz-node^=\"why-label-\"] p{font:400 12.5px/1.4 var(--font-body);letter-spacing:0;color:#333;margin:7px 0 0}\n@media (max-width:1100px){\n  body [data-bz-node=\"why\"]{padding:72px 24px}\n  body [data-bz-node=\"why-head\"] h2{font-size:34px}\n  body [data-bz-node=\"why-grid\"]{grid-template-columns:repeat(3,1fr);margin-top:40px}\n}\n@media (max-width:640px){\n  body [data-bz-node=\"why\"]{padding:56px 20px}\n  body [data-bz-node=\"why-head\"] h2{font-size:28px}\n  body [data-bz-node=\"why-grid\"]{grid-template-columns:repeat(2,1fr);gap:12px}\n  body [data-bz-node^=\"why-card-\"]{padding:24px 8px 0}\n  body [data-bz-node^=\"why-card-\"]:last-child:nth-child(odd){grid-column:1/-1}\n}\n"
+}

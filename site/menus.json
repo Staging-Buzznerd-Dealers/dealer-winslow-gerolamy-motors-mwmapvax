@@ -5,36 +5,322 @@
       "id": "main",
       "name": "Main menu",
       "items": [
-        { "id": "home", "label": "Home", "type": "page", "ref": "home" },
-        { "id": "inventory", "label": "Inventory", "type": "inventory", "ref": "inventory" },
+        {
+          "id": "home",
+          "label": "Home",
+          "type": "page",
+          "ref": "home"
+        },
+        {
+          "id": "inventory",
+          "label": "Inventory",
+          "type": "inventory",
+          "ref": "inventory"
+        },
         {
           "id": "about",
           "label": "About",
           "type": "url",
           "url": "/about",
           "children": [
-            { "id": "about-team", "label": "Our team", "type": "url", "url": "/about#team" },
-            { "id": "about-history", "label": "History", "type": "url", "url": "/about#history" }
+            {
+              "id": "about-team",
+              "label": "Our team",
+              "type": "url",
+              "url": "/about#team"
+            },
+            {
+              "id": "about-history",
+              "label": "History",
+              "type": "url",
+              "url": "/about#history"
+            }
           ]
         },
-        { "id": "contact", "label": "Contact", "type": "url", "url": "/contact" }
+        {
+          "id": "contact",
+          "label": "Contact",
+          "type": "url",
+          "url": "/contact"
+        }
       ]
     },
     {
       "id": "footer",
       "name": "Footer menu",
       "items": [
-        { "id": "f-inventory", "label": "Inventory", "type": "inventory", "ref": "inventory" },
-        { "id": "f-about", "label": "About", "type": "url", "url": "/about" },
-        { "id": "f-contact", "label": "Contact", "type": "url", "url": "/contact" }
+        {
+          "id": "f-inventory",
+          "label": "Inventory",
+          "type": "inventory",
+          "ref": "inventory"
+        },
+        {
+          "id": "f-about",
+          "label": "About",
+          "type": "url",
+          "url": "/about"
+        },
+        {
+          "id": "f-contact",
+          "label": "Contact",
+          "type": "url",
+          "url": "/contact"
+        }
       ]
     },
     {
       "id": "legal",
       "name": "Legal",
       "items": [
-        { "id": "privacy", "label": "Privacy", "type": "url", "url": "/privacy" },
-        { "id": "terms", "label": "Terms", "type": "url", "url": "/terms" }
+        {
+          "id": "privacy",
+          "label": "Privacy",
+          "type": "url",
+          "url": "/privacy"
+        },
+        {
+          "id": "terms",
+          "label": "Terms",
+          "type": "url",
+          "url": "/terms"
+        }
+      ]
+    },
+    {
+      "id": "home-main",
+      "name": "Header menu (home)",
+      "items": [
+        {
+          "id": "hm-home",
+          "label": "Home",
+          "type": "page",
+          "ref": "home"
+        },
+        {
+          "id": "hm-inventory",
+          "label": "Inventory",
+          "type": "inventory",
+          "ref": "inventory",
+          "children": [
+            {
+              "id": "hm-inv-all",
+              "label": "All inventory",
+              "type": "inventory",
+              "ref": "inventory"
+            },
+            {
+              "id": "hm-inv-new",
+              "label": "New trucks",
+              "type": "inventory",
+              "ref": "inventory?condition=new"
+            },
+            {
+              "id": "hm-inv-used",
+              "label": "Used trucks",
+              "type": "inventory",
+              "ref": "inventory?condition=used"
+            }
+          ]
+        },
+        {
+          "id": "hm-service",
+          "label": "Service",
+          "type": "url",
+          "url": "#service",
+          "children": [
+            {
+              "id": "hm-svc-center",
+              "label": "Service center",
+              "type": "url",
+              "url": "#service"
+            },
+            {
+              "id": "hm-svc-contact",
+              "label": "Talk to service",
+              "type": "url",
+              "url": "#contact"
+            }
+          ]
+        },
+        {
+          "id": "hm-about",
+          "label": "About us",
+          "type": "url",
+          "url": "#about",
+          "children": [
+            {
+              "id": "hm-about-story",
+              "label": "Our story",
+              "type": "url",
+              "url": "#about"
+            },
+            {
+              "id": "hm-about-why",
+              "label": "Why Winslow-Gerolamy",
+              "type": "url",
+              "url": "#why"
+            },
+            {
+              "id": "hm-about-loc",
+              "label": "Location & coverage",
+              "type": "url",
+              "url": "#location"
+            },
+            {
+              "id": "hm-about-news",
+              "label": "News & specials",
+              "type": "url",
+              "url": "#news"
+            }
+          ]
+        },
+        {
+          "id": "hm-parts",
+          "label": "Parts",
+          "type": "inventory",
+          "ref": "parts"
+        },
+        {
+          "id": "hm-rental",
+          "label": "Rental & Leasing",
+          "type": "url",
+          "url": "#rental",
+          "children": [
+            {
+              "id": "hm-rental-info",
+              "label": "Rental & leasing solutions",
+              "type": "url",
+              "url": "#rental"
+            },
+            {
+              "id": "hm-rental-trucks",
+              "label": "Browse trucks",
+              "type": "inventory",
+              "ref": "inventory"
+            }
+          ]
+        },
+        {
+          "id": "hm-brochures",
+          "label": "Brochures & Spec Sheets",
+          "type": "url",
+          "url": "#contact"
+        }
+      ]
+    },
+    {
+      "id": "hero-links",
+      "name": "Hero quick links",
+      "items": [
+        {
+          "id": "hl-trucks",
+          "label": "Trucks",
+          "type": "inventory",
+          "ref": "inventory"
+        },
+        {
+          "id": "hl-rentals",
+          "label": "Rentals",
+          "type": "url",
+          "url": "#rental"
+        },
+        {
+          "id": "hl-service",
+          "label": "Service",
+          "type": "url",
+          "url": "#service"
+        },
+        {
+          "id": "hl-parts",
+          "label": "Parts",
+          "type": "inventory",
+          "ref": "parts"
+        }
+      ]
+    },
+    {
+      "id": "footer-company",
+      "name": "Footer: Company",
+      "items": [
+        {
+          "id": "fc-inv",
+          "label": "Inventory",
+          "type": "inventory",
+          "ref": "inventory"
+        },
+        {
+          "id": "fc-parts",
+          "label": "Parts",
+          "type": "inventory",
+          "ref": "parts"
+        },
+        {
+          "id": "fc-about",
+          "label": "About Us",
+          "type": "url",
+          "url": "#about"
+        },
+        {
+          "id": "fc-career",
+          "label": "Career",
+          "type": "url",
+          "url": "#contact"
+        },
+        {
+          "id": "fc-rental",
+          "label": "Rental & Leasing",
+          "type": "url",
+          "url": "#rental"
+        }
+      ]
+    },
+    {
+      "id": "footer-legal",
+      "name": "Footer: Legal",
+      "items": [
+        {
+          "id": "fl-privacy",
+          "label": "Privacy Policy",
+          "type": "url",
+          "url": "/privacy"
+        },
+        {
+          "id": "fl-terms",
+          "label": "Terms of Service",
+          "type": "url",
+          "url": "/terms"
+        }
+      ]
+    },
+    {
+      "id": "footer-contact",
+      "name": "Footer: Contact",
+      "items": [
+        {
+          "id": "fk-parts",
+          "label": "Parts Request",
+          "type": "url",
+          "url": "#contact"
+        },
+        {
+          "id": "fk-service",
+          "label": "Service Request",
+          "type": "url",
+          "url": "#contact"
+        },
+        {
+          "id": "fk-rental",
+          "label": "Rental/Lease Request",
+          "type": "url",
+          "url": "#rental"
+        },
+        {
+          "id": "fk-general",
+          "label": "General Inquiries",
+          "type": "url",
+          "url": "#contact"
+        }
       ]
     }
   ]

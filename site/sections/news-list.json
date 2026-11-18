@@ -1,0 +1,182 @@
+{
+  "version": 2,
+  "id": "news-list",
+  "name": "News & specials list",
+  "props": [
+    {
+      "key": "eyebrow",
+      "type": "text",
+      "label": "Eyebrow"
+    },
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading"
+    },
+    {
+      "key": "items",
+      "type": "list",
+      "label": "Articles",
+      "fields": [
+        {
+          "key": "num",
+          "type": "text",
+          "label": "Number"
+        },
+        {
+          "key": "title",
+          "type": "text",
+          "label": "Title"
+        },
+        {
+          "key": "excerpt",
+          "type": "textarea",
+          "label": "Summary"
+        },
+        {
+          "key": "date",
+          "type": "text",
+          "label": "Date"
+        },
+        {
+          "key": "ctaLabel",
+          "type": "text",
+          "label": "Link label"
+        },
+        {
+          "key": "url",
+          "type": "url",
+          "label": "Link to"
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "nw",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "paper",
+        "anchor": "news"
+      },
+      "children": [
+        {
+          "id": "nw-head-row",
+          "type": "row",
+          "props": {
+            "gap": 0
+          },
+          "children": [
+            {
+              "id": "nw-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "nw-head",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "headingLevel": 2,
+                    "eyebrow": "{{eyebrow}}",
+                    "align": "left"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "nw-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "align": "center",
+            "stackOn": "tablet",
+            "repeat": "items"
+          },
+          "children": [
+            {
+              "id": "nw-num",
+              "type": "column",
+              "props": {
+                "span": 1
+              },
+              "children": [
+                {
+                  "id": "nw-numtext",
+                  "type": "text",
+                  "props": {
+                    "text": "{{num}}",
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "nw-body",
+              "type": "column",
+              "props": {
+                "span": 8
+              },
+              "children": [
+                {
+                  "id": "nw-title",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{title}}",
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "nw-excerpt",
+                  "type": "text",
+                  "props": {
+                    "text": "{{excerpt}}",
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "nw-meta",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "nw-date",
+                  "type": "text",
+                  "props": {
+                    "text": "{{date}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "nw-more",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "{{ctaLabel}}",
+                        "url": "{{url}}",
+                        "style": "link"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "css": "body :where([data-bz-node=\"nw\"]) .bz-block{padding:0}\nbody :where([data-bz-node=\"nw\"]) .bz-container{padding:0;max-width:none}\nbody [data-bz-node=\"nw\"]>.bz-container{padding-inline:0}\n\nbody [data-bz-node=\"nw\"]{background:var(--paper);padding:104px 0 99px}\nbody [data-bz-node=\"nw\"]>.bz-container{max-width:var(--container)}\nbody [data-bz-node=\"nw-head\"] .bz-eyebrow{font:700 11px/1.4 var(--font-body);letter-spacing:.2em;text-transform:uppercase;color:#6b6b6a;margin:0 0 6px;margin-bottom:8px}\nbody [data-bz-node=\"nw-head\"] h2{font:700 42.4px/1.1 var(--font-heading);letter-spacing:0;text-transform:uppercase;color:var(--ink);margin:0}\nbody [data-bz-node=\"nw-head-row\"]{margin-bottom:57px}\nbody [data-bz-node^=\"nw-row-\"]{display:grid;grid-template-columns:111px 1fr 220px;gap:0;align-items:center;border-top:1px solid #d2d2d0;padding:28px 0}\nbody [data-bz-node^=\"nw-row-\"]:last-child{border-bottom:1px solid #d2d2d0}\nbody [data-bz-node^=\"nw-num-\"],body [data-bz-node^=\"nw-body-\"],body [data-bz-node^=\"nw-meta-\"]{grid-column:auto}\nbody [data-bz-node^=\"nw-num-\"] p{font:700 16px/1 var(--font-body);letter-spacing:.1em;color:var(--ink);margin:0}\nbody [data-bz-node^=\"nw-title-\"] h3{font:700 19.1px/22px var(--font-heading);letter-spacing:0;text-transform:uppercase;color:var(--ink);margin:0}\nbody [data-bz-node^=\"nw-excerpt-\"] .bz-text{max-width:625px;margin-top:10px}\nbody [data-bz-node^=\"nw-excerpt-\"] p{font:400 12.5px/21.5px var(--font-body);color:#222;margin:0}\nbody [data-bz-node^=\"nw-meta-\"]{text-align:right}\nbody [data-bz-node^=\"nw-date-\"] p{font:400 12px/1 var(--font-body);letter-spacing:.03em;color:#555;margin:0}\nbody [data-bz-node^=\"nw-more-\"]{margin-top:19px}\nbody [data-bz-node^=\"nw-more-\"] .bz-btns{margin:0;justify-content:flex-end}\nbody [data-bz-node^=\"nw-more-\"] .bz-btn{padding:0;border:0;background:none;color:var(--ink);font:700 11px/1 var(--font-body);letter-spacing:.18em;text-transform:uppercase;gap:9px;text-decoration:none}\nbody [data-bz-node^=\"nw-more-\"] .bz-btn::after{content:\"\";width:13px;height:13px;background:currentColor;-webkit-mask:url(/icons/arrow-right.svg) center/13px no-repeat;mask:url(/icons/arrow-right.svg) center/13px no-repeat}\nbody [data-bz-node^=\"nw-more-\"] .bz-btn:hover{color:var(--accent)}\n@media (max-width:1100px){\n  body [data-bz-node=\"nw\"]{padding:72px 24px 56px}\n  body [data-bz-node=\"nw-head\"] h2{font-size:34px}\n  body [data-bz-node^=\"nw-row-\"]{grid-template-columns:64px 1fr;row-gap:16px}\n  body [data-bz-node^=\"nw-meta-\"]{grid-column:2;text-align:left;display:flex;align-items:center;gap:24px}\n  body [data-bz-node^=\"nw-meta-\"] .bz-btns{justify-content:flex-start}\n  body [data-bz-node^=\"nw-date-\"] p{margin:0}\n  body [data-bz-node^=\"nw-more-\"]{margin-top:0}\n}\n@media (max-width:640px){\n  body [data-bz-node=\"nw\"]{padding:56px 20px 40px}\n  body [data-bz-node=\"nw-head\"] h2{font-size:28px}\n  body [data-bz-node=\"nw-head-row\"]{margin-bottom:32px}\n  body [data-bz-node^=\"nw-row-\"]{grid-template-columns:40px 1fr}\n  body [data-bz-node^=\"nw-title-\"] h3{font-size:15px;line-height:20px}\n  body [data-bz-node^=\"nw-meta-\"]{flex-wrap:wrap;gap:10px 20px}\n}\n"
+}

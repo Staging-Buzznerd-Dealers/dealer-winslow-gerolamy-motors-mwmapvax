@@ -1,0 +1,59 @@
+{
+  "id": "contact-team",
+  "name": "Talk to our team",
+  "status": "live",
+  "surfaces": [
+    "page"
+  ],
+  "intent": "contact",
+  "submitLabel": "Send message",
+  "successMessage": "Thanks — we'll respond within one business day.",
+  "consent": {
+    "enabled": false,
+    "required": false,
+    "text": ""
+  },
+  "fields": [
+    {
+      "id": "ct-name",
+      "type": "full_name",
+      "label": "Full name",
+      "placeholder": "Full name",
+      "required": true
+    },
+    {
+      "id": "ct-email",
+      "type": "email",
+      "label": "Email address",
+      "placeholder": "Email address",
+      "required": true
+    },
+    {
+      "id": "ct-message",
+      "type": "paragraph",
+      "label": "How can we help?",
+      "placeholder": "How can we help?",
+      "required": true
+    }
+  ],
+  "notifications": [
+    {
+      "id": "ct-default",
+      "name": "General enquiries",
+      "logic": "AND",
+      "rules": [],
+      "targetType": "role",
+      "roleId": "sales-manager",
+      "scopeMode": "dynamic"
+    }
+  ],
+  "confirmations": [
+    {
+      "id": "ct-thanks",
+      "name": "Thanks",
+      "type": "message",
+      "rules": [],
+      "message": "Thanks — we'll respond within one business day."
+    }
+  ]
+}

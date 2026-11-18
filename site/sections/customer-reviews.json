@@ -1,0 +1,127 @@
+{
+  "version": 2,
+  "id": "customer-reviews",
+  "name": "Customer reviews",
+  "props": [
+    {
+      "key": "eyebrow",
+      "type": "text",
+      "label": "Eyebrow"
+    },
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading"
+    },
+    {
+      "key": "items",
+      "type": "list",
+      "label": "Reviews",
+      "fields": [
+        {
+          "key": "quote",
+          "type": "textarea",
+          "label": "Quote"
+        },
+        {
+          "key": "name",
+          "type": "text",
+          "label": "Name"
+        },
+        {
+          "key": "source",
+          "type": "text",
+          "label": "Source"
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "tm",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "paper",
+        "anchor": "reviews"
+      },
+      "children": [
+        {
+          "id": "tm-head-row",
+          "type": "row",
+          "props": {
+            "gap": 0
+          },
+          "children": [
+            {
+              "id": "tm-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "tm-head",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "headingLevel": 2,
+                    "eyebrow": "{{eyebrow}}",
+                    "align": "left"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "tm-grid",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "align": "stretch",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "tm-card",
+              "type": "column",
+              "props": {
+                "span": 4,
+                "repeat": "items"
+              },
+              "children": [
+                {
+                  "id": "tm-quote",
+                  "type": "text",
+                  "props": {
+                    "text": "“{{quote}}”",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "tm-name",
+                  "type": "text",
+                  "props": {
+                    "text": "{{name}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "tm-source",
+                  "type": "text",
+                  "props": {
+                    "text": "{{source}}",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "css": "body :where([data-bz-node=\"tm\"]) .bz-block{padding:0}\nbody :where([data-bz-node=\"tm\"]) .bz-container{padding:0;max-width:none}\nbody [data-bz-node=\"tm\"]>.bz-container{padding-inline:0}\n\nbody [data-bz-node=\"tm\"]{background:var(--paper);padding:100px 0 97px}\nbody [data-bz-node=\"tm\"]>.bz-container{max-width:var(--container)}\nbody [data-bz-node=\"tm-head\"] .bz-eyebrow{font:700 11px/1.4 var(--font-body);letter-spacing:.2em;text-transform:uppercase;color:#6b6b6a;margin:0 0 6px;margin-bottom:8px}\nbody [data-bz-node=\"tm-head\"] h2{font:700 42.4px/1.1 var(--font-heading);letter-spacing:0;text-transform:uppercase;color:var(--ink);margin:0;font-size:40.3px}\nbody [data-bz-node=\"tm-grid\"]{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:45px 1px 0;align-items:stretch}\nbody [data-bz-node^=\"tm-card-\"]{grid-column:auto;display:flex;flex-direction:column;background:#fff;border:1px solid #d4d4d2;padding:21px 21px 20px;min-height:236px;box-sizing:border-box}\nbody [data-bz-node^=\"tm-quote-\"] p{font:400 13px/23px var(--font-body);color:var(--ink);margin:0}\nbody [data-bz-node^=\"tm-name-\"]{margin-top:auto}\nbody [data-bz-node^=\"tm-name-\"] p{font:700 11.5px/1 var(--font-body);letter-spacing:.02em;color:var(--ink);margin:0}\nbody [data-bz-node^=\"tm-source-\"] p{font:700 10.6px/1 var(--font-body);letter-spacing:.04em;color:#777;margin:9px 0 0}\n@media (max-width:1100px){\n  body [data-bz-node=\"tm\"]{padding:0 24px 72px}\n  body [data-bz-node=\"tm-head\"] h2{font-size:34px}\n  body [data-bz-node=\"tm-grid\"]{grid-template-columns:1fr;gap:16px}\n  body [data-bz-node^=\"tm-card-\"]{min-height:0;gap:20px}\n}\n@media (max-width:640px){\n  body [data-bz-node=\"tm\"]{padding:0 20px 56px}\n  body [data-bz-node=\"tm-head\"] h2{font-size:28px}\n}\n"
+}

@@ -1,14 +1,14 @@
 {
   "$schema": "./dealer.config.schema.json",
   "contractVersion": "5.0.0",
-  "name": "BuzzNerd Dealer",
-  "shortName": "BuzzNerd",
+  "name": "Winslow-Gerolamy Motors",
+  "shortName": "Winslow-Gerolamy",
   "channelToken": "winslow-gerolamy-motors-mwmapvax",
   "domain": "dealer-winslow-gerolamy-motors-mwmapvax.vercel.app",
   "url": "https://dealer-winslow-gerolamy-motors-mwmapvax.vercel.app",
   "storefrontOrigin": "https://winslow-gerolamy-motors.ai4dealerships.com",
   "storefrontPrefix": "store",
-  "logo": "/logo.svg",
+  "logo": "/images/logo-international-wg.png",
   "favicon": "/favicon.svg",
   "analytics": {
     "loaderUrl": null,
@@ -16,16 +16,16 @@
   },
   "business": {
     "type": "AutoDealer",
-    "legalName": "BuzzNerd Trucks LLC",
-    "phone": "+1-800-555-0100",
-    "email": "sales@example.com",
-    "streetAddress": "1234 Highway Dr",
-    "addressLocality": "Salt Lake City",
-    "addressRegion": "UT",
-    "postalCode": "84101",
-    "addressCountry": "US",
-    "latitude": 40.7608,
-    "longitude": -111.891,
+    "legalName": "Winslow-Gerolamy Motors Limited",
+    "phone": "+1-705-742-3411",
+    "email": "info@wgmotors.ca",
+    "streetAddress": "1018 Lansdowne St. West",
+    "addressLocality": "Peterborough",
+    "addressRegion": "ON",
+    "postalCode": "K9J 6Y5",
+    "addressCountry": "CA",
+    "latitude": 44.3091,
+    "longitude": -78.3197,
     "priceRange": "$$",
     "openingHours": [
       "Mo-Fr 08:00-18:00",
@@ -33,11 +33,11 @@
     ]
   },
   "seo": {
-    "defaultTitle": "BuzzNerd Dealer | Trucks, Parts & Service",
-    "titleTemplate": "%s | BuzzNerd Dealer",
-    "defaultDescription": "New and used trucks, expert service, genuine parts, financing and leasing from a dealer you can trust.",
+    "defaultTitle": "Winslow-Gerolamy Motors | International Truck Sales, Service & Parts",
+    "titleTemplate": "%s | Winslow-Gerolamy Motors",
+    "defaultDescription": "Central Ontario's full-line International truck dealer since 1952 \u2014 new and used trucks, certified service, same-day parts and rental & leasing in Peterborough, Ontario.",
     "ogImage": "/og-default.jpg",
     "locale": "en_US",
-    "themeColor": "#111c3a"
+    "themeColor": "#161616"
   }
 }

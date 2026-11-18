@@ -1,8 +1,8 @@
 [
   {
     "slug": "home",
-    "title": "Home",
-    "description": "New and used trucks, service and parts from a dealer you can trust.",
+    "title": "International Truck Sales, Service & Parts",
+    "description": "Central Ontario's full-line International truck dealer since 1952 \u2014 new and used trucks, certified service, same-day parts and rental & leasing in Peterborough, Ontario.",
     "path": "/",
     "out": "index.html",
     "dir": "home",
