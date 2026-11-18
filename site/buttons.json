@@ -45,5 +45,32 @@
     "intent": "about",
     "newTab": false,
     "active": true
+  },
+  {
+    "id": "header-phone",
+    "label": "(705) 742-3411",
+    "url": "tel:+17057423411",
+    "style": "primary",
+    "intent": "call-dealer",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "check-availability",
+    "label": "Check availability",
+    "url": "#contact",
+    "style": "primary",
+    "intent": "check-availability",
+    "newTab": false,
+    "active": true
+  },
+  {
+    "id": "request-rental-info",
+    "label": "Request rental info",
+    "url": "#contact",
+    "style": "primary",
+    "intent": "rental-request",
+    "newTab": false,
+    "active": true
   }
 ]

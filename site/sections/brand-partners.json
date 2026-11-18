@@ -1,0 +1,156 @@
+{
+  "version": 2,
+  "id": "brand-partners",
+  "name": "Brand partners coverflow",
+  "props": [
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading"
+    },
+    {
+      "key": "brands",
+      "type": "list",
+      "label": "Brands",
+      "fields": [
+        {
+          "key": "logo",
+          "type": "image",
+          "label": "Logo"
+        },
+        {
+          "key": "name",
+          "type": "text",
+          "label": "Name"
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "bp",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "ink",
+        "anchor": "brands"
+      },
+      "children": [
+        {
+          "id": "bp-head-row",
+          "type": "row",
+          "props": {
+            "gap": 0
+          },
+          "children": [
+            {
+              "id": "bp-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "bp-head",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "headingLevel": 2,
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bp-rail",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "align": "stretch",
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "bp-slide",
+              "type": "column",
+              "props": {
+                "span": 2,
+                "repeat": "brands"
+              },
+              "children": [
+                {
+                  "id": "bp-logo",
+                  "type": "image",
+                  "props": {
+                    "image": "{{logo}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "bp-name",
+                  "type": "text",
+                  "props": {
+                    "text": "{{name}}",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bp-controls",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "bp-controls-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "bp-prev",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/icons/arrow-left-white.svg",
+                      "alt": "Previous brand",
+                      "width": 24,
+                      "height": 24
+                    },
+                    "url": "#",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "bp-next",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/icons/arrow-right-white.svg",
+                      "alt": "Next brand",
+                      "width": 24,
+                      "height": 24
+                    },
+                    "url": "#",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "css": "body :where([data-bz-node=\"bp\"]) .bz-block{padding:0}\nbody :where([data-bz-node=\"bp\"]) .bz-container{padding:0;max-width:none}\nbody [data-bz-node=\"bp\"]>.bz-container{padding-inline:0}\n\nbody [data-bz-node=\"bp\"]{background:#161616;padding:90px 0 79px;color:#fff;overflow:hidden}\nbody [data-bz-node=\"bp\"]>.bz-container{max-width:var(--container)}\nbody [data-bz-node=\"bp-head\"] .bz-headingblock{text-align:center}\nbody [data-bz-node=\"bp-head\"] h2{font:700 36px/1.1 var(--font-heading);letter-spacing:-.01em;text-transform:uppercase;color:#fff;margin:0}\nbody [data-bz-node=\"bp-rail\"]{display:flex;flex-wrap:wrap;justify-content:center;gap:16px;margin-top:78px}\nbody [data-bz-node^=\"bp-slide-\"]{grid-column:auto;flex:0 0 190px;background:#1f1f1f;padding:10px 10px 0;box-sizing:border-box;text-align:center}\nbody [data-bz-node^=\"bp-slide-\"] img{width:100%;aspect-ratio:1;object-fit:contain;background:#fff;border-radius:0;padding:8%;box-sizing:border-box}\nbody [data-bz-node^=\"bp-slide-\"] figure{margin:0}\nbody [data-bz-node^=\"bp-name-\"] p{font:700 11px/44px var(--font-body);letter-spacing:.2em;text-transform:uppercase;color:#bbb;margin:0}\nbody [data-bz-node=\"bp-controls\"]{display:block;margin-top:48px}\nbody [data-bz-node=\"bp-controls-col\"]{display:flex;justify-content:center;gap:8px}\nbody [data-bz-node=\"bp-controls\"] .bz-block{width:36px;height:36px}\nbody [data-bz-node=\"bp-prev\"],body [data-bz-node=\"bp-next\"]{background:var(--accent)}\nbody [data-bz-node=\"bp-prev\"]:hover,body [data-bz-node=\"bp-next\"]:hover{background:var(--accent-dark)}\nbody [data-bz-node=\"bp-prev\"] a,body [data-bz-node=\"bp-next\"] a,body [data-bz-node=\"bp-prev\"] button,body [data-bz-node=\"bp-next\"] button{display:flex;align-items:center;justify-content:center;width:36px;height:36px;border:0;background:none;padding:0;cursor:pointer}\nbody [data-bz-node=\"bp-prev\"] img,body [data-bz-node=\"bp-next\"] img{width:18px;height:18px}\nbody [data-bz-node=\"bp-prev\"] figure,body [data-bz-node=\"bp-next\"] figure{margin:0}\n\n/* Coverflow — only once bp.js has staged it. Without JS (and in the editor) the logos are an in-flow row. */\nbody [data-bz-node=\"bp-rail\"].is-staged{display:block;position:relative;height:311px;gap:0}\nbody [data-bz-node=\"bp-rail\"].is-staged>.bz-col{position:absolute;left:50%;top:50%;transition:transform .45s ease,opacity .45s ease,width .45s ease,background-color .45s ease;opacity:0;pointer-events:none;transform:translate(-50%,-50%)}\nbody [data-bz-node=\"bp-rail\"].is-staged>.bz-col[data-pos=\"0\"]{width:255px;padding:10px 10px 0;background:#2b2824;opacity:1;pointer-events:auto;z-index:3}\nbody [data-bz-node=\"bp-rail\"].is-staged>.bz-col[data-pos=\"0\"] img{height:240px}\nbody [data-bz-node=\"bp-rail\"].is-staged>.bz-col[data-pos=\"0\"] p{font-size:16px;line-height:61px;color:#fff;letter-spacing:.1em;height:61px}\nbody [data-bz-node=\"bp-rail\"].is-staged>.bz-col[data-pos=\"-1\"],body [data-bz-node=\"bp-rail\"].is-staged>.bz-col[data-pos=\"1\"]{width:215px;padding:12px 12px 0;opacity:1;pointer-events:auto;z-index:2}\nbody [data-bz-node=\"bp-rail\"].is-staged>.bz-col[data-pos=\"-1\"] img,body [data-bz-node=\"bp-rail\"].is-staged>.bz-col[data-pos=\"1\"] img{height:190px;opacity:.9}\nbody [data-bz-node=\"bp-rail\"].is-staged>.bz-col[data-pos=\"-2\"],body [data-bz-node=\"bp-rail\"].is-staged>.bz-col[data-pos=\"2\"]{width:170px;padding:12px 12px 0;background:#1a1a1a;opacity:1;pointer-events:auto;z-index:1}\nbody [data-bz-node=\"bp-rail\"].is-staged>.bz-col[data-pos=\"-2\"] img,body [data-bz-node=\"bp-rail\"].is-staged>.bz-col[data-pos=\"2\"] img{height:150px;opacity:.55}\nbody [data-bz-node=\"bp-rail\"].is-staged>.bz-col[data-pos=\"-2\"] p,body [data-bz-node=\"bp-rail\"].is-staged>.bz-col[data-pos=\"2\"] p{color:#777}\nbody [data-bz-node=\"bp-rail\"].is-staged>.bz-col[data-pos=\"-2\"]{transform:translate(calc(-50% - 455px),-50%)}\nbody [data-bz-node=\"bp-rail\"].is-staged>.bz-col[data-pos=\"-1\"]{transform:translate(calc(-50% - 249px),-50%)}\nbody [data-bz-node=\"bp-rail\"].is-staged>.bz-col[data-pos=\"1\"]{transform:translate(calc(-50% + 249px),-50%)}\nbody [data-bz-node=\"bp-rail\"].is-staged>.bz-col[data-pos=\"2\"]{transform:translate(calc(-50% + 455px),-50%)}\nbody [data-bz-node=\"bp-rail\"].is-staged>.bz-col[data-pos=\"far\"]{width:170px;opacity:0;transform:translate(-50%,-50%) scale(.6)}\n@media (max-width:1100px){\n  body [data-bz-node=\"bp\"]{padding:64px 24px}\n  body [data-bz-node=\"bp-rail\"].is-staged>.bz-col[data-pos=\"-2\"],body [data-bz-node=\"bp-rail\"].is-staged>.bz-col[data-pos=\"2\"]{opacity:0;pointer-events:none}\n  body [data-bz-node=\"bp-rail\"].is-staged>.bz-col[data-pos=\"-1\"]{transform:translate(calc(-50% - 240px),-50%)}\n  body [data-bz-node=\"bp-rail\"].is-staged>.bz-col[data-pos=\"1\"]{transform:translate(calc(-50% + 240px),-50%)}\n}\n@media (max-width:640px){\n  body [data-bz-node=\"bp\"]{padding:48px 0 48px}\n  body [data-bz-node=\"bp-head\"] h2{font-size:26px}\n  body [data-bz-node=\"bp-rail\"]{margin-top:40px}\n  body [data-bz-node=\"bp-rail\"].is-staged{height:300px}\n  body [data-bz-node=\"bp-rail\"].is-staged>.bz-col[data-pos=\"0\"]{width:220px}\n  body [data-bz-node=\"bp-rail\"].is-staged>.bz-col[data-pos=\"0\"] img{height:200px}\n  body [data-bz-node=\"bp-rail\"].is-staged>.bz-col[data-pos=\"-1\"],body [data-bz-node=\"bp-rail\"].is-staged>.bz-col[data-pos=\"1\"]{width:150px;opacity:.5}\n  body [data-bz-node=\"bp-rail\"].is-staged>.bz-col[data-pos=\"-1\"] img,body [data-bz-node=\"bp-rail\"].is-staged>.bz-col[data-pos=\"1\"] img{height:120px}\n  body [data-bz-node=\"bp-rail\"].is-staged>.bz-col[data-pos=\"-1\"]{transform:translate(calc(-50% - 175px),-50%)}\n  body [data-bz-node=\"bp-rail\"].is-staged>.bz-col[data-pos=\"1\"]{transform:translate(calc(-50% + 175px),-50%)}\n  body [data-bz-node=\"bp-controls\"]{margin-top:32px}\n}\n@media (prefers-reduced-motion:reduce){body [data-bz-node=\"bp-rail\"].is-staged>.bz-col{transition:none}}\n",
+  "js": "(function () {\n  /* Coverflow for the brand partners band. The platform `carousel` behaviour is a\n     scroll-snap rail and cannot centre-and-scale one slide, so this script only\n     sets data-pos on each slide; every size and offset lives in the component CSS. */\n  document.querySelectorAll('[data-bz-node=\"bp-rail\"]').forEach(function (rail) {\n    var slides = Array.prototype.slice.call(rail.children).filter(function (el) { return el.classList.contains('bz-col'); });\n    var n = slides.length;\n    if (n < 2) return;\n    var root = rail.closest('[data-bz-node=\"bp\"]') || document;\n    var prev = root.querySelector('[data-bz-node=\"bp-prev\"] a, [data-bz-node=\"bp-prev\"] button');\n    var next = root.querySelector('[data-bz-node=\"bp-next\"] a, [data-bz-node=\"bp-next\"] button');\n    var active = Math.min(2, n - 1);\n    if (n >= 3) active = Math.floor(n / 2);\n    function layout() {\n      var half = Math.floor(n / 2);\n      slides.forEach(function (slide, i) {\n        var d = ((i - active) % n + n) % n;\n        if (d > half) d -= n;\n        slide.setAttribute('data-pos', Math.abs(d) <= 2 ? String(d) : 'far');\n        slide.setAttribute('aria-hidden', Math.abs(d) <= 2 ? 'false' : 'true');\n      });\n    }\n    function go(step, e) { if (e) e.preventDefault(); active = (active + step + n) % n; layout(); }\n    if (prev) { prev.setAttribute('aria-label', 'Previous brand'); prev.addEventListener('click', function (e) { go(-1, e); }); }\n    if (next) { next.setAttribute('aria-label', 'Next brand'); next.addEventListener('click', function (e) { go(1, e); }); }\n    slides.forEach(function (slide, i) {\n      slide.addEventListener('click', function () { if (i !== active) { active = i; layout(); } });\n    });\n    rail.setAttribute('tabindex', '0');\n    rail.setAttribute('role', 'group');\n    rail.setAttribute('aria-label', 'Brand partners');\n    rail.addEventListener('keydown', function (e) {\n      if (e.key === 'ArrowRight') go(1, e);\n      if (e.key === 'ArrowLeft') go(-1, e);\n    });\n    layout();\n    rail.classList.add('is-staged');\n  });\n})();\n"
+}

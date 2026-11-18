@@ -1,0 +1,104 @@
+{
+  "version": 2,
+  "id": "rental-cta",
+  "name": "Rental & leasing CTA band",
+  "props": [
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading"
+    },
+    {
+      "key": "text",
+      "type": "textarea",
+      "label": "Copy"
+    },
+    {
+      "key": "phoneLead",
+      "type": "text",
+      "label": "Phone lead-in"
+    },
+    {
+      "key": "phone",
+      "type": "text",
+      "label": "Phone"
+    },
+    {
+      "key": "phoneUrl",
+      "type": "url",
+      "label": "Phone link"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "rt",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "ink",
+        "anchor": "rental"
+      },
+      "children": [
+        {
+          "id": "rt-row",
+          "type": "row",
+          "props": {
+            "gap": 0
+          },
+          "children": [
+            {
+              "id": "rt-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "rt-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "headingLevel": 2,
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "rt-text",
+                  "type": "text",
+                  "props": {
+                    "text": "{{text}}",
+                    "width": "full",
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "rt-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "request-rental-info"
+                      }
+                    ],
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "rt-call",
+                  "type": "text",
+                  "props": {
+                    "text": "{{phoneLead}} <a href=\"{{phoneUrl}}\">{{phone}}</a>",
+                    "width": "full",
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "css": "body :where([data-bz-node=\"rt\"]) .bz-block{padding:0}\nbody :where([data-bz-node=\"rt\"]) .bz-container{padding:0;max-width:none}\nbody [data-bz-node=\"rt\"]>.bz-container{padding-inline:0}\n\nbody [data-bz-node=\"rt\"]{background:#2b2824;padding:82px 0 82px;color:#fff;text-align:center}\nbody [data-bz-node=\"rt\"]>.bz-container{max-width:var(--container)}\nbody [data-bz-node=\"rt-h\"] h2{font:700 38px/41px var(--font-heading);letter-spacing:0;text-transform:uppercase;color:#fff;margin:0 auto;max-width:380px}\nbody [data-bz-node=\"rt-text\"] .bz-text{max-width:290px;margin:23px auto 0}\nbody [data-bz-node=\"rt-text\"] p{font:400 13px/23.5px var(--font-body);color:#fff;margin:0}\nbody [data-bz-node=\"rt-cta\"]{margin-top:26px}\nbody [data-bz-node=\"rt-cta\"] .bz-btns{margin:0;justify-content:center}\nbody [data-bz-node=\"rt-cta\"] .bz-btn{display:inline-flex;align-items:center;justify-content:center;height:50px;padding:0 20px;border:0;border-radius:2px;background:var(--accent);color:#fff;font:700 11px/1 var(--font-body);letter-spacing:.18em;text-transform:uppercase;text-decoration:none;padding:0 27px;height:50px}\nbody [data-bz-node=\"rt-cta\"] .bz-btn:hover{background:var(--accent-dark)}\nbody [data-bz-node=\"rt-call\"]{margin-top:24px}\nbody [data-bz-node=\"rt-call\"] .bz-text{max-width:none}\nbody [data-bz-node=\"rt-call\"] p{display:inline-flex;align-items:center;gap:9px;font:400 12px/1 var(--font-body);color:#fff;margin:0;letter-spacing:.02em}\nbody [data-bz-node=\"rt-call\"] p::before{content:\"\";width:17px;height:17px;background:#fff;-webkit-mask:url(/icons/phone.svg) center/16px no-repeat;mask:url(/icons/phone.svg) center/16px no-repeat}\nbody [data-bz-node=\"rt-call\"] a{color:#fff;margin-left:6px}\nbody [data-bz-node=\"rt-call\"] a:hover{color:var(--accent)}\n@media (max-width:640px){\n  body [data-bz-node=\"rt\"]{padding:56px 20px}\n  body [data-bz-node=\"rt-h\"] h2{font-size:30px;line-height:32px}\n}\n"
+}

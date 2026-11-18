@@ -1,0 +1,226 @@
+{
+  "version": 2,
+  "id": "site-footer",
+  "name": "Site footer",
+  "props": [
+    {
+      "key": "linkColumns",
+      "type": "list",
+      "label": "Link columns",
+      "fields": [
+        {
+          "key": "heading",
+          "type": "text",
+          "label": "Heading"
+        },
+        {
+          "key": "menuId",
+          "type": "text",
+          "label": "Menu id"
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "ft",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "none"
+      },
+      "children": [
+        {
+          "id": "ft-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "align": "start"
+          },
+          "children": [
+            {
+              "id": "ft-brand",
+              "type": "column",
+              "props": {
+                "span": 4
+              },
+              "children": [
+                {
+                  "id": "ft-logo",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/images/logo-international-wg.png",
+                      "alt": "International | Winslow-Gerolamy Motors",
+                      "width": 4124,
+                      "height": 564
+                    },
+                    "url": "/",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "ft-address",
+                  "type": "text",
+                  "props": {
+                    "text": "1018 Lansdowne St. West, P.O. Box 6,\n\nPeterborough, Ontario K9J 6Y5\n\nTel <a href=\"tel:+17057423411\">(705) 742-3411</a> · Fax (705) 742-2551\n\n<a href=\"mailto:info@wgmotors.ca\">info@wgmotors.ca</a>",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "ft-social",
+                  "type": "row",
+                  "props": {
+                    "gap": 0,
+                    "align": "start",
+                    "stackOn": "never"
+                  },
+                  "children": [
+                    {
+                      "id": "ft-social-col",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "children": [
+                        {
+                          "id": "ft-fb",
+                          "type": "image",
+                          "props": {
+                            "image": {
+                              "src": "/icons/facebook.svg",
+                              "alt": "Facebook",
+                              "width": 24,
+                              "height": 24
+                            },
+                            "width": "full",
+                            "url": "https://www.facebook.com/"
+                          }
+                        },
+                        {
+                          "id": "ft-ig",
+                          "type": "image",
+                          "props": {
+                            "image": {
+                              "src": "/icons/instagram.svg",
+                              "alt": "Instagram",
+                              "width": 24,
+                              "height": 24
+                            },
+                            "width": "full",
+                            "url": "https://www.instagram.com/"
+                          }
+                        },
+                        {
+                          "id": "ft-x",
+                          "type": "image",
+                          "props": {
+                            "image": {
+                              "src": "/icons/x.svg",
+                              "alt": "X",
+                              "width": 24,
+                              "height": 24
+                            },
+                            "width": "full",
+                            "url": "https://x.com/"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ft-link-col",
+              "type": "column",
+              "props": {
+                "span": 3,
+                "repeat": "linkColumns"
+              },
+              "children": [
+                {
+                  "id": "ft-link-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "ft-link-nav",
+                  "type": "menu",
+                  "props": {
+                    "menuId": "{{menuId}}",
+                    "layout": "vertical"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ft-bottom",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "align": "center",
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "ft-copy",
+              "type": "column",
+              "props": {
+                "span": 8
+              },
+              "children": [
+                {
+                  "id": "ft-copy-t",
+                  "type": "text",
+                  "props": {
+                    "text": "© 2026 Winslow-Gerolamy Motors Limited. All rights reserved.",
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "ft-built",
+              "type": "column",
+              "props": {
+                "span": 4
+              },
+              "children": [
+                {
+                  "id": "ft-built-t",
+                  "type": "text",
+                  "props": {
+                    "text": "Built by",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "ft-built-logo",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/images/logo-buzznerd.png",
+                      "alt": "BuzzNerd",
+                      "width": 1084,
+                      "height": 226
+                    },
+                    "width": "full",
+                    "url": "https://www.buzznerd.com"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "css": "\nbody [data-bz-node=\"ft\"]{background:#141414;padding:48px 0 0;color:#fff}\nbody [data-bz-node=\"ft\"] .bz-block{padding:0}\nbody [data-bz-node=\"ft\"] .bz-container{padding:0}\nbody [data-bz-node=\"ft\"]>.bz-container{max-width:var(--container)}\nbody [data-bz-node=\"ft-row\"]>.bz-col{grid-column:auto}\nbody [data-bz-node=\"ft-row\"]{display:grid;grid-template-columns:371fr 285fr 286fr 246fr;gap:0;padding-bottom:40px;align-items:start}\nbody [data-bz-node=\"ft-logo\"]{margin-bottom:14px}\nbody [data-bz-node=\"ft-logo\"] img{height:30px;width:auto}\nbody [data-bz-node=\"ft-address\"] p{font:400 12.5px/22.5px var(--font-body);color:rgba(255,255,255,.88);margin:0}\nbody [data-bz-node=\"ft-address\"] a{color:inherit}\nbody [data-bz-node=\"ft-address\"] p:last-child{margin-top:4px;font-weight:500;color:#fff}\nbody [data-bz-node=\"ft-social\"]{display:block;margin-top:17px}\nbody [data-bz-node=\"ft-social-col\"]{display:flex;gap:18px}\nbody [data-bz-node=\"ft-social-col\"] .bz-block{width:24px}\nbody [data-bz-node=\"ft-social-col\"] img,body [data-bz-node=\"ft-social-col\"] a{width:24px;height:24px;display:block}\nbody [data-bz-node=\"ft-social-col\"] .bz-block:hover{opacity:.7}\nbody [data-bz-node=\"ft-row\"] h3{font:700 11px/1 var(--font-body);letter-spacing:.22em;text-transform:uppercase;color:#fff;margin:7px 0 18px}\nbody [data-bz-node=\"ft-row\"] .bz-nav{flex-direction:column;align-items:flex-start;gap:0}\nbody [data-bz-node=\"ft-row\"] .bz-navitem>a{padding:0;display:block;font:400 12.5px/32px var(--font-body);color:rgba(255,255,255,.9)}\nbody [data-bz-node=\"ft-row\"] .bz-navitem>a:hover{color:var(--accent)}\nbody [data-bz-node=\"ft-bottom\"]{display:flex;justify-content:space-between;align-items:center;gap:24px;border-top:1px solid #353535;padding:15px 0 20px;min-height:55px;box-sizing:border-box}\nbody [data-bz-node=\"ft-copy\"] p{font:400 11px/1.4 var(--font-body);color:rgba(255,255,255,.7);margin:0}\nbody [data-bz-node=\"ft-built\"]{display:flex;align-items:center;gap:8px;flex:0 0 auto}\nbody [data-bz-node=\"ft-built\"]>.bz-block{width:auto}\nbody [data-bz-node=\"ft-built\"] p{font:400 11px/1 var(--font-body);color:rgba(255,255,255,.7);margin:0}\nbody [data-bz-node=\"ft-built-logo\"] img{width:52px;height:auto}\n@media (max-width:1100px){\n  body [data-bz-node=\"ft\"]{padding:48px 24px 0}\n  body [data-bz-node=\"ft-row\"]{grid-template-columns:1fr 1fr;gap:36px 24px}\n  body [data-bz-node=\"ft-row\"]>[data-bz-node=\"ft-brand\"]{grid-column:1/-1}\n}\n@media (max-width:640px){\n  body [data-bz-node=\"ft\"]{padding:40px 20px 0}\n  body [data-bz-node=\"ft-row\"]{grid-template-columns:1fr 1fr;gap:32px 16px}\n  body [data-bz-node=\"ft-logo\"] img{height:26px}\n  body [data-bz-node=\"ft-bottom\"]{flex-direction:column;align-items:flex-start;gap:12px}\n}\n"
+}

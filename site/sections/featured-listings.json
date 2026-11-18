@@ -1,0 +1,235 @@
+{
+  "version": 2,
+  "id": "featured-listings",
+  "name": "Featured listings",
+  "props": [
+    {
+      "key": "eyebrow",
+      "type": "text",
+      "label": "Eyebrow"
+    },
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading"
+    },
+    {
+      "key": "listings",
+      "type": "list",
+      "label": "Listings",
+      "fields": [
+        {
+          "key": "photo",
+          "type": "image",
+          "label": "Photo"
+        },
+        {
+          "key": "title",
+          "type": "text",
+          "label": "Title"
+        },
+        {
+          "key": "location",
+          "type": "text",
+          "label": "Location"
+        },
+        {
+          "key": "tags",
+          "type": "list",
+          "label": "Spec tags",
+          "fields": [
+            {
+              "key": "value",
+              "type": "text",
+              "label": "Value"
+            },
+            {
+              "key": "label",
+              "type": "text",
+              "label": "Label"
+            }
+          ]
+        },
+        {
+          "key": "price",
+          "type": "text",
+          "label": "Price"
+        }
+      ]
+    },
+    {
+      "key": "viewAllLabel",
+      "type": "text",
+      "label": "Link label"
+    },
+    {
+      "key": "viewAllUrl",
+      "type": "url",
+      "label": "Link to"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "fl",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "paper",
+        "anchor": "inventory"
+      },
+      "children": [
+        {
+          "id": "fl-head-row",
+          "type": "row",
+          "props": {
+            "gap": 0
+          },
+          "children": [
+            {
+              "id": "fl-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "fl-head",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "headingLevel": 2,
+                    "eyebrow": "{{eyebrow}}",
+                    "align": "left"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "fl-grid",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "align": "stretch",
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "fl-card",
+              "type": "column",
+              "props": {
+                "span": 3,
+                "repeat": "listings"
+              },
+              "children": [
+                {
+                  "id": "fl-photo",
+                  "type": "image",
+                  "props": {
+                    "image": "{{photo}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fl-heart",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/icons/heart-white.svg",
+                      "alt": "Save listing",
+                      "width": 24,
+                      "height": 24
+                    },
+                    "url": "/store/inventory",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fl-title",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{title}}",
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "fl-loc",
+                  "type": "text",
+                  "props": {
+                    "text": "{{location}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "fl-tags",
+                  "type": "row",
+                  "props": {
+                    "gap": 0,
+                    "stackOn": "never"
+                  },
+                  "children": [
+                    {
+                      "id": "fl-tag",
+                      "type": "column",
+                      "props": {
+                        "span": 12,
+                        "repeat": "tags"
+                      },
+                      "children": [
+                        {
+                          "id": "fl-tagtext",
+                          "type": "text",
+                          "props": {
+                            "text": "<strong>{{value}}</strong> {{label}}",
+                            "width": "full"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "fl-price",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{price}}",
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "fl-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "check-availability"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "fl-all",
+          "type": "buttons",
+          "props": {
+            "items": [
+              {
+                "label": "{{viewAllLabel}}",
+                "url": "{{viewAllUrl}}",
+                "style": "link"
+              }
+            ],
+            "align": "left"
+          }
+        }
+      ]
+    }
+  ],
+  "css": "body :where([data-bz-node=\"fl\"]) .bz-block{padding:0}\nbody :where([data-bz-node=\"fl\"]) .bz-container{padding:0;max-width:none}\nbody [data-bz-node=\"fl\"]>.bz-container{padding-inline:0}\n\nbody [data-bz-node=\"fl\"]{background:var(--paper);padding:104px 0 105px}\nbody [data-bz-node=\"fl\"]>.bz-container{max-width:var(--container)}\nbody [data-bz-node=\"fl-head\"] .bz-eyebrow{font:700 11px/1.4 var(--font-body);letter-spacing:.2em;text-transform:uppercase;color:#6b6b6a;margin:0 0 6px;margin-bottom:8px}\nbody [data-bz-node=\"fl-head\"] h2{font:700 42.4px/1.1 var(--font-heading);letter-spacing:0;text-transform:uppercase;color:var(--ink);margin:0}\nbody [data-bz-node=\"fl-grid\"]{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin:34px 1px 0;align-items:stretch}\nbody [data-bz-node^=\"fl-card-\"]{grid-column:auto;position:relative;display:flex;flex-direction:column;background:#fff;border:1px solid #d4d4d2;box-sizing:border-box}\nbody [data-bz-node^=\"fl-photo-\"] img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:0}\nbody [data-bz-node^=\"fl-photo-\"] figure{margin:0}\nbody [data-bz-node^=\"fl-heart-\"]{position:absolute;top:10px;right:10px;width:30px;height:30px;border-radius:50%;background:var(--accent)}\nbody [data-bz-node^=\"fl-heart-\"] figure{margin:0}\nbody [data-bz-node^=\"fl-heart-\"] a{display:flex;align-items:center;justify-content:center;width:30px;height:30px}\nbody [data-bz-node^=\"fl-heart-\"] img{width:15px;height:15px;aspect-ratio:auto}\nbody [data-bz-node^=\"fl-title-\"]{padding:0 19px;margin-top:18px}\nbody [data-bz-node^=\"fl-title-\"] h3{font:700 16px/20px var(--font-heading);text-transform:uppercase;letter-spacing:.01em;color:var(--ink);margin:0}\nbody [data-bz-node^=\"fl-loc-\"]{padding:0 19px;margin-top:6px}\nbody [data-bz-node^=\"fl-loc-\"] p{font:400 12px/16px var(--font-body);color:#555;margin:0;padding-left:17px;position:relative;letter-spacing:.02em}\nbody [data-bz-node^=\"fl-loc-\"] p::before{content:\"\";position:absolute;left:1px;top:2px;width:12px;height:12px;background:#666;-webkit-mask:url(/icons/map-pin.svg) center/12px no-repeat;mask:url(/icons/map-pin.svg) center/12px no-repeat}\nbody [data-bz-node^=\"fl-tags-\"]{display:flex;flex-wrap:wrap;gap:6px;padding:0 19px;margin:15px 0 0;flex:1 1 auto;align-content:flex-start}\nbody [data-bz-node^=\"fl-tag-\"]{grid-column:auto;border:1px solid #cfcfcd;height:30px;display:flex;align-items:center;padding:0 7px}\nbody [data-bz-node^=\"fl-tag-\"] p{font:400 11px/1 var(--font-body);color:#555;margin:0;white-space:nowrap}\nbody [data-bz-node^=\"fl-tag-\"] strong{font-weight:700;color:var(--ink)}\nbody [data-bz-node^=\"fl-price-\"]{padding:0 19px;margin-top:20px}\nbody [data-bz-node^=\"fl-price-\"] h3{font:700 20px/1.2 var(--font-heading);text-transform:uppercase;letter-spacing:0;color:var(--ink);margin:0}\nbody [data-bz-node^=\"fl-cta-\"]{padding:0 19px 23px;margin-top:20px}\nbody [data-bz-node^=\"fl-cta-\"] .bz-btns{margin:0}\nbody [data-bz-node^=\"fl-cta-\"] .bz-btn{display:inline-flex;align-items:center;justify-content:center;height:50px;padding:0 20px;border:0;border-radius:2px;background:var(--accent);color:#fff;font:700 11px/1 var(--font-body);letter-spacing:.18em;text-transform:uppercase;text-decoration:none;width:100%}\nbody [data-bz-node^=\"fl-cta-\"] .bz-btn:hover{background:var(--accent-dark)}\nbody [data-bz-node=\"fl-all\"]{display:flex;justify-content:flex-end;margin-top:30px}\nbody [data-bz-node=\"fl-all\"] .bz-btns{margin:0;justify-content:flex-end}\nbody [data-bz-node=\"fl-all\"] .bz-btn{padding:0;border:0;background:none;color:var(--ink);font:700 11px/1 var(--font-body);letter-spacing:.18em;text-transform:uppercase;gap:10px;text-decoration:none}\nbody [data-bz-node=\"fl-all\"] .bz-btn::after{content:\"\";width:13px;height:13px;background:currentColor;-webkit-mask:url(/icons/arrow-right.svg) center/13px no-repeat;mask:url(/icons/arrow-right.svg) center/13px no-repeat}\nbody [data-bz-node=\"fl-all\"] .bz-btn:hover{color:var(--accent)}\n@media (max-width:1100px){\n  body [data-bz-node=\"fl\"]{padding:72px 24px}\n  body [data-bz-node=\"fl-head\"] h2{font-size:34px}\n  body [data-bz-node=\"fl-grid\"]{grid-template-columns:repeat(2,1fr)}\n}\n@media (max-width:640px){\n  body [data-bz-node=\"fl\"]{padding:56px 20px}\n  body [data-bz-node=\"fl-head\"] h2{font-size:28px}\n  body [data-bz-node=\"fl-grid\"]{grid-template-columns:1fr}\n}\n"
+}

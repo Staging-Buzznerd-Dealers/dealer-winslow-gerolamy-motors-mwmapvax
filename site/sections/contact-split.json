@@ -1,0 +1,103 @@
+{
+  "version": 2,
+  "id": "contact-split",
+  "name": "Contact: photo + form",
+  "props": [
+    {
+      "key": "photo",
+      "type": "image",
+      "label": "Photo"
+    },
+    {
+      "key": "eyebrow",
+      "type": "text",
+      "label": "Eyebrow"
+    },
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading"
+    },
+    {
+      "key": "intro",
+      "type": "textarea",
+      "label": "Intro"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "ct",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "card",
+        "anchor": "contact"
+      },
+      "children": [
+        {
+          "id": "ct-card",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "align": "stretch",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "ct-media",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "ct-img",
+                  "type": "image",
+                  "props": {
+                    "image": "{{photo}}",
+                    "width": "full"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "ct-copy",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "ct-head",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "headingLevel": 2,
+                    "eyebrow": "{{eyebrow}}"
+                  }
+                },
+                {
+                  "id": "ct-intro",
+                  "type": "text",
+                  "props": {
+                    "text": "{{intro}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "ct-form",
+                  "type": "form",
+                  "props": {
+                    "formId": "contact-team"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "css": "body :where([data-bz-node=\"ct\"]) .bz-block{padding:0}\nbody :where([data-bz-node=\"ct\"]) .bz-container{padding:0;max-width:none}\nbody [data-bz-node=\"ct\"]>.bz-container{padding-inline:0}\n\nbody [data-bz-node=\"ct\"]{background:#fff;padding:100px 0 97px}\nbody [data-bz-node=\"ct\"]>.bz-container{max-width:var(--container)}\nbody [data-bz-node=\"ct-card\"]{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid #d4d4d2;min-height:519px;box-sizing:border-box;margin:0 1px}\nbody [data-bz-node=\"ct-media\"],body [data-bz-node=\"ct-copy\"]{grid-column:auto}\nbody [data-bz-node=\"ct-media\"]{position:relative;min-height:517px}\nbody [data-bz-node=\"ct-media\"] .bz-block,body [data-bz-node=\"ct-media\"] .bz-container,body [data-bz-node=\"ct-media\"] figure{height:100%;margin:0}\nbody [data-bz-node=\"ct-media\"] img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 77%;border-radius:0}\nbody [data-bz-node=\"ct-copy\"]{padding:44px 33px 33px;box-sizing:border-box}\nbody [data-bz-node=\"ct-head\"] .bz-eyebrow{font:700 11px/1.4 var(--font-body);letter-spacing:.2em;text-transform:uppercase;color:#6b6b6a;margin:0 0 6px;margin-bottom:8px}\nbody [data-bz-node=\"ct-head\"] h2{font:700 30.3px/1.1 var(--font-heading);letter-spacing:0;text-transform:uppercase;color:var(--ink);margin:0}\nbody [data-bz-node=\"ct-intro\"] .bz-text{max-width:520px;margin-top:18px}\nbody [data-bz-node=\"ct-intro\"] p{font:400 12.5px/23px var(--font-body);color:var(--ink);margin:0}\nbody [data-bz-node=\"ct-form\"]{margin-top:23px}\nbody [data-bz-node=\"ct-form\"] .bz-form{background:none;border:0;padding:0;max-width:440px;gap:11px}\nbody [data-bz-node=\"ct-form\"] .bz-form__t{display:none}\nbody [data-bz-node=\"ct-form\"] .bz-label{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}\nbody [data-bz-node=\"ct-form\"] .bz-input{height:48px;min-height:48px;padding:0 14px;border:1px solid #cfcfcd;border-radius:2px;font:400 12.5px/1 var(--font-body);color:var(--ink);background:#fff;letter-spacing:.02em}\nbody [data-bz-node=\"ct-form\"] textarea.bz-input{height:110px;padding:15px 14px;line-height:1.4;resize:vertical}\nbody [data-bz-node=\"ct-form\"] .bz-input::placeholder{color:#6b6b6a;opacity:1}\nbody [data-bz-node=\"ct-form\"] .bz-req{display:none}\nbody [data-bz-node=\"ct-form\"] .bz-btn{display:inline-flex;align-items:center;justify-content:center;height:50px;padding:0 20px;border:0;border-radius:2px;background:var(--accent);color:#fff;font:700 11px/1 var(--font-body);letter-spacing:.18em;text-transform:uppercase;text-decoration:none;width:100%;height:50px;margin-top:0}\nbody [data-bz-node=\"ct-form\"] .bz-btn:hover{background:var(--accent-dark)}\n@media (max-width:1100px){\n  body [data-bz-node=\"ct\"]{padding:72px 24px}\n  body [data-bz-node=\"ct-card\"]{grid-template-columns:1fr}\n  body [data-bz-node=\"ct-media\"]{min-height:0;aspect-ratio:16/10}\n  body [data-bz-node=\"ct-copy\"]{padding:36px 28px}\n}\n@media (max-width:640px){\n  body [data-bz-node=\"ct\"]{padding:56px 20px}\n  body [data-bz-node=\"ct-copy\"]{padding:28px 20px}\n  body [data-bz-node=\"ct-head\"] h2{font-size:26px}\n}\n"
+}
