@@ -1,0 +1,165 @@
+{
+  "version": 2,
+  "id": "text-columns",
+  "name": "Text columns (one or two)",
+  "props": [
+    {
+      "key": "textColumns",
+      "type": "list",
+      "label": "Columns",
+      "fields": [
+        {
+          "key": "eyebrow",
+          "type": "text",
+          "label": "Eyebrow (small label)"
+        },
+        {
+          "key": "heading",
+          "type": "text",
+          "label": "Heading"
+        },
+        {
+          "key": "text",
+          "type": "textarea",
+          "label": "Copy (blank line between paragraphs)"
+        },
+        {
+          "key": "points",
+          "type": "list",
+          "label": "Bullet points",
+          "fields": [
+            {
+              "key": "text",
+              "type": "text",
+              "label": "Text"
+            }
+          ]
+        },
+        {
+          "key": "items",
+          "type": "list",
+          "label": "Titled items",
+          "fields": [
+            {
+              "key": "title",
+              "type": "text",
+              "label": "Title"
+            },
+            {
+              "key": "text",
+              "type": "text",
+              "label": "Description"
+            }
+          ]
+        },
+        {
+          "key": "textAfter",
+          "type": "textarea",
+          "label": "Copy after the lists"
+        },
+        {
+          "key": "linkLabel",
+          "type": "text",
+          "label": "Link label (blank for none)"
+        },
+        {
+          "key": "linkUrl",
+          "type": "url",
+          "label": "Link to"
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "tcl",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "card"
+      },
+      "children": [
+        {
+          "id": "tcl-grid",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "align": "start",
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "tcl-col",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "repeat": "textColumns"
+              },
+              "children": [
+                {
+                  "id": "tcl-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "headingLevel": 2,
+                    "eyebrow": "{{eyebrow}}"
+                  }
+                },
+                {
+                  "id": "tcl-text",
+                  "type": "text",
+                  "props": {
+                    "text": "{{text}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "tcl-pt",
+                  "type": "text",
+                  "props": {
+                    "text": "{{text}}",
+                    "width": "full",
+                    "repeat": "points"
+                  }
+                },
+                {
+                  "id": "tcl-item",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>{{title}}</strong>{{text}}",
+                    "width": "full",
+                    "repeat": "items"
+                  }
+                },
+                {
+                  "id": "tcl-after",
+                  "type": "text",
+                  "props": {
+                    "text": "{{textAfter}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "tcl-link",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "{{linkLabel}}",
+                        "url": "{{linkUrl}}",
+                        "style": "link"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "css": "body :where([data-bz-node=\"tcl\"]) .bz-block{padding:0}\nbody :where([data-bz-node=\"tcl\"]) .bz-container{padding:0;max-width:none}\nbody [data-bz-node=\"tcl\"]>.bz-container{padding-inline:0}\n\nbody [data-bz-node=\"tcl\"]{background:#fff;padding:96px 0}\nbody [data-bz-node=\"tcl\"]>.bz-container{max-width:var(--container)}\nbody [data-bz-node=\"tcl-grid\"]{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:48px 72px;align-items:start}\nbody [data-bz-node=\"tcl-grid\"]>.bz-col{grid-column:auto}\nbody [data-bz-node^=\"tcl-h-\"] .bz-eyebrow{font:700 10.5px/1.4 var(--font-body);letter-spacing:.22em;text-transform:uppercase;color:#6b6b6a;margin:0 0 14px}\nbody [data-bz-node^=\"tcl-h-\"] h2{font:700 36px/1.08 var(--font-heading);letter-spacing:0;text-transform:uppercase;color:var(--ink);margin:0;font-size:32px}\nbody [data-bz-node^=\"tcl-text-\"] .bz-text,body [data-bz-node^=\"tcl-after-\"] .bz-text{max-width:640px;margin-top:22px}\nbody [data-bz-node^=\"tcl-text-\"] p,body [data-bz-node^=\"tcl-after-\"] p{font:400 13.5px/25px var(--font-body);color:var(--ink);margin:0;margin:0 0 12px}\nbody [data-bz-node^=\"tcl-text-\"] p:last-child,body [data-bz-node^=\"tcl-after-\"] p:last-child{margin:0}\nbody [data-bz-node^=\"tcl-pt-\"]{display:block;margin-bottom:9px}\nbody [data-bz-node^=\"tcl-pt-\"] .bz-text{margin-top:0}\nbody [data-bz-node^=\"tcl-pt-\"][data-bz-node$=\"-1\"]{margin-top:16px}\nbody [data-bz-node^=\"tcl-pt-\"] p{position:relative;padding-left:20px;font:400 13.5px/25px var(--font-body);color:var(--ink);margin:0}\nbody [data-bz-node^=\"tcl-pt-\"] p::before{content:\"\";position:absolute;left:2px;top:9px;width:6px;height:6px;background:var(--accent)}\nbody [data-bz-node^=\"tcl-item-\"]{display:block;margin-top:20px}\nbody [data-bz-node^=\"tcl-item-\"] .bz-text{margin-top:0}\nbody [data-bz-node^=\"tcl-item-\"] strong{display:block;font:700 14px/1.4 var(--font-body);letter-spacing:.01em;text-transform:uppercase;margin-bottom:4px}\nbody [data-bz-node^=\"tcl-item-\"] p{font:400 12.5px/1.75 var(--font-body);color:#555;margin:0}\nbody [data-bz-node^=\"tcl-link-\"]{margin-top:26px}\nbody [data-bz-node^=\"tcl-link-\"] .bz-btns{margin:0}\nbody [data-bz-node^=\"tcl-link-\"] .bz-btn{display:inline-flex;align-items:center;padding:0;border:0;background:none;color:var(--ink);font:700 10.5px/1 var(--font-body);letter-spacing:.16em;text-transform:uppercase;text-decoration:none;gap:10px;height:auto;min-height:0}\nbody [data-bz-node^=\"tcl-link-\"] .bz-btn::after{content:\"\";width:13px;height:13px;background:currentColor;-webkit-mask:url(/icons/arrow-right.svg) center/13px no-repeat;mask:url(/icons/arrow-right.svg) center/13px no-repeat}\nbody [data-bz-node^=\"tcl-link-\"] .bz-btn:hover{color:var(--accent)}\n@media (max-width:1100px){body [data-bz-node=\"tcl\"]{padding:64px 24px}body [data-bz-node^=\"tcl-h-\"] h2{font-size:28px}body [data-bz-node=\"tcl-grid\"]{gap:40px}}\n@media (max-width:640px){body [data-bz-node=\"tcl\"]{padding:48px 20px}body [data-bz-node^=\"tcl-h-\"] h2{font-size:24px}}\n"
+}

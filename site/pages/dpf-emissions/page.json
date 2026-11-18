@@ -1,0 +1,381 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "pb-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "page-banner",
+        "values": {
+          "title": "DPF & Emissions System Service In Central Ontario",
+          "crumb": "<a href=\"/service\">Service</a> / DPF & Emissions System Service",
+          "subtitle": "",
+          "ctaLabel": "",
+          "ctaUrl": "",
+          "image": {
+            "src": "/images/hero-banner-poster.jpg",
+            "alt": "International trucks lined up in front of the Winslow-Gerolamy dealership",
+            "width": 1440,
+            "height": 780
+          }
+        }
+      }
+    },
+    {
+      "id": "in-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "split-band",
+        "values": {
+          "eyebrow": "Emissions service",
+          "heading": "Cleaning, Diagnostics, And Repair For Heavy-Duty Trucks",
+          "text": "Winslow-Gerolamy Motors Limited provides DPF cleaning, emissions diagnostics, and repair services for heavy-duty trucks across Central Ontario.\n\nModern diesel engines rely on emissions systems such as DPF, DEF, SCR, and EGR to maintain performance and meet regulatory requirements. Our service team is focused on keeping these systems operating efficiently to prevent downtime and maintain compliance.",
+          "points": [],
+          "textAfter": "",
+          "linkLabel": "",
+          "linkUrl": "",
+          "image": {
+            "src": "/images/dpf-shop-lift.jpg",
+            "alt": "A yellow dump truck and a truck raised on lifts in the Winslow-Gerolamy service shop",
+            "width": 804,
+            "height": 435
+          }
+        }
+      }
+    },
+    {
+      "id": "ap-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "text-columns",
+        "values": {
+          "textColumns": [
+            {
+              "eyebrow": "Our approach",
+              "heading": "Our Approach To Emissions Service",
+              "text": "The service department at Winslow-Gerolamy Motors prides itself on providing an outstanding customer service experience with operational excellence. Our number one priority is to keep our customers' businesses moving and growing.\n\nOur highly skilled, professional staff work to maximize uptime through timely repairs and help lower operating costs through preventative maintenance. Our technicians are 310T certified and OEM trained.",
+              "points": [],
+              "items": [],
+              "textAfter": "",
+              "linkLabel": "",
+              "linkUrl": ""
+            },
+            {
+              "eyebrow": "Certified",
+              "heading": "Certified Technicians & OEM Support",
+              "text": "Winslow-Gerolamy Motors Limited is a Certified Warranty Dealer for:",
+              "points": [
+                {
+                  "text": "International"
+                },
+                {
+                  "text": "Cummins"
+                },
+                {
+                  "text": "Allison"
+                },
+                {
+                  "text": "Eaton"
+                },
+                {
+                  "text": "Meritor"
+                }
+              ],
+              "items": [],
+              "textAfter": "All emissions diagnostics, repairs, and warranty work are completed to manufacturer standards using approved tools and procedures.",
+              "linkLabel": "Learn more about Cummins diagnostics",
+              "linkUrl": "/service"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dc-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "split-band",
+        "values": {
+          "eyebrow": "DPF cleaning",
+          "heading": "DPF Cleaning Services",
+          "text": "We provide professional Diesel Particulate Filter (DPF) cleaning to remove soot and ash buildup that can restrict airflow and reduce performance.\n\nOur DPF cleaning process includes:",
+          "points": [
+            {
+              "text": "Inspection of filter condition"
+            },
+            {
+              "text": "Cleaning to remove accumulated soot and ash"
+            },
+            {
+              "text": "Testing to ensure proper operation"
+            }
+          ],
+          "textAfter": "Regular cleaning helps extend filter life, improve engine efficiency, and reduce the risk of system failure.\n\nDPF units can be dropped off at the service department and are typically ready for pickup the following day.",
+          "linkLabel": "",
+          "linkUrl": "",
+          "image": {
+            "src": "/images/dpf-cleaned-here.jpg",
+            "alt": "A DPF cleaned here: a diesel particulate filter marked 'clean me' with the slogan Run Clean. Run Efficiently. Save Money.",
+            "width": 816,
+            "height": 633
+          }
+        }
+      }
+    },
+    {
+      "id": "dg-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "text-columns",
+        "values": {
+          "textColumns": [
+            {
+              "eyebrow": "Diagnostics",
+              "heading": "Emissions System Diagnostics",
+              "text": "Accurate diagnostics are essential to identifying emissions-related issues.\n\nWe use OEM-level diagnostic tools to:",
+              "points": [
+                {
+                  "text": "Retrieve and analyze fault codes"
+                },
+                {
+                  "text": "Monitor emissions system performance"
+                },
+                {
+                  "text": "Identify sensor and electrical faults"
+                },
+                {
+                  "text": "Diagnose regeneration and DEF system issues"
+                }
+              ],
+              "items": [],
+              "textAfter": "This allows us to identify the root cause of problems and complete repairs efficiently.",
+              "linkLabel": "Request service",
+              "linkUrl": "/service#service-request"
+            },
+            {
+              "eyebrow": "Components",
+              "heading": "Emissions Systems We Service",
+              "text": "We provide service and repair for all major emissions system components:",
+              "points": [],
+              "items": [
+                {
+                  "title": "DPF (Diesel Particulate Filter)",
+                  "text": "Cleaning, inspection, and replacement"
+                },
+                {
+                  "title": "DEF System",
+                  "text": "Inspection and repair of DEF tanks, injectors, and sensors"
+                },
+                {
+                  "title": "SCR (Selective Catalytic Reduction)",
+                  "text": "Diagnostics and repair to maintain emissions compliance"
+                },
+                {
+                  "title": "EGR (Exhaust Gas Recirculation)",
+                  "text": "Cleaning and repair to prevent buildup and performance issues"
+                }
+              ],
+              "textAfter": "",
+              "linkLabel": "",
+              "linkUrl": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cu-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "card-grid",
+        "values": {
+          "eyebrow": "",
+          "heading": "",
+          "intro": "",
+          "outroHeading": "",
+          "outro": "",
+          "cards": [
+            {
+              "title": "Common Emissions Issues",
+              "paras": [
+                {
+                  "text": "We regularly diagnose and repair:"
+                }
+              ],
+              "points": [
+                {
+                  "text": "DPF clogging and restricted airflow"
+                },
+                {
+                  "text": "Failed regeneration cycles"
+                },
+                {
+                  "text": "DEF contamination and crystallization"
+                },
+                {
+                  "text": "Sensor and electrical faults"
+                },
+                {
+                  "text": "Emissions-related engine derate"
+                }
+              ],
+              "after": "Addressing these issues early helps prevent more significant repairs and downtime.",
+              "linkLabel": "",
+              "linkUrl": ""
+            },
+            {
+              "title": "Preventative Emissions Maintenance",
+              "paras": [
+                {
+                  "text": "Routine maintenance of emissions systems helps reduce the risk of failure and maintain consistent performance."
+                },
+                {
+                  "text": "Preventative service includes:"
+                }
+              ],
+              "points": [
+                {
+                  "text": "Regular DPF inspection and cleaning"
+                },
+                {
+                  "text": "Monitoring DEF system operation"
+                },
+                {
+                  "text": "Scheduled emissions system diagnostics"
+                },
+                {
+                  "text": "Addressing fault codes before they lead to derate"
+                }
+              ],
+              "after": "",
+              "linkLabel": "",
+              "linkUrl": ""
+            },
+            {
+              "title": "Supporting Fleet Uptime",
+              "paras": [
+                {
+                  "text": "Emissions system performance plays a critical role in overall vehicle uptime."
+                },
+                {
+                  "text": "We help fleets reduce downtime through:"
+                }
+              ],
+              "points": [
+                {
+                  "text": "Fast and accurate diagnostics"
+                },
+                {
+                  "text": "Timely repairs"
+                },
+                {
+                  "text": "Preventative maintenance planning"
+                },
+                {
+                  "text": "Reliable parts availability"
+                }
+              ],
+              "after": "",
+              "linkLabel": "",
+              "linkUrl": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "wc-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "split-band",
+        "values": {
+          "eyebrow": "",
+          "heading": "Why Choose Winslow-Gerolamy Motors Limited",
+          "text": "",
+          "points": [
+            {
+              "text": "Family-owned International dealer since 1952"
+            },
+            {
+              "text": "310T certified and OEM-trained technicians"
+            },
+            {
+              "text": "Certified warranty provider for major OEMs"
+            },
+            {
+              "text": "Advanced diagnostic tools and emissions expertise"
+            },
+            {
+              "text": "Strong focus on uptime and efficient repairs"
+            }
+          ],
+          "textAfter": "",
+          "linkLabel": "Learn more about us",
+          "linkUrl": "/about",
+          "image": {
+            "src": "/images/dpf-bucket-truck.jpg",
+            "alt": "A white International bucket truck parked beside a road",
+            "width": 810,
+            "height": 501
+          }
+        }
+      }
+    },
+    {
+      "id": "fq",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "card",
+        "anchor": "faq"
+      },
+      "children": [
+        {
+          "id": "fq-h",
+          "type": "heading",
+          "props": {
+            "text": "Frequently Asked Questions",
+            "headingLevel": 2,
+            "eyebrow": "DPF & emissions FAQs"
+          }
+        },
+        {
+          "id": "fq-list",
+          "type": "widget",
+          "props": {
+            "widget": "faq",
+            "config": {
+              "items": [
+                {
+                  "q": "What is a DPF and why is it important?",
+                  "a": "A Diesel Particulate Filter captures soot from exhaust gases and must be maintained to ensure proper engine performance and emissions compliance."
+                },
+                {
+                  "q": "How often should a DPF be cleaned?",
+                  "a": ""
+                },
+                {
+                  "q": "What causes emissions system issues?",
+                  "a": ""
+                },
+                {
+                  "q": "What is engine derate?",
+                  "a": ""
+                },
+                {
+                  "q": "Do you diagnose emissions system faults?",
+                  "a": ""
+                },
+                {
+                  "q": "Do you service all emissions components?",
+                  "a": ""
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

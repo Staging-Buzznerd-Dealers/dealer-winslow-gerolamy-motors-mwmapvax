@@ -125,5 +125,23 @@
       "footer": null,
       "utilityNav": null
     }
+  },
+  {
+    "slug": "dpf-emissions",
+    "title": "DPF & Emissions System Service in Central Ontario",
+    "description": "DPF cleaning, emissions diagnostics and repair for heavy-duty trucks across Central Ontario, by 310T certified and OEM-trained technicians.",
+    "path": "/dpf-emissions",
+    "out": "dpf-emissions/index.html",
+    "dir": "dpf-emissions",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
   }
 ]

@@ -152,6 +152,12 @@
               "label": "Fleet Maintenance",
               "type": "page",
               "ref": "fleet-maintenance"
+            },
+            {
+              "id": "hm-svc-dpf",
+              "label": "DPF & Emissions",
+              "type": "page",
+              "ref": "dpf-emissions"
             }
           ]
         },
