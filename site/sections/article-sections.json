@@ -1,0 +1,141 @@
+{
+  "version": 2,
+  "id": "article-sections",
+  "name": "Article (heading, intro, photos, sections)",
+  "props": [
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading"
+    },
+    {
+      "key": "intro",
+      "type": "textarea",
+      "label": "Intro (blank line between paragraphs; links allowed)"
+    },
+    {
+      "key": "photos",
+      "type": "list",
+      "label": "Photos",
+      "fields": [
+        {
+          "key": "image",
+          "type": "image",
+          "label": "Photo"
+        }
+      ]
+    },
+    {
+      "key": "sections",
+      "type": "list",
+      "label": "Sections",
+      "fields": [
+        {
+          "key": "heading",
+          "type": "text",
+          "label": "Heading"
+        },
+        {
+          "key": "text",
+          "type": "textarea",
+          "label": "Copy (blank line between paragraphs; links allowed)"
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "ar",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "card",
+        "anchor": "rental-info"
+      },
+      "children": [
+        {
+          "id": "ar-h",
+          "type": "heading",
+          "props": {
+            "text": "{{heading}}",
+            "headingLevel": 2
+          }
+        },
+        {
+          "id": "ar-intro",
+          "type": "text",
+          "props": {
+            "text": "{{intro}}",
+            "width": "full"
+          }
+        },
+        {
+          "id": "ar-photos",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "ar-photo",
+              "type": "column",
+              "props": {
+                "span": 6,
+                "repeat": "photos"
+              },
+              "children": [
+                {
+                  "id": "ar-img",
+                  "type": "image",
+                  "props": {
+                    "image": "{{image}}",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ar-sections",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "ar-sec",
+              "type": "column",
+              "props": {
+                "span": 12,
+                "repeat": "sections"
+              },
+              "children": [
+                {
+                  "id": "ar-sh",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "ar-stext",
+                  "type": "text",
+                  "props": {
+                    "text": "{{text}}",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "css": "body :where([data-bz-node=\"ar\"]) .bz-block{padding:0}\nbody :where([data-bz-node=\"ar\"]) .bz-container{padding:0;max-width:none}\nbody [data-bz-node=\"ar\"]>.bz-container{padding-inline:0}\n\nbody [data-bz-node=\"ar\"]{background:#fff;padding:90px 0 60px}\nbody [data-bz-node=\"ar\"]>.bz-container{max-width:var(--container)}\nbody [data-bz-node=\"ar-h\"] h2{font:700 36px/1.1 var(--font-heading);letter-spacing:0;text-transform:uppercase;color:var(--ink);margin:0}\nbody [data-bz-node=\"ar-intro\"] .bz-text,body [data-bz-node^=\"ar-stext-\"] .bz-text{max-width:none;margin-top:22px}\nbody [data-bz-node=\"ar-intro\"] p,body [data-bz-node^=\"ar-stext-\"] p{font:400 13.5px/25px var(--font-body);color:var(--ink);margin:0;margin:0 0 14px}\nbody [data-bz-node=\"ar-intro\"] p:last-child,body [data-bz-node^=\"ar-stext-\"] p:last-child{margin:0}\nbody [data-bz-node=\"ar-intro\"] a,body [data-bz-node^=\"ar-stext-\"] a{color:var(--accent);text-decoration:none}\nbody [data-bz-node=\"ar-intro\"] a:hover,body [data-bz-node^=\"ar-stext-\"] a:hover{text-decoration:underline}\nbody [data-bz-node=\"ar-photos\"]{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:36px}\nbody [data-bz-node=\"ar-photos\"]>.bz-col{grid-column:auto}\nbody [data-bz-node^=\"ar-photo-\"] figure{margin:0}\nbody [data-bz-node^=\"ar-photo-\"] img{width:100%;aspect-ratio:1413/771;object-fit:cover;border-radius:0}\nbody [data-bz-node=\"ar-sections\"]{display:block;margin-top:56px}\nbody [data-bz-node^=\"ar-sec-\"]{display:block;margin-bottom:46px}\nbody [data-bz-node^=\"ar-sh-\"] h3{font:700 28px/1.1 var(--font-heading);letter-spacing:0;text-transform:uppercase;color:var(--ink);margin:0}\n@media (max-width:1100px){body [data-bz-node=\"ar\"]{padding:64px 24px 40px}body [data-bz-node=\"ar-h\"] h2{font-size:30px}}\n@media (max-width:640px){body [data-bz-node=\"ar\"]{padding:48px 20px 32px}body [data-bz-node=\"ar-h\"] h2{font-size:26px}body [data-bz-node=\"ar-photos\"]{grid-template-columns:1fr;gap:16px}body [data-bz-node^=\"ar-sh-\"] h3{font-size:22px}body [data-bz-node=\"ar-sections\"]{margin-top:40px}}\n"
+}

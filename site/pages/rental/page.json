@@ -1,0 +1,86 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "pb-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "page-banner",
+        "values": {
+          "title": "Rental & Leasing",
+          "crumb": "Rental & Leasing",
+          "image": {
+            "src": "/images/hero-banner-poster.jpg",
+            "alt": "International trucks lined up in front of the Winslow-Gerolamy dealership",
+            "width": 1440,
+            "height": 780
+          }
+        }
+      }
+    },
+    {
+      "id": "ar-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "article-sections",
+        "values": {
+          "heading": "Idealease Truck Rental And Leasing",
+          "intro": "Idealease offers comprehensive truck leasing, truck rentals and a dedicated maintenance solution for companies who want to manage their business, not their truck fleet. Idealease Peterborough delivers expertise, responsiveness and stability to the truck transportation industry with commercial vehicle specifications fit to your needs and backed by superior service at a predictable cost.\n\nWe put our expertise to work for you, increasing your efficiency and profitability. We deliver a level of responsiveness that is unparalleled in our industry. Our responsive fleet services will keep your business running smoothly, allowing you to focus even more attention, serving your customers and growing your business.\n\nIdealease Peterborough is committed to vehicle uptime. Downtime costs money, we have a dedicated team of professionals to service our customers when problems arise. No waiting, we provide priority service to our Lease and Rental customers.",
+          "photos": [
+            {
+              "image": {
+                "src": "/images/idealease-trucks-1.jpg",
+                "alt": "Two white Idealease trucks, a day-cab tractor and a box truck, parked beside a warehouse",
+                "width": 1413,
+                "height": 771
+              }
+            },
+            {
+              "image": {
+                "src": "/images/idealease-trucks-2.jpg",
+                "alt": "An Idealease day-cab tractor parked in front of an Idealease box truck",
+                "width": 1413,
+                "height": 771
+              }
+            }
+          ],
+          "sections": [
+            {
+              "heading": "Full Service Lease",
+              "text": "Winslow Gerolamy Motors offers full-service leasing, a great alternative to truck ownership. Commercial truck ownership is getting more challenging and costly to manage every day. For most well-run businesses, truck leasing is a superior financial and operational alternative, improving your cash flow, truck uptime will improve and transportation costs are more consistent\n\nFull Service Lease vehicles are backed by superior fleet maintenance and fleet services such as 24/7 roadside assistance, licensing service, safety and compliance programs and much more. We are industry leading experts at seamlessly transitioning businesses from truck ownership to full-service leasing.\n\nContact us for more information on how we can reduce your costs and improve vehicle uptime so you can serve your customers better and grow your business."
+            },
+            {
+              "heading": "Rental",
+              "text": "Idealease Peterborough customers rely on us to provide industry-leading trucks and tractors at a moment’s notice. We can help you handle a short-term peak in your business or rent replacement vehicles when your truck is in the shop.\n\nOur straight trucks and day-cab tractors are well maintained, reliable and clean. Contact us to help you find the right truck rental to fill your need."
+            },
+            {
+              "heading": "Idealnet",
+              "text": "Idealease Peterborough relies on 24/7 Roadside Assistance service from Idealnet. When an emergency happens or a vehicle breaks down, you can rely on Idealnet to get your truck back on the road as quickly as possible to meet your deadlines and keep your business running smoothly.\n\nOne call to <a href=\"tel:+18004353273\">1-800-IDEALEASE (435-3273)</a> links you and your driver to our safety net of more than 430 Idealease truck dealership locations and 34,000 selected service providers across North America."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "fm",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "card",
+        "anchor": "lease-rental-request"
+      },
+      "children": [
+        {
+          "id": "fm-form",
+          "type": "form",
+          "props": {
+            "formId": "lease-rental-request",
+            "heading": "Lease /Rental Request",
+            "headingLevel": 2
+          }
+        }
+      ]
+    }
+  ]
+}

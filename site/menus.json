@@ -184,14 +184,14 @@
         {
           "id": "hm-rental",
           "label": "Rental & Leasing",
-          "type": "url",
-          "url": "/#rental",
+          "type": "page",
+          "ref": "rental",
           "children": [
             {
               "id": "hm-rental-info",
               "label": "Rental & leasing solutions",
-              "type": "url",
-              "url": "/#rental"
+              "type": "page",
+              "ref": "rental"
             },
             {
               "id": "hm-rental-trucks",
@@ -270,8 +270,8 @@
         {
           "id": "fc-rental",
           "label": "Rental & Leasing",
-          "type": "url",
-          "url": "/#rental"
+          "type": "page",
+          "ref": "rental"
         }
       ]
     },
@@ -313,7 +313,7 @@
           "id": "fk-rental",
           "label": "Rental/Lease Request",
           "type": "url",
-          "url": "/#rental"
+          "url": "/rental#lease-rental-request"
         },
         {
           "id": "fk-general",
