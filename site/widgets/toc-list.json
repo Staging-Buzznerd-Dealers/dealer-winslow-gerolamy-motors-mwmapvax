@@ -1,0 +1,31 @@
+{
+  "id": "toc-list",
+  "label": "Table of contents",
+  "props": [
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Label",
+      "default": "On this page"
+    },
+    {
+      "key": "items",
+      "type": "list",
+      "label": "Links",
+      "fields": [
+        {
+          "key": "label",
+          "type": "text",
+          "label": "Label"
+        },
+        {
+          "key": "url",
+          "type": "url",
+          "label": "Jump to (#anchor)"
+        }
+      ]
+    }
+  ],
+  "html": "<nav class=\"toc\" aria-label=\"{{heading}}\"><p class=\"toc__h\">{{heading}}</p><ul>{{#each items}}<li><a href=\"{{url}}\">{{label}}</a></li>{{/each}}</ul></nav>",
+  "css": ".toc__h{font:700 10px/1.4 var(--font-body);letter-spacing:.22em;text-transform:uppercase;color:#6b6b6a;margin:0 0 14px}.toc ul{list-style:none;margin:0;padding:0;border-top:1px solid #e4e4e2}.toc li{border-bottom:1px solid #e4e4e2}.toc a{display:block;padding:10px 0;font:500 12px/1.4 var(--font-body);color:var(--ink);text-decoration:none}.toc a:hover{color:var(--accent)}&.bz-block{padding:0}"
+}

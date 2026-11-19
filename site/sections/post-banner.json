@@ -1,0 +1,91 @@
+{
+  "version": 2,
+  "id": "post-banner",
+  "name": "Blog post banner",
+  "props": [
+    {
+      "key": "title",
+      "type": "text",
+      "label": "Post title"
+    },
+    {
+      "key": "category",
+      "type": "text",
+      "label": "Category"
+    },
+    {
+      "key": "meta",
+      "type": "text",
+      "label": "Date and details (for example MAY 15, 2026 · 5 MIN READ)"
+    },
+    {
+      "key": "image",
+      "type": "image",
+      "label": "Banner photo"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "pbn",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "ink"
+      },
+      "children": [
+        {
+          "id": "pbn-img",
+          "type": "image",
+          "props": {
+            "image": "{{image}}",
+            "width": "full"
+          }
+        },
+        {
+          "id": "pbn-row",
+          "type": "row",
+          "props": {
+            "gap": 0
+          },
+          "children": [
+            {
+              "id": "pbn-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "pbn-crumb",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"/\">Home</a> / <a href=\"/blog\">Blog</a> / {{category}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "pbn-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{title}}",
+                    "headingLevel": 1
+                  }
+                },
+                {
+                  "id": "pbn-meta",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>{{category}}</strong>{{meta}}",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "css": "body :where([data-bz-node=\"pbn\"]) .bz-block{padding:0}\nbody :where([data-bz-node=\"pbn\"]) .bz-container{padding:0;max-width:none}\nbody [data-bz-node=\"pbn\"]>.bz-container{padding-inline:0}\n\nbody [data-bz-node=\"pbn\"]{position:relative;overflow:hidden;min-height:470px;display:flex;flex-direction:column;justify-content:flex-end;background:#16130f;padding:0 0 64px}\nbody [data-bz-node=\"pbn\"]::after{content:\"\";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.72) 0%,rgba(0,0,0,.55) 55%,rgba(0,0,0,.35) 100%);z-index:1;pointer-events:none}\nbody [data-bz-node=\"pbn\"]>.bz-container{max-width:var(--container)}\nbody [data-bz-node=\"pbn-img\"]{position:absolute;inset:0;z-index:0}\nbody [data-bz-node=\"pbn-img\"] figure{margin:0;height:100%}\nbody [data-bz-node=\"pbn-img\"] img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%;border-radius:0}\nbody [data-bz-node=\"pbn-row\"]{display:block;position:relative;z-index:2;padding-top:170px}\nbody [data-bz-node=\"pbn-crumb\"] p{font:700 10.5px/1.4 var(--font-body);letter-spacing:.22em;text-transform:uppercase;color:#fff;margin:0 0 22px}\nbody [data-bz-node=\"pbn-crumb\"] a{color:#fff;text-decoration:none}\nbody [data-bz-node=\"pbn-crumb\"] a:hover{text-decoration:underline}\nbody [data-bz-node=\"pbn-h\"] h1{font:700 44px/1.08 var(--font-heading);letter-spacing:0;text-transform:uppercase;color:#fff;margin:0;max-width:780px}\nbody [data-bz-node=\"pbn-meta\"]{margin-top:24px}\nbody [data-bz-node=\"pbn-meta\"] p{font:700 10.5px/1.4 var(--font-body);letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.9);margin:0}\nbody [data-bz-node=\"pbn-meta\"] strong{display:inline-block;margin-right:14px;padding:6px 10px;background:rgba(255,255,255,.16);color:#fff;font-weight:700}\n@media (max-width:1100px){body [data-bz-node=\"pbn\"]{padding:0 24px 48px;min-height:420px}body [data-bz-node=\"pbn-h\"] h1{font-size:36px}}\n@media (max-width:640px){body [data-bz-node=\"pbn\"]{padding:0 20px 36px;min-height:400px}body [data-bz-node=\"pbn-row\"]{padding-top:130px}body [data-bz-node=\"pbn-h\"] h1{font-size:26px;line-height:1.12}body [data-bz-node=\"pbn-crumb\"] p{margin-bottom:16px}}\n"
+}

@@ -204,6 +204,12 @@
               "ref": "contact"
             },
             {
+              "id": "hm-about-blog",
+              "label": "Blog",
+              "type": "url",
+              "url": "/blog"
+            },
+            {
               "id": "hm-about-news",
               "label": "News & specials",
               "type": "url",
