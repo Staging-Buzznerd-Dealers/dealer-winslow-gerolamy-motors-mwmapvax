@@ -338,22 +338,28 @@
           "cardTitle": "Hours",
           "days": [
             {
-              "text": "Monday: 6:00AM to 11:00PM"
+              "day": "Monday",
+              "hours": "6:00AM to 11:00PM"
             },
             {
-              "text": "Tuesday: 6:00AM to 11:00PM"
+              "day": "Tuesday",
+              "hours": "6:00AM to 11:00PM"
             },
             {
-              "text": "Wednesday: 6:00AM to 11:00PM"
+              "day": "Wednesday",
+              "hours": "6:00AM to 11:00PM"
             },
             {
-              "text": "Thursday: 6:00AM to 11:00PM"
+              "day": "Thursday",
+              "hours": "6:00AM to 11:00PM"
             },
             {
-              "text": "Friday: 6:00 a.m. to 5:00 p.m."
+              "day": "Friday",
+              "hours": "6:00 a.m. to 5:00 p.m."
             },
             {
-              "text": "Saturday: Closed until further notice"
+              "day": "Saturday",
+              "hours": "Closed until further notice"
             }
           ],
           "darkTitle": "Toll Free",
