@@ -179,5 +179,23 @@
       "footer": null,
       "utilityNav": null
     }
+  },
+  {
+    "slug": "contact",
+    "title": "Contact Winslow-Gerolamy Motors Limited",
+    "description": "Contact Winslow-Gerolamy Motors Limited in Peterborough, Ontario for truck sales, service, parts and fleet maintenance support.",
+    "path": "/contact",
+    "out": "contact/index.html",
+    "dir": "contact",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
   }
 ]

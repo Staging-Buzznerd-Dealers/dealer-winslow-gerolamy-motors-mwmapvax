@@ -1,0 +1,77 @@
+{
+  "id": "contact-request",
+  "name": "Request service or information",
+  "status": "live",
+  "surfaces": [
+    "page"
+  ],
+  "intent": "contact",
+  "submitLabel": "Submit",
+  "successMessage": "Thanks — we have received your request and will respond promptly.",
+  "consent": {
+    "enabled": false,
+    "required": false,
+    "text": ""
+  },
+  "fields": [
+    {
+      "id": "cr-first",
+      "type": "first_name",
+      "label": "First Name",
+      "required": true,
+      "width": "half",
+      "placeholder": "Enter First Name"
+    },
+    {
+      "id": "cr-last",
+      "type": "last_name",
+      "label": "Last Name",
+      "required": false,
+      "width": "half",
+      "placeholder": "Enter Last Name"
+    },
+    {
+      "id": "cr-phone",
+      "type": "phone",
+      "label": "Phone Number",
+      "required": false,
+      "width": "half",
+      "placeholder": "Enter Phone"
+    },
+    {
+      "id": "cr-email",
+      "type": "email",
+      "label": "Email Address",
+      "required": true,
+      "width": "half",
+      "placeholder": "Enter Email"
+    },
+    {
+      "id": "cr-message",
+      "type": "paragraph",
+      "label": "Message",
+      "required": false,
+      "placeholder": "Write here"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "cr-default",
+      "name": "Contact requests",
+      "logic": "AND",
+      "rules": [],
+      "targetType": "role",
+      "roleId": "sales-manager",
+      "scopeMode": "dynamic"
+    }
+  ],
+  "confirmations": [
+    {
+      "id": "cr-thanks",
+      "name": "Thanks",
+      "type": "message",
+      "rules": [],
+      "message": "Thanks — we have received your request and will respond promptly."
+    }
+  ]
+}

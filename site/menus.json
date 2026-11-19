@@ -198,6 +198,12 @@
               "ref": "service-parts-locations"
             },
             {
+              "id": "hm-about-contact",
+              "label": "Contact us",
+              "type": "page",
+              "ref": "contact"
+            },
+            {
               "id": "hm-about-news",
               "label": "News & specials",
               "type": "url",
@@ -348,8 +354,8 @@
         {
           "id": "fk-general",
           "label": "General Inquiries",
-          "type": "url",
-          "url": "/#contact"
+          "type": "page",
+          "ref": "contact"
         }
       ]
     }
