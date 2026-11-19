@@ -1,0 +1,36 @@
+{
+  "id": "bullet-list",
+  "label": "Bullet list",
+  "props": [
+    {
+      "key": "items",
+      "type": "list",
+      "label": "Items",
+      "fields": [
+        {
+          "key": "text",
+          "type": "text",
+          "label": "Text (links allowed)"
+        }
+      ]
+    },
+    {
+      "key": "variant",
+      "type": "select",
+      "label": "Style",
+      "default": "bullets",
+      "options": [
+        {
+          "value": "bullets",
+          "label": "Orange bullets"
+        },
+        {
+          "value": "links",
+          "label": "Bold orange links"
+        }
+      ]
+    }
+  ],
+  "html": "<ul class=\"bl bl--{{variant}}\">{{#each items}}<li>{{&text}}</li>{{/each}}</ul>",
+  "css": ".bl{list-style:none;margin:0;padding:0}.bl li{position:relative;padding-left:20px;margin:0 0 8px;font:400 13.5px/24px var(--font-body);color:var(--ink)}.bl li:last-child{margin-bottom:0}.bl li::before{content:\"\";position:absolute;left:2px;top:9px;width:6px;height:6px;background:var(--accent)}.bl a{color:var(--accent);text-decoration:none}.bl a:hover{text-decoration:underline}.bl--links a{font-weight:700}&.bz-block{padding:0}"
+}

@@ -1,0 +1,179 @@
+{
+  "version": 2,
+  "id": "post",
+  "name": "Blog post",
+  "conditions": [
+    {
+      "type": "allPosts",
+      "ref": null
+    }
+  ],
+  "css": "\n/* The platform draws a plain title / date / cover above every post. The post banner component draws the real one. */\narticle > .bz-block:first-child{display:none}\n\nbody [data-bz-node=\"pst\"]{background:#fff;padding:72px 0 88px}\nbody :where([data-bz-node=\"pst\"]) .bz-block{padding:0}\nbody :where([data-bz-node=\"pst\"]) .bz-container{padding:0;max-width:none}\nbody [data-bz-node=\"pst\"]>.bz-container{max-width:var(--container);padding-inline:0}\nbody [data-bz-node=\"pst-row\"]{display:grid;grid-template-columns:250px minmax(0,780px);gap:0 64px;justify-content:center;align-items:start}\nbody [data-bz-node=\"pst-row\"]>.bz-col{grid-column:auto}\nbody [data-bz-node=\"pst-side\"]{position:sticky;top:32px;align-self:start}\nbody [data-bz-node=\"pst-ctarow\"]{display:block;margin-top:36px}\nbody [data-bz-node=\"pst-cta\"]{border:1px solid #e4e4e2;padding:24px 22px 22px;background:#fff}\nbody [data-bz-node=\"pst-cta-h\"] h3{font:700 14px/1.3 var(--font-heading);letter-spacing:.02em;text-transform:uppercase;color:var(--ink);margin:0 0 12px}\nbody [data-bz-node=\"pst-cta-t\"] p{font:400 12.5px/1.65 var(--font-body);color:#555;margin:0}\nbody [data-bz-node=\"pst-cta-b\"]{margin-top:16px}\nbody [data-bz-node=\"pst-cta-b\"] .bz-btns{margin:0}\nbody [data-bz-node=\"pst-cta-b\"] .bz-btn{padding:0;border:0;background:none;color:var(--ink);font:700 10.5px/1 var(--font-body);letter-spacing:.16em;text-transform:uppercase;text-decoration:none;gap:10px}\nbody [data-bz-node=\"pst-cta-b\"] .bz-btn::after{content:\"\";width:13px;height:13px;background:currentColor;-webkit-mask:url(/icons/arrow-right.svg) center/13px no-repeat;mask:url(/icons/arrow-right.svg) center/13px no-repeat}\n\n/* article column */\nbody [data-bz-node=\"pst-body\"] .bz-text{max-width:none}\nbody [data-bz-node=\"pst-body\"] .bz-block--text{margin:0 0 18px}\nbody [data-bz-node=\"pst-body\"] .bz-block--text p{font:400 13.5px/26px var(--font-body);color:var(--ink);margin:0}\nbody [data-bz-node=\"pst-body\"] .bz-block--text a{color:var(--accent);text-decoration:none}\nbody [data-bz-node=\"pst-body\"] .bz-block--text a:hover{text-decoration:underline}\nbody [data-bz-node=\"pst-body\"] .bz-block--heading{margin:54px 0 18px}\nbody [data-bz-node=\"pst-body\"] .bz-block--heading:first-child{margin-top:0}\nbody [data-bz-node=\"pst-body\"] .bz-block--heading h2{font:700 28px/1.12 var(--font-heading);letter-spacing:0;text-transform:uppercase;color:var(--ink);margin:0}\nbody [data-bz-node=\"pst-body\"] .bz-block--bullet-list{margin:0 0 20px}\nbody [data-bz-node=\"pst-body\"] .bz-block--buttons{margin:26px 0 0}\nbody [data-bz-node=\"pst-body\"] .bz-block--buttons .bz-btns{margin:0;gap:12px}\nbody [data-bz-node=\"pst-body\"] .bz-block--buttons .bz-btn{display:inline-flex;align-items:center;justify-content:center;height:46px;padding:0 26px;border:0;border-radius:2px;background:var(--accent);color:#fff;font:700 11px/1 var(--font-body);letter-spacing:.18em;text-transform:uppercase;text-decoration:none}\nbody [data-bz-node=\"pst-body\"] .bz-block--buttons .bz-btn:hover{background:var(--accent-dark)}\nbody [data-bz-node=\"pst-body\"] .bz-block--buttons + .bz-block--text{margin-top:28px}\nbody [data-bz-node=\"pst-body\"] .bz-block--widget{margin:28px 0 0}\nbody [data-bz-node=\"pst-body\"] .bz-faqs{display:block;border-top:1px solid #d8d8d6}\nbody [data-bz-node=\"pst-body\"] .bz-faq{border:0;border-bottom:1px solid #d8d8d6;border-radius:0;background:transparent;padding:0}\nbody [data-bz-node=\"pst-body\"] .bz-faq summary{list-style:none;position:relative;padding:20px 44px 20px 0;font:700 12.5px/1.5 var(--font-heading);letter-spacing:.02em;text-transform:uppercase;color:var(--ink);cursor:pointer}\nbody [data-bz-node=\"pst-body\"] .bz-faq summary::-webkit-details-marker{display:none}\nbody [data-bz-node=\"pst-body\"] .bz-faq summary::after{content:\"+\";position:absolute;right:6px;top:50%;transform:translateY(-50%);font:400 20px/1 var(--font-body);color:var(--ink)}\nbody [data-bz-node=\"pst-body\"] .bz-faq[open] summary::after{content:\"\\2212\"}\nbody [data-bz-node=\"pst-body\"] .bz-faq__a{padding:0 44px 22px 0;margin:0;font:400 13px/1.8 var(--font-body);color:#555}\n\n@media (max-width:1100px){\n  body [data-bz-node=\"pst\"]{padding:48px 24px 64px}\n  body [data-bz-node=\"pst-row\"]{grid-template-columns:minmax(0,1fr);gap:40px 0}\n  body [data-bz-node=\"pst-side\"]{position:static;order:2}\n  body [data-bz-node=\"pst-body\"]{order:1}\n  body [data-bz-node=\"pst-body\"] .bz-block--heading h2{font-size:24px}\n}\n@media (max-width:640px){\n  body [data-bz-node=\"pst\"]{padding:36px 20px 48px}\n  body [data-bz-node=\"pst-body\"] .bz-block--heading{margin:40px 0 14px}\n  body [data-bz-node=\"pst-body\"] .bz-block--heading h2{font-size:21px}\n  body [data-bz-node=\"pst-body\"] .bz-block--buttons .bz-btn{width:100%}\n}\n",
+  "nodes": [
+    {
+      "id": "hdr",
+      "type": "section",
+      "props": {
+        "width": "full",
+        "paddingY": 0,
+        "background": "none"
+      },
+      "children": [
+        {
+          "id": "hdr-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "align": "start",
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "hdr-brand",
+              "type": "column",
+              "props": {
+                "span": 4
+              },
+              "children": [
+                {
+                  "id": "hdr-logo",
+                  "type": "logo",
+                  "props": {
+                    "image": {
+                      "src": "/images/logo-international-wg.png",
+                      "alt": "International | Winslow-Gerolamy Motors",
+                      "width": 4124,
+                      "height": 564
+                    },
+                    "url": "/",
+                    "height": 34
+                  }
+                }
+              ]
+            },
+            {
+              "id": "hdr-right",
+              "type": "column",
+              "props": {
+                "span": 8
+              },
+              "children": [
+                {
+                  "id": "hdr-menu",
+                  "type": "menu",
+                  "props": {
+                    "menuId": "home-main",
+                    "layout": "horizontal",
+                    "collapseOnMobile": true,
+                    "align": "end"
+                  }
+                },
+                {
+                  "id": "hdr-search",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/icons/search-white.svg",
+                      "alt": "Search inventory",
+                      "width": 24,
+                      "height": 24
+                    },
+                    "width": "full",
+                    "url": "/store/search"
+                  }
+                },
+                {
+                  "id": "hdr-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "header-phone"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "content",
+      "type": "contentArea",
+      "props": {
+        "label": "Post content"
+      }
+    },
+    {
+      "id": "mb",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "paper",
+        "anchor": "more-posts"
+      },
+      "children": [
+        {
+          "id": "mb-posts",
+          "type": "postsList",
+          "props": {
+            "heading": "More from the blog",
+            "headingLevel": 2,
+            "count": 3,
+            "showDates": true,
+            "cta": {
+              "label": "All blog posts",
+              "url": "/blog",
+              "style": "link"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "cb-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "contact-band",
+        "values": {
+          "eyebrow": "Need help?",
+          "heading": "Contact Our Team",
+          "text": "Call us or visit our dealership at 1018 Lansdowne St. West, Peterborough, Ontario.",
+          "callLabel": "(705) 742-3411",
+          "callUrl": "tel:+17057423411",
+          "emailLabel": "info@wgmotors.ca",
+          "emailUrl": "mailto:info@wgmotors.ca",
+          "ctaLabel": "Send a message",
+          "ctaUrl": "/contact"
+        }
+      }
+    },
+    {
+      "id": "footer",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "site-footer",
+        "values": {
+          "linkColumns": [
+            {
+              "heading": "Company",
+              "menuId": "footer-company"
+            },
+            {
+              "heading": "Legal",
+              "menuId": "footer-legal"
+            },
+            {
+              "heading": "Contact",
+              "menuId": "footer-contact"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

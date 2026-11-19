@@ -1,0 +1,975 @@
+{
+  "slug": "international-truck-preventive-maintenance-schedules-for-ontario-fleets",
+  "title": "International Truck Preventive Maintenance Schedules For Ontario Fleets",
+  "date": "2026-05-15",
+  "description": "Service intervals, seasonal planning, and uptime strategies. Winslow-Gerolamy Motors helps fleets across Ontario develop preventive maintenance schedules that reduce downtime, control operating costs, and extend truck life.",
+  "coverImage": "/images/dpf-shop-lift.jpg",
+  "category": "News",
+  "status": "published",
+  "version": 2,
+  "nodes": [
+    {
+      "id": "pbn-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "post-banner",
+        "values": {
+          "title": "International Truck Preventive Maintenance Schedules For Ontario Fleets",
+          "category": "News",
+          "meta": "MAY 15, 2026",
+          "image": {
+            "src": "/images/dpf-shop-lift.jpg",
+            "alt": "A yellow dump truck and a truck raised on lifts in the Winslow-Gerolamy service shop",
+            "width": 804,
+            "height": 435
+          }
+        }
+      }
+    },
+    {
+      "id": "pst",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "card",
+        "anchor": "article"
+      },
+      "children": [
+        {
+          "id": "pst-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "align": "start",
+            "stackOn": "tablet"
+          },
+          "children": [
+            {
+              "id": "pst-side",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "pst-toc",
+                  "type": "toc-list",
+                  "props": {
+                    "heading": "On this page",
+                    "items": [
+                      {
+                        "label": "Service Intervals, Seasonal Planning, And Uptime Strategies",
+                        "url": "#uptime-strategies"
+                      },
+                      {
+                        "label": "Why Preventive Maintenance Matters For Fleets",
+                        "url": "#why-it-matters"
+                      },
+                      {
+                        "label": "Recommended Service Intervals For International Trucks",
+                        "url": "#service-intervals"
+                      },
+                      {
+                        "label": "Customizing Maintenance Schedules For Fleet Operations",
+                        "url": "#customizing"
+                      },
+                      {
+                        "label": "Seasonal Maintenance Planning For Ontario Fleets",
+                        "url": "#seasonal"
+                      },
+                      {
+                        "label": "Summer And High-Load Conditions",
+                        "url": "#summer"
+                      },
+                      {
+                        "label": "Year-Round Emissions Maintenance",
+                        "url": "#emissions"
+                      },
+                      {
+                        "label": "Fleet Uptime Strategies",
+                        "url": "#uptime"
+                      },
+                      {
+                        "label": "Proactive Diagnostics",
+                        "url": "#diagnostics"
+                      },
+                      {
+                        "label": "Parts Planning And Availability",
+                        "url": "#parts"
+                      },
+                      {
+                        "label": "Maintenance Service Contracts",
+                        "url": "#contracts"
+                      },
+                      {
+                        "label": "Common Issues Prevented Through Routine Maintenance",
+                        "url": "#common-issues"
+                      },
+                      {
+                        "label": "Our Preventive Maintenance Process",
+                        "url": "#process"
+                      },
+                      {
+                        "label": "Continuous Adjustment",
+                        "url": "#adjustment"
+                      },
+                      {
+                        "label": "Explore Our Truck Maintenance & Performance Resources",
+                        "url": "#resources"
+                      },
+                      {
+                        "label": "Why Fleets Choose Winslow-Gerolamy Motors Limited",
+                        "url": "#why-us"
+                      },
+                      {
+                        "label": "Need Help Building A Preventive Maintenance Plan?",
+                        "url": "#need-help"
+                      },
+                      {
+                        "label": "Frequently Asked Questions",
+                        "url": "#faq"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "pst-ctarow",
+                  "type": "row",
+                  "props": {
+                    "gap": 0,
+                    "stackOn": "never"
+                  },
+                  "children": [
+                    {
+                      "id": "pst-cta",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "children": [
+                        {
+                          "id": "pst-cta-h",
+                          "type": "heading",
+                          "props": {
+                            "text": "Need Help Building A Preventive Maintenance Plan?",
+                            "headingLevel": 3
+                          }
+                        },
+                        {
+                          "id": "pst-cta-t",
+                          "type": "text",
+                          "props": {
+                            "text": "If you’re looking to reduce downtime and improve fleet performance.",
+                            "width": "full"
+                          }
+                        },
+                        {
+                          "id": "pst-cta-b",
+                          "type": "buttons",
+                          "props": {
+                            "items": [
+                              {
+                                "label": "Contact us",
+                                "url": "/contact",
+                                "style": "link"
+                              }
+                            ],
+                            "align": "left"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "pst-body",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "a01",
+                  "type": "heading",
+                  "props": {
+                    "text": "Service Intervals, Seasonal Planning, And Uptime Strategies",
+                    "headingLevel": 2,
+                    "anchor": "uptime-strategies"
+                  }
+                },
+                {
+                  "id": "a02",
+                  "type": "text",
+                  "props": {
+                    "text": "Winslow-Gerolamy Motors Limited helps fleets across Ontario develop preventive maintenance schedules that reduce downtime, control operating costs, and extend truck life.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "a03",
+                  "type": "text",
+                  "props": {
+                    "text": "For International trucks and Cummins-powered systems, preventive maintenance is one of the most important factors in improving uptime, avoiding unexpected repairs, and maintaining long-term vehicle performance.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "a04",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why Preventive Maintenance Matters For Fleets",
+                    "headingLevel": 2,
+                    "anchor": "why-it-matters"
+                  }
+                },
+                {
+                  "id": "a05",
+                  "type": "text",
+                  "props": {
+                    "text": "Reactive maintenance often leads to unexpected breakdowns, higher repair costs, lost revenue from downtime, and shortened vehicle life.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "a06",
+                  "type": "text",
+                  "props": {
+                    "text": "A structured preventive maintenance program helps fleets:",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "a07",
+                  "type": "bullet-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Identify issues early"
+                      },
+                      {
+                        "text": "Maintain consistent performance"
+                      },
+                      {
+                        "text": "Improve fuel efficiency"
+                      },
+                      {
+                        "text": "Stay compliant with emissions and safety requirements"
+                      }
+                    ],
+                    "variant": "bullets"
+                  }
+                },
+                {
+                  "id": "a08",
+                  "type": "text",
+                  "props": {
+                    "text": "For Ontario fleets, preventive maintenance is especially important due to changing weather conditions, traffic congestion, mixed operating environments, and demanding route schedules.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "a09",
+                  "type": "heading",
+                  "props": {
+                    "text": "Recommended Service Intervals For International Trucks",
+                    "headingLevel": 2,
+                    "anchor": "service-intervals"
+                  }
+                },
+                {
+                  "id": "a10",
+                  "type": "text",
+                  "props": {
+                    "text": "Preventive maintenance schedules should be based on engine type, mileage, engine hours, driving conditions, load demands, and overall vehicle use.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "a11",
+                  "type": "text",
+                  "props": {
+                    "text": "Typical maintenance intervals may include:",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "a12",
+                  "type": "bullet-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Oil and filter changes every 15,000 to 25,000 km"
+                      },
+                      {
+                        "text": "Fuel filter replacement every 25,000 to 40,000 km"
+                      },
+                      {
+                        "text": "Air filter inspection and replacement every 40,000 to 80,000 km"
+                      },
+                      {
+                        "text": "Coolant system service every 12 to 24 months"
+                      },
+                      {
+                        "text": "Transmission service according to OEM recommendations"
+                      },
+                      {
+                        "text": "DPF inspection as part of every regular preventive maintenance cycle"
+                      }
+                    ],
+                    "variant": "bullets"
+                  }
+                },
+                {
+                  "id": "a13",
+                  "type": "text",
+                  "props": {
+                    "text": "These intervals should always be adjusted based on actual vehicle use and operating conditions.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "a14",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "Request service",
+                        "url": "/service#service-request",
+                        "style": "primary"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "a15",
+                  "type": "heading",
+                  "props": {
+                    "text": "Customizing Maintenance Schedules For Fleet Operations",
+                    "headingLevel": 2,
+                    "anchor": "customizing"
+                  }
+                },
+                {
+                  "id": "a16",
+                  "type": "text",
+                  "props": {
+                    "text": "No two fleets operate the same way. Maintenance schedules should reflect the way trucks are actually used in the field.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "a17",
+                  "type": "text",
+                  "props": {
+                    "text": "We help fleets build service plans based on:",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "a18",
+                  "type": "bullet-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Regional or long-haul route patterns"
+                      },
+                      {
+                        "text": "Stop-and-go driving and idle time"
+                      },
+                      {
+                        "text": "Load weight and application demands"
+                      },
+                      {
+                        "text": "Seasonal weather exposure"
+                      },
+                      {
+                        "text": "Engine performance and fuel efficiency trends"
+                      }
+                    ],
+                    "variant": "bullets"
+                  }
+                },
+                {
+                  "id": "a19",
+                  "type": "text",
+                  "props": {
+                    "text": "This helps ensure that service timing is based on real-world conditions rather than generic schedules alone.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "a20",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "Learn more",
+                        "url": "/fleet-maintenance",
+                        "style": "primary"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "a21",
+                  "type": "heading",
+                  "props": {
+                    "text": "Seasonal Maintenance Planning For Ontario Fleets",
+                    "headingLevel": 2,
+                    "anchor": "seasonal"
+                  }
+                },
+                {
+                  "id": "a22",
+                  "type": "text",
+                  "props": {
+                    "text": "Ontario’s seasonal conditions can create different maintenance priorities throughout the year.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "a23",
+                  "type": "text",
+                  "props": {
+                    "text": "Winter Maintenance Priorities",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "a24",
+                  "type": "text",
+                  "props": {
+                    "text": "Cold weather can increase the risk of downtime and should be addressed proactively. Winter maintenance planning should include:",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "a25",
+                  "type": "bullet-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Battery testing and replacement when needed"
+                      },
+                      {
+                        "text": "Fuel system protection"
+                      },
+                      {
+                        "text": "Coolant system inspection"
+                      },
+                      {
+                        "text": "Tire condition and pressure checks"
+                      },
+                      {
+                        "text": "Heating and charging system inspection"
+                      }
+                    ],
+                    "variant": "bullets"
+                  }
+                },
+                {
+                  "id": "a26",
+                  "type": "heading",
+                  "props": {
+                    "text": "Summer And High-Load Conditions",
+                    "headingLevel": 2,
+                    "anchor": "summer"
+                  }
+                },
+                {
+                  "id": "a27",
+                  "type": "text",
+                  "props": {
+                    "text": "Warmer months and heavy workloads can place additional stress on key systems. Summer maintenance should include:",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "a28",
+                  "type": "bullet-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Cooling system performance checks"
+                      },
+                      {
+                        "text": "Air conditioning inspection"
+                      },
+                      {
+                        "text": "Tire wear monitoring"
+                      },
+                      {
+                        "text": "Engine and load-related performance evaluation"
+                      }
+                    ],
+                    "variant": "bullets"
+                  }
+                },
+                {
+                  "id": "a29",
+                  "type": "heading",
+                  "props": {
+                    "text": "Year-Round Emissions Maintenance",
+                    "headingLevel": 2,
+                    "anchor": "emissions"
+                  }
+                },
+                {
+                  "id": "a30",
+                  "type": "text",
+                  "props": {
+                    "text": "Emissions systems should be monitored throughout the year to reduce the risk of derates and performance issues. This includes:",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "a31",
+                  "type": "bullet-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "DPF inspection and cleaning"
+                      },
+                      {
+                        "text": "DEF system monitoring"
+                      },
+                      {
+                        "text": "SCR and EGR system checks"
+                      },
+                      {
+                        "text": "Fault code review and diagnostics"
+                      }
+                    ],
+                    "variant": "bullets"
+                  }
+                },
+                {
+                  "id": "a32",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "Learn more",
+                        "url": "/dpf-emissions",
+                        "style": "primary"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "a33",
+                  "type": "heading",
+                  "props": {
+                    "text": "Fleet Uptime Strategies",
+                    "headingLevel": 2,
+                    "anchor": "uptime"
+                  }
+                },
+                {
+                  "id": "a34",
+                  "type": "text",
+                  "props": {
+                    "text": "Preventive maintenance is one of the most effective tools for reducing downtime, but it works best when supported by a broader uptime strategy.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "a35",
+                  "type": "text",
+                  "props": {
+                    "text": "Scheduled Maintenance Programs",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "a36",
+                  "type": "text",
+                  "props": {
+                    "text": "Routine inspections, planned service intervals, and maintenance tracking help fleets stay ahead of repairs and avoid reactive service.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "a37",
+                  "type": "heading",
+                  "props": {
+                    "text": "Proactive Diagnostics",
+                    "headingLevel": 2,
+                    "anchor": "diagnostics"
+                  }
+                },
+                {
+                  "id": "a38",
+                  "type": "text",
+                  "props": {
+                    "text": "Using diagnostic tools to identify fault codes, monitor performance, and catch small issues early helps prevent larger failures.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "a39",
+                  "type": "heading",
+                  "props": {
+                    "text": "Parts Planning And Availability",
+                    "headingLevel": 2,
+                    "anchor": "parts"
+                  }
+                },
+                {
+                  "id": "a40",
+                  "type": "text",
+                  "props": {
+                    "text": "<a href=\"/parts\">Access to the right parts</a> at the right time helps avoid unnecessary delays. Accurate VIN-based parts matching and fast sourcing are important parts of any fleet uptime strategy.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "a41",
+                  "type": "heading",
+                  "props": {
+                    "text": "Maintenance Service Contracts",
+                    "headingLevel": 2,
+                    "anchor": "contracts"
+                  }
+                },
+                {
+                  "id": "a42",
+                  "type": "text",
+                  "props": {
+                    "text": "Structured service contracts can help fleets track maintenance timing, schedule repairs more effectively, and improve long-term performance across multiple units.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "a43",
+                  "type": "heading",
+                  "props": {
+                    "text": "Common Issues Prevented Through Routine Maintenance",
+                    "headingLevel": 2,
+                    "anchor": "common-issues"
+                  }
+                },
+                {
+                  "id": "a44",
+                  "type": "text",
+                  "props": {
+                    "text": "A well-managed preventive maintenance schedule can reduce the likelihood of:",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "a45",
+                  "type": "bullet-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Engine failures caused by missed service"
+                      },
+                      {
+                        "text": "DPF clogging and emissions-related faults"
+                      },
+                      {
+                        "text": "Cooling system problems"
+                      },
+                      {
+                        "text": "Fuel system contamination"
+                      },
+                      {
+                        "text": "Electrical and sensor-related failures"
+                      },
+                      {
+                        "text": "Unplanned downtime due to delayed repairs"
+                      }
+                    ],
+                    "variant": "bullets"
+                  }
+                },
+                {
+                  "id": "a46",
+                  "type": "heading",
+                  "props": {
+                    "text": "Our Preventive Maintenance Process",
+                    "headingLevel": 2,
+                    "anchor": "process"
+                  }
+                },
+                {
+                  "id": "a47",
+                  "type": "text",
+                  "props": {
+                    "text": "Fleet Assessment",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "a48",
+                  "type": "text",
+                  "props": {
+                    "text": "We review fleet size, vehicle types, usage patterns, and operating conditions.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "a49",
+                  "type": "text",
+                  "props": {
+                    "text": "Schedule Development",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "a50",
+                  "type": "text",
+                  "props": {
+                    "text": "We build a customized maintenance plan based on service intervals, application, and operational demands.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "a51",
+                  "type": "text",
+                  "props": {
+                    "text": "Ongoing Maintenance and Inspection We provide routine service, inspections, diagnostics, and repair support to keep vehicles operating efficiently.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "a52",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "Learn more",
+                        "url": "/fleet-maintenance",
+                        "style": "primary"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "a53",
+                  "type": "heading",
+                  "props": {
+                    "text": "Continuous Adjustment",
+                    "headingLevel": 2,
+                    "anchor": "adjustment"
+                  }
+                },
+                {
+                  "id": "a54",
+                  "type": "text",
+                  "props": {
+                    "text": "Maintenance strategies can be refined over time based on vehicle performance, route demands, and seasonal operating conditions.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "a55",
+                  "type": "heading",
+                  "props": {
+                    "text": "Explore Our Truck Maintenance & Performance Resources",
+                    "headingLevel": 2,
+                    "anchor": "resources"
+                  }
+                },
+                {
+                  "id": "a56",
+                  "type": "text",
+                  "props": {
+                    "text": "Preventive maintenance works best when combined with diagnostics, emissions management, and parts strategy.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "a57",
+                  "type": "bullet-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "<a href=\"/service\">Learn how we diagnose engine issues</a>"
+                      },
+                      {
+                        "text": "<a href=\"/dpf-emissions\">Understand emissions system maintenance</a>"
+                      },
+                      {
+                        "text": "<a href=\"/fleet-maintenance\">Improve fleet uptime with planning</a>"
+                      },
+                      {
+                        "text": "<a href=\"/parts\">Compare parts strategies</a>"
+                      },
+                      {
+                        "text": "<a href=\"/service\">Explore full maintenance services</a>"
+                      }
+                    ],
+                    "variant": "links"
+                  }
+                },
+                {
+                  "id": "a58",
+                  "type": "heading",
+                  "props": {
+                    "text": "Why Fleets Choose Winslow-Gerolamy Motors Limited",
+                    "headingLevel": 2,
+                    "anchor": "why-us"
+                  }
+                },
+                {
+                  "id": "a59",
+                  "type": "text",
+                  "props": {
+                    "text": "Winslow-Gerolamy Motors Limited has served the trucking industry since 1952 as a family-owned International dealer.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "a60",
+                  "type": "bullet-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "Preventive maintenance planning expertise"
+                      },
+                      {
+                        "text": "Advanced diagnostics and emissions support"
+                      },
+                      {
+                        "text": "Full-service repair and parts availability"
+                      },
+                      {
+                        "text": "Strong focus on uptime and operational efficiency"
+                      },
+                      {
+                        "text": "Proven experience supporting fleets across Ontario"
+                      }
+                    ],
+                    "variant": "bullets"
+                  }
+                },
+                {
+                  "id": "a61",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "Learn more about us",
+                        "url": "/about",
+                        "style": "primary"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "a62",
+                  "type": "heading",
+                  "props": {
+                    "text": "Need Help Building A Preventive Maintenance Plan?",
+                    "headingLevel": 2,
+                    "anchor": "need-help"
+                  }
+                },
+                {
+                  "id": "a63",
+                  "type": "text",
+                  "props": {
+                    "text": "If you’re looking to reduce downtime and improve fleet performance.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "a64",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "Contact us",
+                        "url": "/contact",
+                        "style": "primary"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "a65",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>Or explore related topics:</strong>",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "a66",
+                  "type": "bullet-list",
+                  "props": {
+                    "items": [
+                      {
+                        "text": "<a href=\"/service\">Engine Diagnostics</a>"
+                      },
+                      {
+                        "text": "<a href=\"/dpf-emissions\">DPF & Emissions</a>"
+                      },
+                      {
+                        "text": "<a href=\"/fleet-maintenance\">Fleet Maintenance</a>"
+                      },
+                      {
+                        "text": "<a href=\"/parts\">Parts Strategy</a>"
+                      }
+                    ],
+                    "variant": "links"
+                  }
+                },
+                {
+                  "id": "a67",
+                  "type": "heading",
+                  "props": {
+                    "text": "Frequently Asked Questions",
+                    "headingLevel": 2,
+                    "anchor": "faq"
+                  }
+                },
+                {
+                  "id": "a68",
+                  "type": "widget",
+                  "props": {
+                    "widget": "faq",
+                    "config": {
+                      "items": [
+                        {
+                          "q": "How often should preventive maintenance be performed on an International truck?",
+                          "a": "Service frequency depends on mileage, engine type, duty cycle, and operating conditions."
+                        },
+                        {
+                          "q": "What is included in a preventive maintenance program?",
+                          "a": ""
+                        },
+                        {
+                          "q": "How does preventive maintenance reduce downtime?",
+                          "a": ""
+                        },
+                        {
+                          "q": "Can maintenance schedules be customized for a fleet?",
+                          "a": ""
+                        },
+                        {
+                          "q": "Why is seasonal maintenance important in Ontario?",
+                          "a": ""
+                        },
+                        {
+                          "q": "Do you offer support for fleet maintenance planning?",
+                          "a": ""
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "js": "/* Open the first FAQ question that has an answer, as the old article shows it expanded. */\n(function () {\n  var items = document.querySelectorAll('[data-bz-node=\"pst-body\"] details.bz-faq');\n  for (var i = 0; i < items.length; i++) {\n    var a = items[i].querySelector('.bz-faq__a');\n    if (a && a.textContent.trim()) { items[i].setAttribute('open', ''); break; }\n  }\n})();\n"
+}

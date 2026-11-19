@@ -1,0 +1,271 @@
+{
+  "version": 2,
+  "id": "blog",
+  "name": "Blog listing",
+  "conditions": [
+    {
+      "type": "blog",
+      "ref": null
+    }
+  ],
+  "css": "",
+  "nodes": [
+    {
+      "id": "hdr",
+      "type": "section",
+      "props": {
+        "width": "full",
+        "paddingY": 0,
+        "background": "none"
+      },
+      "children": [
+        {
+          "id": "hdr-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "align": "start",
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "hdr-brand",
+              "type": "column",
+              "props": {
+                "span": 4
+              },
+              "children": [
+                {
+                  "id": "hdr-logo",
+                  "type": "logo",
+                  "props": {
+                    "image": {
+                      "src": "/images/logo-international-wg.png",
+                      "alt": "International | Winslow-Gerolamy Motors",
+                      "width": 4124,
+                      "height": 564
+                    },
+                    "url": "/",
+                    "height": 34
+                  }
+                }
+              ]
+            },
+            {
+              "id": "hdr-right",
+              "type": "column",
+              "props": {
+                "span": 8
+              },
+              "children": [
+                {
+                  "id": "hdr-menu",
+                  "type": "menu",
+                  "props": {
+                    "menuId": "home-main",
+                    "layout": "horizontal",
+                    "collapseOnMobile": true,
+                    "align": "end"
+                  }
+                },
+                {
+                  "id": "hdr-search",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/icons/search-white.svg",
+                      "alt": "Search inventory",
+                      "width": 24,
+                      "height": 24
+                    },
+                    "width": "full",
+                    "url": "/store/search"
+                  }
+                },
+                {
+                  "id": "hdr-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "header-phone"
+                      }
+                    ],
+                    "align": "left"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pb-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "page-banner",
+        "values": {
+          "title": "Blog",
+          "crumb": "Blog",
+          "subtitle": "Dealership news, service tips and new arrivals.",
+          "ctaLabel": "",
+          "ctaUrl": "",
+          "image": {
+            "src": "/images/hero-banner-poster.jpg",
+            "alt": "International trucks lined up in front of the Winslow-Gerolamy dealership",
+            "width": 1440,
+            "height": 780
+          }
+        }
+      }
+    },
+    {
+      "id": "ll",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "card",
+        "anchor": "latest"
+      },
+      "children": [
+        {
+          "id": "ll-posts",
+          "type": "postsList",
+          "props": {
+            "heading": "Latest posts",
+            "headingLevel": 2,
+            "count": 6,
+            "showDates": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "content",
+      "type": "contentArea",
+      "props": {
+        "label": "More articles (older posts appear here automatically)"
+      }
+    },
+    {
+      "id": "lk-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "link-cards",
+        "values": {
+          "eyebrow": "More from Winslow-Gerolamy",
+          "heading": "Elsewhere On The Site",
+          "cards": [
+            {
+              "title": "Service",
+              "text": "Full-service maintenance and repair for heavy-duty trucks across Central Ontario.",
+              "linkLabel": "Service",
+              "linkUrl": "/service"
+            },
+            {
+              "title": "Parts",
+              "text": "OEM and aftermarket parts, delivered daily across Central Ontario.",
+              "linkLabel": "Parts",
+              "linkUrl": "/parts"
+            },
+            {
+              "title": "Fleet Maintenance",
+              "text": "Data-driven maintenance and uptime planning for fleets.",
+              "linkLabel": "Fleet maintenance",
+              "linkUrl": "/fleet-maintenance"
+            },
+            {
+              "title": "About Us",
+              "text": "A family-owned International dealership since 1952.",
+              "linkLabel": "About us",
+              "linkUrl": "/about"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "fq",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "card",
+        "anchor": "faq"
+      },
+      "children": [
+        {
+          "id": "fq-h",
+          "type": "heading",
+          "props": {
+            "text": "Common Questions",
+            "headingLevel": 2,
+            "eyebrow": "About the blog"
+          }
+        },
+        {
+          "id": "fq-list",
+          "type": "widget",
+          "props": {
+            "widget": "faq",
+            "config": {
+              "items": [
+                {
+                  "q": "What topics does the blog cover?",
+                  "a": "Preventive maintenance schedules, OEM and aftermarket parts, and fleet maintenance planning for Ontario fleets."
+                },
+                {
+                  "q": "Can I get help with something I read here?",
+                  "a": "Yes. Call (705) 742-3411 or send us a message and our team will help."
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "cb-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "contact-band",
+        "values": {
+          "eyebrow": "Need help?",
+          "heading": "Contact Our Team",
+          "text": "Call us or visit our dealership at 1018 Lansdowne St. West, Peterborough, Ontario.",
+          "callLabel": "(705) 742-3411",
+          "callUrl": "tel:+17057423411",
+          "emailLabel": "info@wgmotors.ca",
+          "emailUrl": "mailto:info@wgmotors.ca",
+          "ctaLabel": "Send a message",
+          "ctaUrl": "/contact"
+        }
+      }
+    },
+    {
+      "id": "footer",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "site-footer",
+        "values": {
+          "linkColumns": [
+            {
+              "heading": "Company",
+              "menuId": "footer-company"
+            },
+            {
+              "heading": "Legal",
+              "menuId": "footer-legal"
+            },
+            {
+              "heading": "Contact",
+              "menuId": "footer-contact"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
