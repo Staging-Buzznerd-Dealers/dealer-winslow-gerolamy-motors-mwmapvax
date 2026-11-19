@@ -323,22 +323,28 @@
           "cardTitle": "Service department",
           "days": [
             {
-              "text": "Monday: 6:00AM to 11:00PM"
+              "day": "Monday",
+              "hours": "6:00AM to 11:00PM"
             },
             {
-              "text": "Tuesday: 6:00AM to 11:00PM"
+              "day": "Tuesday",
+              "hours": "6:00AM to 11:00PM"
             },
             {
-              "text": "Wednesday: 6:00AM to 11:00PM"
+              "day": "Wednesday",
+              "hours": "6:00AM to 11:00PM"
             },
             {
-              "text": "Thursday: 6:00AM to 11:00PM"
+              "day": "Thursday",
+              "hours": "6:00AM to 11:00PM"
             },
             {
-              "text": "Friday: 6:00am to 5:00pm"
+              "day": "Friday",
+              "hours": "6:00am to 5:00pm"
             },
             {
-              "text": "Saturday: Closed until Further Notice"
+              "day": "Saturday",
+              "hours": "Closed until Further Notice"
             }
           ],
           "darkTitle": "Toll Free",

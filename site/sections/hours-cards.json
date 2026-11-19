@@ -1,7 +1,7 @@
 {
   "version": 2,
   "id": "hours-cards",
-  "name": "Hours of operation cards",
+  "name": "Hours of operation + call card",
   "props": [
     {
       "key": "eyebrow",
@@ -16,7 +16,7 @@
     {
       "key": "intro",
       "type": "textarea",
-      "label": "Intro (blank line between paragraphs)"
+      "label": "Intro (optional)"
     },
     {
       "key": "cardTitle",
@@ -26,34 +26,39 @@
     {
       "key": "days",
       "type": "list",
-      "label": "Hours (one line each)",
+      "label": "Hours",
       "fields": [
         {
-          "key": "text",
+          "key": "day",
           "type": "text",
-          "label": "Day and hours"
+          "label": "Day"
+        },
+        {
+          "key": "hours",
+          "type": "text",
+          "label": "Hours"
         }
       ]
     },
     {
       "key": "darkTitle",
       "type": "text",
-      "label": "Dark card title"
+      "label": "Call card label"
     },
     {
       "key": "darkText",
       "type": "textarea",
-      "label": "Dark card copy (optional)"
+      "label": "Call card copy (optional)"
     },
     {
       "key": "darkLabel",
       "type": "text",
-      "label": "Dark card button label"
+      "label": "Phone number (shown large)"
     },
     {
       "key": "darkUrl",
       "type": "url",
-      "label": "Dark card button link"
+      "label": "Phone link"
     }
   ],
   "nodes": [
@@ -97,7 +102,7 @@
               "id": "hc-card",
               "type": "column",
               "props": {
-                "span": 4
+                "span": 7
               },
               "children": [
                 {
@@ -125,10 +130,18 @@
                       },
                       "children": [
                         {
-                          "id": "hc-dayx",
+                          "id": "hc-dayname",
                           "type": "text",
                           "props": {
-                            "text": "{{text}}",
+                            "text": "{{day}}",
+                            "width": "full"
+                          }
+                        },
+                        {
+                          "id": "hc-dayhours",
+                          "type": "text",
+                          "props": {
+                            "text": "{{hours}}",
                             "width": "full"
                           }
                         }
@@ -142,22 +155,27 @@
               "id": "hc-dark",
               "type": "column",
               "props": {
-                "span": 4
+                "span": 5
               },
               "children": [
                 {
-                  "id": "hc-dt",
-                  "type": "heading",
+                  "id": "hc-dicon",
+                  "type": "image",
                   "props": {
-                    "text": "{{darkTitle}}",
-                    "headingLevel": 3
+                    "image": {
+                      "src": "/icons/phone-white.svg",
+                      "alt": "Phone",
+                      "width": 24,
+                      "height": 24
+                    },
+                    "width": "full"
                   }
                 },
                 {
-                  "id": "hc-dtext",
+                  "id": "hc-dt",
                   "type": "text",
                   "props": {
-                    "text": "{{darkText}}",
+                    "text": "{{darkTitle}}",
                     "width": "full"
                   }
                 },
@@ -169,10 +187,18 @@
                       {
                         "label": "{{darkLabel}}",
                         "url": "{{darkUrl}}",
-                        "style": "secondary"
+                        "style": "link"
                       }
                     ],
                     "align": "left"
+                  }
+                },
+                {
+                  "id": "hc-dtext",
+                  "type": "text",
+                  "props": {
+                    "text": "{{darkText}}",
+                    "width": "full"
                   }
                 }
               ]
@@ -182,5 +208,5 @@
       ]
     }
   ],
-  "css": "body :where([data-bz-node=\"hc\"]) .bz-block{padding:0}\nbody :where([data-bz-node=\"hc\"]) .bz-container{padding:0;max-width:none}\nbody [data-bz-node=\"hc\"]>.bz-container{padding-inline:0}\n\nbody [data-bz-node=\"hc-h\"] .bz-eyebrow{font:700 10.5px/1.4 var(--font-body);letter-spacing:.22em;text-transform:uppercase;color:#6b6b6a;margin:0 0 14px}\nbody [data-bz-node=\"hc-h\"] h2{font:700 36px/1.08 var(--font-heading);letter-spacing:0;text-transform:uppercase;color:var(--ink);margin:0}\nbody [data-bz-node=\"hc-h\"] h2:empty{display:none}\nbody [data-bz-node=\"hc-intro\"] .bz-text{max-width:760px;margin-top:22px}\nbody [data-bz-node=\"hc-intro\"] p{font:400 13.5px/25px var(--font-body);color:var(--ink);margin:0;margin:0 0 14px}\nbody [data-bz-node=\"hc-intro\"] p:last-child{margin:0}\nbody [data-bz-node=\"hc-intro\"] a{color:var(--accent);text-decoration:none}\n\nbody [data-bz-node=\"hc\"]{background:#fff;padding:96px 0}\nbody [data-bz-node=\"hc\"]>.bz-container{max-width:var(--container)}\nbody [data-bz-node=\"hc-grid\"]{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:24px;margin-top:40px;align-items:stretch}\nbody [data-bz-node=\"hc-grid\"]>.bz-col{grid-column:auto}\nbody [data-bz-node=\"hc-card\"],body [data-bz-node=\"hc-dark\"]{display:flex;flex-direction:column;padding:32px 32px 34px;box-sizing:border-box}\nbody [data-bz-node=\"hc-card\"]{background:#fff;border:1px solid #e4e4e2}\nbody [data-bz-node=\"hc-dark\"]{background:#2a2723}\nbody [data-bz-node=\"hc-ct\"] h3{font:700 15px/1.35 var(--font-heading);text-transform:uppercase;color:var(--ink);margin:0 0 20px}\nbody [data-bz-node^=\"hc-day-\"]{display:block;margin-bottom:6px}\nbody [data-bz-node^=\"hc-day-\"] p{position:relative;padding-left:26px;font:400 12.5px/1.6 var(--font-body);color:#444;margin:0}\nbody [data-bz-node^=\"hc-day-\"] p::before{content:\"\";position:absolute;left:0;top:2px;width:14px;height:14px;background:var(--ink);-webkit-mask:url(/icons/clock.svg) center/14px no-repeat;mask:url(/icons/clock.svg) center/14px no-repeat}\nbody [data-bz-node=\"hc-dt\"] h3{font:700 15px/1.35 var(--font-heading);text-transform:uppercase;color:#fff;margin:0 0 20px}\nbody [data-bz-node=\"hc-dtext\"] p{font:400 12.5px/1.75 var(--font-body);color:rgba(255,255,255,.88);margin:0}\nbody [data-bz-node=\"hc-dcta\"]{margin-top:auto;padding-top:22px}\nbody [data-bz-node=\"hc-dcta\"] .bz-btns{margin:0}\nbody [data-bz-node=\"hc-dcta\"] .bz-btn{display:inline-flex;align-items:center;justify-content:center;height:44px;padding:0 24px;border:0;border-radius:3px;background:#fff;color:var(--ink);font:700 10.5px/1 var(--font-body);letter-spacing:.16em;text-transform:uppercase;text-decoration:none;gap:10px}\nbody [data-bz-node=\"hc-dcta\"] .bz-btn::before{content:\"\";width:13px;height:13px;background:var(--ink);-webkit-mask:url(/icons/phone.svg) center/13px no-repeat;mask:url(/icons/phone.svg) center/13px no-repeat}\nbody [data-bz-node=\"hc-dcta\"] .bz-btn:hover{background:#ececec}\n@media (max-width:1100px){body [data-bz-node=\"hc\"]{padding:64px 24px}body [data-bz-node=\"hc-h\"] h2{font-size:30px}}\n@media (max-width:640px){body [data-bz-node=\"hc\"]{padding:48px 20px}body [data-bz-node=\"hc-h\"] h2{font-size:26px}body [data-bz-node=\"hc-grid\"]{gap:16px}}\n"
+  "css": "body :where([data-bz-node=\"hc\"]) .bz-block{padding:0}\nbody :where([data-bz-node=\"hc\"]) .bz-container{padding:0;max-width:none}\nbody [data-bz-node=\"hc\"]>.bz-container{padding-inline:0}\n\nbody [data-bz-node=\"hc\"]{background:#fff;padding:96px 0}\nbody [data-bz-node=\"hc\"]>.bz-container{max-width:var(--container)}\nbody [data-bz-node=\"hc-h\"] .bz-eyebrow{font:700 10.5px/1.4 var(--font-body);letter-spacing:.22em;text-transform:uppercase;color:#6b6b6a;margin:0 0 14px}\nbody [data-bz-node=\"hc-h\"] h2{font:700 36px/1.08 var(--font-heading);letter-spacing:0;text-transform:uppercase;color:var(--ink);margin:0}\nbody [data-bz-node=\"hc-intro\"] .bz-text{max-width:640px;margin-top:20px}\nbody [data-bz-node=\"hc-intro\"] p{font:400 13.5px/25px var(--font-body);color:var(--ink);margin:0}\nbody [data-bz-node=\"hc-grid\"]{display:grid;grid-template-columns:7fr 5fr;gap:24px;margin-top:40px;align-items:stretch}\nbody [data-bz-node=\"hc-grid\"]>.bz-col{grid-column:auto}\n\n/* hours card */\nbody [data-bz-node=\"hc-card\"]{background:#fff;border:1px solid #e4e4e2;padding:34px 40px 22px;box-sizing:border-box}\nbody [data-bz-node=\"hc-ct\"] h3{display:flex;align-items:center;gap:12px;font:700 15px/1.2 var(--font-heading);letter-spacing:.04em;text-transform:uppercase;color:var(--ink);margin:0 0 14px}\nbody [data-bz-node=\"hc-ct\"] h3::before{content:\"\";width:20px;height:20px;background:var(--accent);-webkit-mask:url(/icons/clock.svg) center/20px no-repeat;mask:url(/icons/clock.svg) center/20px no-repeat}\nbody [data-bz-node=\"hc-days\"]{display:block}\nbody [data-bz-node^=\"hc-day-\"]{display:flex;align-items:baseline;gap:20px;padding:15px 0;border-bottom:1px solid #ececea}\nbody [data-bz-node^=\"hc-day-\"]:last-child{border-bottom:0}\nbody [data-bz-node^=\"hc-dayname-\"]{flex:0 0 150px}\nbody [data-bz-node^=\"hc-dayname-\"] p{font:700 11.5px/1.4 var(--font-body);letter-spacing:.16em;text-transform:uppercase;color:var(--ink);margin:0}\nbody [data-bz-node^=\"hc-dayhours-\"]{flex:1 1 auto}\nbody [data-bz-node^=\"hc-dayhours-\"] p{font:400 14px/1.4 var(--font-body);color:#444;margin:0}\n\n/* call card */\nbody [data-bz-node=\"hc-dark\"]{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;background:#2a2723;padding:40px;box-sizing:border-box}\nbody [data-bz-node=\"hc-dicon\"] figure{margin:0}\nbody [data-bz-node=\"hc-dicon\"] img{width:26px;height:26px}\nbody [data-bz-node=\"hc-dicon\"]{width:60px;height:60px;border-radius:50%;background:var(--accent);display:flex;align-items:center;justify-content:center}\nbody [data-bz-node=\"hc-dicon\"] .bz-container,body [data-bz-node=\"hc-dicon\"] figure{display:contents}\nbody [data-bz-node=\"hc-dt\"]{margin-top:26px}\nbody [data-bz-node=\"hc-dt\"] .bz-text{max-width:none}\nbody [data-bz-node=\"hc-dt\"] p{font:700 10.5px/1.4 var(--font-body);letter-spacing:.24em;text-transform:uppercase;color:rgba(255,255,255,.72);margin:0}\nbody [data-bz-node=\"hc-dcta\"]{margin-top:8px}\nbody [data-bz-node=\"hc-dcta\"] .bz-btns{margin:0}\nbody [data-bz-node=\"hc-dcta\"] .bz-btn{padding:0;border:0;background:none;border-radius:0;color:#fff;font:700 clamp(28px,3.1vw,40px)/1.1 var(--font-heading);letter-spacing:.01em;text-decoration:none;text-transform:none;min-height:0;height:auto}\nbody [data-bz-node=\"hc-dcta\"] .bz-btn:hover{color:var(--accent)}\nbody [data-bz-node=\"hc-dtext\"] .bz-text{max-width:none;margin-top:16px}\nbody [data-bz-node=\"hc-dtext\"] p{font:400 13px/1.7 var(--font-body);color:rgba(255,255,255,.85);margin:0}\n\n@media (max-width:1100px){\n  body [data-bz-node=\"hc\"]{padding:64px 24px}\n  body [data-bz-node=\"hc-h\"] h2{font-size:30px}\n  body [data-bz-node=\"hc-grid\"]{grid-template-columns:1fr}\n}\n@media (max-width:640px){\n  body [data-bz-node=\"hc\"]{padding:48px 20px}\n  body [data-bz-node=\"hc-h\"] h2{font-size:26px}\n  body [data-bz-node=\"hc-grid\"]{gap:16px;margin-top:28px}\n  body [data-bz-node=\"hc-card\"]{padding:26px 22px 14px}\n  body [data-bz-node^=\"hc-day-\"]{flex-direction:column;gap:4px;padding:13px 0}\n  body [data-bz-node^=\"hc-dayname-\"]{flex-basis:auto}\n  body [data-bz-node=\"hc-dark\"]{padding:30px 24px}\n}\n"
 }
