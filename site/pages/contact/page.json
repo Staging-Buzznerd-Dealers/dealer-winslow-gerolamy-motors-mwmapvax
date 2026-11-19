@@ -1,0 +1,461 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "pb-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "page-banner",
+        "values": {
+          "title": "Contact Winslow-Gerolamy Motors Limited",
+          "crumb": "Contact Winslow-Gerolamy Motors Limited",
+          "subtitle": "",
+          "ctaLabel": "",
+          "ctaUrl": "",
+          "image": {
+            "src": "/images/hero-banner-poster.jpg",
+            "alt": "International trucks lined up in front of the Winslow-Gerolamy dealership",
+            "width": 1440,
+            "height": 780
+          }
+        }
+      }
+    },
+    {
+      "id": "in-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "split-band",
+        "values": {
+          "eyebrow": "Get in touch",
+          "heading": "Truck Sales, Service, Parts, And Fleet Support In Central Ontario",
+          "text": "Winslow-Gerolamy Motors Limited provides full-service support for heavy-duty trucks, including sales, service, parts, and fleet maintenance solutions.\n\nWhether you need to schedule service, order parts, inquire about truck inventory, or discuss fleet support, our team is ready to assist.",
+          "points": [],
+          "textAfter": "",
+          "linkLabel": "Service locations",
+          "linkUrl": "/service-parts-locations",
+          "image": {
+            "src": "/images/dealership-storefront.jpg",
+            "alt": "The Winslow-Gerolamy International dealership building and parking lot on a sunny day",
+            "width": 1044,
+            "height": 684
+          }
+        }
+      }
+    },
+    {
+      "id": "hw-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "card-grid-2",
+        "values": {
+          "eyebrow": "Departments",
+          "heading": "How Can We Help You?",
+          "intro": "Select the service you need and connect directly with the appropriate department.",
+          "outroHeading": "",
+          "outro": "",
+          "cards": [
+            {
+              "title": "Service & Repair Inquiries",
+              "paras": [
+                {
+                  "text": "Schedule maintenance, diagnostics, or repairs for your truck or fleet."
+                },
+                {
+                  "text": "We support:"
+                }
+              ],
+              "points": [
+                {
+                  "text": "Preventative maintenance"
+                },
+                {
+                  "text": "Engine diagnostics and repair"
+                },
+                {
+                  "text": "Emissions system service (DPF, DEF, SCR, EGR)"
+                },
+                {
+                  "text": "Warranty repairs"
+                }
+              ],
+              "after": "Our team works to provide timely service and minimize downtime.",
+              "linkLabel": "Service request",
+              "linkUrl": "/service#service-request"
+            },
+            {
+              "title": "Parts Orders & Availability",
+              "paras": [
+                {
+                  "text": "Order OEM and aftermarket truck parts with fast availability and delivery."
+                },
+                {
+                  "text": "We assist with:"
+                }
+              ],
+              "points": [
+                {
+                  "text": "VIN-based parts matching"
+                },
+                {
+                  "text": "OEM and aftermarket parts selection"
+                },
+                {
+                  "text": "Next-day availability for most non-stock parts"
+                },
+                {
+                  "text": "Warranty repairs"
+                }
+              ],
+              "after": "Daily delivery across Central Ontario",
+              "linkLabel": "Learn more",
+              "linkUrl": "/parts"
+            },
+            {
+              "title": "Truck Sales & Inventory",
+              "paras": [
+                {
+                  "text": "Speak with our sales team about new and pre-owned International trucks."
+                },
+                {
+                  "text": "We provide:"
+                }
+              ],
+              "points": [
+                {
+                  "text": "Truck selection and specification guidance"
+                },
+                {
+                  "text": "Inventory availability"
+                },
+                {
+                  "text": "Financing and leasing options"
+                },
+                {
+                  "text": "Fleet purchasing support"
+                }
+              ],
+              "after": "",
+              "linkLabel": "Explore inventory",
+              "linkUrl": "/store/inventory"
+            },
+            {
+              "title": "Fleet Maintenance & Support",
+              "paras": [
+                {
+                  "text": "Discuss maintenance planning and uptime strategies for your fleet."
+                },
+                {
+                  "text": "We offer:"
+                }
+              ],
+              "points": [
+                {
+                  "text": "Preventative maintenance programs"
+                },
+                {
+                  "text": "Connected vehicle solutions (OnCommand Connection, International 360)"
+                },
+                {
+                  "text": "Fleet health monitoring"
+                },
+                {
+                  "text": "Repair scheduling and coordination"
+                }
+              ],
+              "after": "",
+              "linkLabel": "Learn more",
+              "linkUrl": "/fleet-maintenance"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "rq-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "text-columns",
+        "values": {
+          "textColumns": [
+            {
+              "eyebrow": "Contact form",
+              "heading": "Request Service Or Information",
+              "text": "Customers can contact us to:",
+              "points": [
+                {
+                  "text": "Schedule service appointments"
+                },
+                {
+                  "text": "Request parts quotes"
+                },
+                {
+                  "text": "Check truck availability"
+                },
+                {
+                  "text": "Ask about fleet maintenance programs"
+                }
+              ],
+              "items": [],
+              "textAfter": "Our team will respond promptly to ensure your needs are handled efficiently.",
+              "linkLabel": "",
+              "linkUrl": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "fm",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "card",
+        "anchor": "contact-form"
+      },
+      "children": [
+        {
+          "id": "fm-form",
+          "type": "form",
+          "props": {
+            "formId": "contact-request"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ec-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "email-cards",
+        "values": {
+          "eyebrow": "Email us directly",
+          "heading": "",
+          "departments": [
+            {
+              "name": "Sales",
+              "emails": [
+                {
+                  "address": "sgerolamy@wgmotors.ca"
+                },
+                {
+                  "address": "tlong@wgmotors.ca"
+                }
+              ]
+            },
+            {
+              "name": "Leasing",
+              "emails": [
+                {
+                  "address": "swalker@wgmotors.ca"
+                },
+                {
+                  "address": "mwinslow@wgmotors.ca"
+                }
+              ]
+            },
+            {
+              "name": "Rentals",
+              "emails": [
+                {
+                  "address": "mwinslow@wgmotors.ca"
+                }
+              ]
+            },
+            {
+              "name": "Service",
+              "emails": [
+                {
+                  "address": "service@wgmotors.ca"
+                }
+              ]
+            },
+            {
+              "name": "Parts",
+              "emails": [
+                {
+                  "address": "dgerolamy@wgmotors.ca"
+                },
+                {
+                  "address": "parts@wgmotors.ca"
+                }
+              ]
+            },
+            {
+              "name": "Information",
+              "emails": [
+                {
+                  "address": "info@wgmotors.ca"
+                }
+              ]
+            },
+            {
+              "name": "Receivables",
+              "emails": []
+            },
+            {
+              "name": "Payables",
+              "emails": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "mc-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "map-contact",
+        "values": {
+          "intro": "Winslow-Gerolamy Motors Limited serves customers across Central Ontario, including Peterborough, the Greater Toronto Area, and surrounding regions.\n\nWe support owner-operators, regional fleets, and long-haul carriers with consistent service and support.",
+          "lines": [
+            {
+              "text": "1018 Lansdowne St. West P.O. Box 6 Peterborough, Ontario K9J 6Y5 Canada"
+            },
+            {
+              "text": "Phone: <a href=\"tel:+17057423411\">(705) 742-3411</a>"
+            },
+            {
+              "text": "Toll Free: <a href=\"tel:+18004618417\">1-800-461-8417</a>"
+            },
+            {
+              "text": "Fax: (705) 742-2551"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "hc-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "hours-cards",
+        "values": {
+          "eyebrow": "When to reach us",
+          "heading": "Hours Of Operation",
+          "intro": "",
+          "cardTitle": "Hours",
+          "days": [
+            {
+              "text": "Monday: 6:00AM to 11:00PM"
+            },
+            {
+              "text": "Tuesday: 6:00AM to 11:00PM"
+            },
+            {
+              "text": "Wednesday: 6:00AM to 11:00PM"
+            },
+            {
+              "text": "Thursday: 6:00AM to 11:00PM"
+            },
+            {
+              "text": "Friday: 6:00 a.m. to 5:00 p.m."
+            },
+            {
+              "text": "Saturday: Closed until further notice"
+            }
+          ],
+          "darkTitle": "Toll Free",
+          "darkText": "",
+          "darkLabel": "1.800.461.8417",
+          "darkUrl": "tel:+18004618417"
+        }
+      }
+    },
+    {
+      "id": "wc-placed",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "split-band",
+        "values": {
+          "eyebrow": "",
+          "heading": "Why Contact Winslow-Gerolamy Motors Limited",
+          "text": "",
+          "points": [
+            {
+              "text": "Family-owned International dealer since 1952"
+            },
+            {
+              "text": "Full-service dealership with sales, service, and parts"
+            },
+            {
+              "text": "310T certified and OEM-trained technicians"
+            },
+            {
+              "text": "Strong focus on uptime and fast turnaround"
+            },
+            {
+              "text": "Experienced in supporting fleets and owner-operators"
+            }
+          ],
+          "textAfter": "",
+          "linkLabel": "",
+          "linkUrl": "",
+          "image": {
+            "src": "/images/contact-snowplow.jpg",
+            "alt": "A red International dump truck with a snowplow clearing a snowy road",
+            "width": 912,
+            "height": 556
+          }
+        }
+      }
+    },
+    {
+      "id": "fq",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0,
+        "background": "card",
+        "anchor": "faq"
+      },
+      "children": [
+        {
+          "id": "fq-h",
+          "type": "heading",
+          "props": {
+            "text": "Frequently Asked Questions",
+            "headingLevel": 2,
+            "eyebrow": "Contact FAQs"
+          }
+        },
+        {
+          "id": "fq-list",
+          "type": "widget",
+          "props": {
+            "widget": "faq",
+            "config": {
+              "items": [
+                {
+                  "q": "How do I schedule service?",
+                  "a": "You can contact our service department directly to schedule maintenance or repairs."
+                },
+                {
+                  "q": "How do I order parts?",
+                  "a": ""
+                },
+                {
+                  "q": "Can I request a quote for a truck?",
+                  "a": ""
+                },
+                {
+                  "q": "Do you support fleet maintenance programs?",
+                  "a": ""
+                },
+                {
+                  "q": "What areas do you serve?",
+                  "a": ""
+                },
+                {
+                  "q": "How quickly will I receive a response?",
+                  "a": ""
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
